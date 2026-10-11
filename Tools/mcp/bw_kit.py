@@ -1,0 +1,1344 @@
+"""Brinewake prop kit for Unreal: chunky shapes, colour painted per vertex (gradients, no textures).
+
+blender -b --python bw_kit.py -- <out_dir>
+Units are metres (1 m -> 100 cm in Unreal). Every prop sits on z = 0 with its pivot at the base.
+"""
+import math
+import os
+import random
+import sys
+
+import bmesh
+import bpy
+from mathutils import Matrix, Vector, noise
+
+OUT = sys.argv[sys.argv.index("--") + 1] if "--" in sys.argv else os.getcwd()
+os.makedirs(OUT, exist_ok=True)
+
+
+def lerp(a, b, t):
+    return tuple(a[i] + (b[i] - a[i]) * t for i in range(3))
+
+
+def clamp01(x):
+    return max(0.0, min(1.0, x))
+
+
+SHELF = []
+
+
+class Prop:
+    """Collects painted geometry in one bmesh, then exports it as a single mesh."""
+
+    def __init__(self, name):
+        self.name = name
+        self.bm = bmesh.new()
+        self.col = self.bm.loops.layers.color.new("Col")
+
+    def paint(self, faces, fn):
+        for f in faces:
+            for loop in f.loops:
+                c = fn(loop.vert.co, f.normal)
+                loop[self.col] = (c[0] ** 1.6, c[1] ** 1.6, c[2] ** 1.6, 1.0)  # palette is display colour, Unreal reads linear
+
+    def tube(self, rings, colour, smooth=True, cap=True, sides=10):
+        """rings: list of (centre Vector, radius, axis Vector). Returns the new faces."""
+        loops = []
+        for centre, radius, axis in rings:
+            axis = axis.normalized()
+            side = axis.cross(Vector((0, 1, 0)))
+            if side.length < 1e-4:
+                side = axis.cross(Vector((1, 0, 0)))
+            side.normalize()
+            up = side.cross(axis)
+            loops.append([self.bm.verts.new(centre + (side * math.cos(a) + up * math.sin(a)) * radius)
+                          for a in (2 * math.pi * k / sides for k in range(sides))])
+        faces = []
+        for a, b in zip(loops, loops[1:]):
+            for k in range(sides):
+                faces.append(self.bm.faces.new((a[k], a[(k + 1) % sides], b[(k + 1) % sides], b[k])))
+        if cap:
+            faces.append(self.bm.faces.new(loops[-1]))
+            faces.append(self.bm.faces.new(list(reversed(loops[0]))))
+        for f in faces:
+            f.smooth = smooth
+        self.bm.normal_update()
+        self.paint(faces, colour)
+        return faces
+
+    def blob(self, centre, size, colour, seed=0, rough=0.28, subdiv=2, strata=0.0, smooth=False):
+        """A lumpy rock / foliage mass. size is a 3-vector of radii."""
+        geo = bmesh.ops.create_icosphere(self.bm, subdivisions=subdiv, radius=1.0)
+        verts = geo["verts"]
+        off = Vector((seed * 13.1, seed * 7.7, seed * 3.3))
+        for v in verts:
+            n = noise.noise(v.co * 1.3 + off) * rough + noise.noise(v.co * 3.1 + off) * rough * 0.35
+            v.co *= 1.0 + n
+            if strata:
+                # squash toward horizontal ledges so the rock reads as bedded stone
+                z = v.co.z
+                step = round(z / strata) * strata
+                v.co.z = z + (step - z) * 0.55
+            v.co = Vector((v.co.x * size[0], v.co.y * size[1], v.co.z * size[2])) + Vector(centre)
+        faces = list({f for v in verts for f in v.link_faces})
+        for f in faces:
+            f.smooth = smooth
+        self.bm.normal_update()
+        self.paint(faces, colour)
+        return faces
+
+    def blade(self, root, direction, length, width, droop, colour, segs=7, fold=0.35):
+        """A folded palm frond / leaf: a spine that droops, two halves angled up like a V."""
+        direction = direction.normalized()
+        side = direction.cross(Vector((0, 0, 1)))
+        if side.length < 1e-4:
+            side = Vector((1, 0, 0))
+        side.normalize()
+        spine, left, right = [], [], []
+        for i in range(segs + 1):
+            t = i / segs
+            p = root + direction * (length * t) + Vector((0, 0, -droop * length * t * t))
+            w = width * math.sin(math.pi * (0.08 + 0.92 * t)) ** 0.6 * (1.0 - 0.25 * t)
+            lift = Vector((0, 0, w * fold))
+            jag = 1.0 if i % 2 == 0 else 0.72
+            spine.append(self.bm.verts.new(p))
+            left.append(self.bm.verts.new(p + side * w * jag + lift))
+            right.append(self.bm.verts.new(p - side * w * jag + lift))
+        faces = []
+        for i in range(segs):
+            faces.append(self.bm.faces.new((spine[i], spine[i + 1], left[i + 1], left[i])))
+            faces.append(self.bm.faces.new((spine[i], right[i], right[i + 1], spine[i + 1])))
+        for f in faces:
+            f.smooth = False
+        self.bm.normal_update()
+        self.paint(faces, lambda co, n: colour((co - root).length / max(length, 1e-4)))
+        return faces
+
+    def box(self, centre, size, colour, bevel=0.0, xform=None, local_paint=None):
+        """Axis-aligned box, optionally chamfered, then moved by xform (local_paint runs before the move)."""
+        geo = bmesh.ops.create_cube(self.bm, size=1.0)
+        verts = geo["verts"]
+        for v in verts:
+            v.co = Vector((v.co.x * size[0], v.co.y * size[1], v.co.z * size[2])) + Vector(centre)
+        faces = list({f for v in verts for f in v.link_faces})
+        if bevel:
+            edges = list({e for f in faces for e in f.edges})
+            res = bmesh.ops.bevel(self.bm, geom=edges, offset=bevel, segments=1, affect='EDGES')
+            faces = list({f for v in res["verts"] for f in v.link_faces} | set(f for f in faces if f.is_valid))
+        for f in faces:
+            f.smooth = False
+        self.bm.normal_update()
+        if local_paint:
+            self.paint(faces, local_paint)
+        if xform is not None:
+            for v in {v for f in faces for v in f.verts}:
+                v.co = xform @ v.co
+            self.bm.normal_update()
+        if not local_paint:
+            self.paint(faces, colour)
+        return faces
+
+    def export(self):
+        mesh = bpy.data.meshes.new(self.name)
+        bmesh.ops.triangulate(self.bm, faces=self.bm.faces[:])
+        self.bm.to_mesh(mesh)
+        self.bm.free()
+        obj = bpy.data.objects.new(self.name, mesh)
+        bpy.context.scene.collection.objects.link(obj)
+        mat = bpy.data.materials.get("BW_Painted")
+        if mat is None:
+            mat = bpy.data.materials.new("BW_Painted")
+            mat.use_nodes = True
+            nodes = mat.node_tree.nodes
+            attr = nodes.new("ShaderNodeVertexColor")
+            attr.layer_name = "Col"
+            bsdf = next(n for n in nodes if n.type == 'BSDF_PRINCIPLED')
+            mat.node_tree.links.new(attr.outputs["Color"], bsdf.inputs["Base Color"])
+            bsdf.inputs["Roughness"].default_value = 0.82
+        mesh.materials.append(mat)
+        bpy.ops.object.select_all(action='DESELECT')
+        obj.select_set(True)
+        bpy.context.view_layer.objects.active = obj
+        path = os.path.join(OUT, self.name + ".fbx")
+        bpy.ops.export_scene.fbx(filepath=path, use_selection=True, mesh_smooth_type='FACE',
+                                 colors_type='LINEAR', add_leaf_bones=False, bake_space_transform=True,
+                                 axis_forward='-Y', axis_up='Z')
+        print("BW exported", self.name, len(mesh.polygons), "tris")
+        slot = len(SHELF)
+        obj.location = ((slot % 10) * 26.0, -(slot // 10) * 30.0, 0.0)       # exported at the origin, shelved afterwards
+        obj.select_set(False)
+        SHELF.append(obj.name)
+
+
+# --- palette: warm lit tops, cool purple-brown shadows, saturated greens ---------------------
+BARK_DARK, BARK_LIGHT, BARK_RING = (0.20, 0.11, 0.07), (0.62, 0.44, 0.24), (0.13, 0.07, 0.06)
+LEAF_DEEP, LEAF_MID, LEAF_TIP = (0.03, 0.22, 0.10), (0.10, 0.48, 0.14), (0.55, 0.72, 0.16)
+ROCK_TOP, ROCK_MID, ROCK_LOW = (0.66, 0.58, 0.46), (0.40, 0.34, 0.31), (0.17, 0.14, 0.19)
+MOSS = (0.25, 0.42, 0.14)
+WOOD_DARK, WOOD_LIGHT, IRON = (0.22, 0.12, 0.07), (0.58, 0.38, 0.20), (0.10, 0.10, 0.12)
+
+
+def leaf_colour(t):
+    return lerp(LEAF_DEEP, LEAF_MID, clamp01(t * 2.2)) if t < 0.45 else lerp(LEAF_MID, LEAF_TIP, clamp01((t - 0.45) / 0.55))
+
+
+def rock(name, size, seed, moss=0.0, pieces=1):
+    rnd = random.Random(seed)
+    p = Prop(name)
+    height = size[2] * 2
+
+    def colour(co, nrm):
+        t = clamp01(co.z / height)
+        base = lerp(ROCK_LOW, ROCK_MID, clamp01(t * 1.8))
+        base = lerp(base, ROCK_TOP, clamp01(nrm.z) ** 1.5 * (0.35 + 0.65 * t))
+        band = 0.5 + 0.5 * math.sin(co.z * 9.0 + noise.noise(co * 0.8) * 3.0)
+        base = lerp(base, ROCK_LOW, 0.16 * band)
+        if moss and nrm.z > 0.55:
+            base = lerp(base, MOSS, moss * clamp01((nrm.z - 0.55) * 3) * clamp01(noise.noise(co * 0.9 + Vector((seed, 0, 0))) + 0.6))
+        return base
+
+    for i in range(pieces):
+        s = 1.0 if i == 0 else rnd.uniform(0.35, 0.6)
+        ang = rnd.uniform(0, 2 * math.pi)
+        off = Vector((0, 0, 0)) if i == 0 else Vector((math.cos(ang) * size[0] * 0.9, math.sin(ang) * size[1] * 0.9, 0))
+        p.blob(off + Vector((0, 0, size[2] * s * 0.82)), (size[0] * s, size[1] * s, size[2] * s), colour,
+               seed + i * 5, 0.32, 3, strata=0.34)
+    p.export()
+
+
+def bush(name, seed, leaves=14, scale=1.0):
+    rnd = random.Random(seed)
+    p = Prop(name)
+    for k in range(leaves):
+        a = 2 * math.pi * k / leaves + rnd.uniform(-0.25, 0.25)
+        rise = rnd.uniform(0.3, 1.3)
+        d = Vector((math.cos(a), math.sin(a), rise))
+        p.blade(Vector((0, 0, 0.05)), d, rnd.uniform(0.9, 1.5) * scale, rnd.uniform(0.2, 0.32) * scale,
+                rnd.uniform(0.35, 0.8), leaf_colour, segs=5, fold=0.3)
+    p.export()
+
+
+# --- crafted wooden props: separate staves / planks, chamfer highlights, warm iron -------------
+IRON_DARK, IRON_LIGHT, RUST = (0.13, 0.11, 0.10), (0.40, 0.36, 0.31), (0.36, 0.19, 0.10)
+GAP = (0.07, 0.04, 0.035)
+EDGE_LIT = (0.80, 0.62, 0.38)
+
+
+def wood_tint(seed):
+    """One board's colour: every board gets its own warmth so the piece reads as hand built."""
+    rnd = random.Random(seed)
+    k = rnd.uniform(0.30, 0.72)
+    warm = rnd.uniform(-0.04, 0.05)
+    base = lerp(WOOD_DARK, WOOD_LIGHT, k)
+    return (clamp01(base[0] + warm), base[1], clamp01(base[2] - warm * 0.5))
+
+
+def is_chamfer(nrm):
+    return max(abs(nrm.x), abs(nrm.y), abs(nrm.z)) < 0.93
+
+
+def strip(p, a, b, colour, smooth=False):
+    """Quads between two polylines of equal length, on fresh vertices so the edges stay hard."""
+    va = [p.bm.verts.new(v) for v in a]
+    vb = [p.bm.verts.new(v) for v in b]
+    faces = [p.bm.faces.new((va[i], va[i + 1], vb[i + 1], vb[i])) for i in range(len(a) - 1)]
+    for f in faces:
+        f.smooth = smooth
+    p.bm.normal_update()
+    p.paint(faces, colour)
+    return faces
+
+
+def ngon(p, pts, colour):
+    f = p.bm.faces.new([p.bm.verts.new(v) for v in pts])
+    p.bm.normal_update()
+    p.paint([f], colour)
+    return f
+
+
+def circle(r, z, seg):
+    return [Vector((r * math.cos(2 * math.pi * k / seg), r * math.sin(2 * math.pi * k / seg), z)) for k in range(seg + 1)]
+
+
+def hoop(p, z, r_in, height, thick, seed):
+    """Iron band: flat outer face, chamfered top and bottom lips, a riveted lap plate."""
+    seg = 32
+    ch = thick * 0.45
+    prof = [(r_in, z - height / 2), (r_in + thick - ch, z - height / 2), (r_in + thick, z - height / 2 + ch),
+            (r_in + thick, z + height / 2 - ch), (r_in + thick - ch, z + height / 2), (r_in, z + height / 2)]
+    rnd = random.Random(seed)
+    rust_at = rnd.uniform(0, 2 * math.pi)
+
+    def iron(co, nrm):
+        a = math.atan2(co.y, co.x)
+        c = lerp(IRON_DARK, IRON_LIGHT, clamp01(0.25 + 0.75 * nrm.z))          # lips catch the sky
+        return lerp(c, RUST, 0.45 * clamp01(math.cos(a - rust_at)) ** 3)
+
+    for (r0, z0), (r1, z1) in zip(prof, prof[1:]):
+        strip(p, circle(r1, z1, seg), circle(r0, z0, seg), iron, smooth=True)
+    rot = Matrix.Rotation(rnd.uniform(0, 2 * math.pi), 4, 'Z')
+    p.box((r_in + thick, 0, z), (thick * 1.2, 0.11, height * 0.82),
+          lambda co, nrm: lerp(IRON_DARK, IRON_LIGHT, 0.55), bevel=0.006, xform=rot)
+    for dy in (-0.03, 0.03):
+        p.box((r_in + thick * 1.6, dy, z), (0.018, 0.022, 0.022), lambda co, nrm: IRON_LIGHT, xform=rot)
+
+
+TRUNK_LOW, TRUNK_HIGH, TRUNK_SCAR = (0.36, 0.24, 0.15), (0.74, 0.58, 0.36), (0.22, 0.14, 0.10)
+FROND_DRY = (0.62, 0.50, 0.16)
+
+
+def frond(p, root, direction, length, droop, colour, leaflets=13, width=0.95, rnd=None):
+    """Feather frond: an arching rib with a row of drooping leaflets down each side."""
+    direction = direction.normalized()
+    side = direction.cross(Vector((0, 0, 1)))
+    if side.length < 1e-4:
+        side = Vector((1, 0, 0))
+    side.normalize()
+
+    def spine(t):
+        return root + direction * (length * t) + Vector((0, 0, -droop * length * t * t))
+
+    pts = [spine(i / 8) for i in range(9)]
+    # rib: a thin three-sided strip so it reads from every angle
+    for off in (side * 0.035, -side * 0.035, Vector((0, 0, 0.04))):
+        strip(p, pts, [q + off * (1.0 - 0.8 * i / 8) for i, q in enumerate(pts)],
+              lambda co, nrm: colour(clamp01((co - root).length / length) * 0.5), smooth=False)
+    for i in range(leaflets):
+        t = 0.12 + 0.88 * (i + 0.5) / leaflets
+        a, b = spine(t - 0.42 / leaflets), spine(t + 0.42 / leaflets)
+        along = (b - a).normalized()
+        reach = width * math.sin(math.pi * (0.10 + 0.86 * t)) ** 0.65
+        sag = Vector((0, 0, -reach * (0.38 + 0.25 * t)))
+        jitter = rnd.uniform(0.86, 1.1) if rnd else 1.0
+        for sgn in (-1, 1):
+            out = side * sgn * reach * jitter + along * reach * 0.38 + sag
+            mid_a, mid_b = a + out * 0.55 + Vector((0, 0, reach * 0.10)), b + out * 0.55 + Vector((0, 0, reach * 0.10))
+            tip = (a + b) / 2 + out
+            verts = [p.bm.verts.new(v) for v in (a, b, mid_b, mid_a, tip)]
+            faces = [p.bm.faces.new((verts[0], verts[1], verts[2], verts[3])), p.bm.faces.new((verts[3], verts[2], verts[4]))]
+            p.bm.normal_update()
+            base_t = t
+
+            def leaf(co, nrm, base_t=base_t, a=a, reach=reach):
+                u = clamp01((co - a).length / max(reach, 1e-4))
+                return colour(clamp01(0.15 + 0.55 * base_t + 0.45 * u))
+
+            p.paint(faces, leaf)
+
+
+def palm(name, height, lean, bend, seed, fronds=9):
+    rnd = random.Random(seed)
+    p = Prop(name)
+    heading = rnd.uniform(0, 2 * math.pi)
+    ldir = Vector((math.cos(heading), math.sin(heading), 0))
+    segs = int(height * 3.2)
+
+    def centre(t):
+        return ldir * (lean * t + bend * math.sin(math.pi * t)) + Vector((0, 0, height * t))
+
+    def girth(t):
+        return (0.34 - 0.16 * t) * (1.0 + 0.9 * (1 - t) ** 7)      # flared foot
+
+    # stacked collars: each segment is wider at its top lip, like old frond scars
+    for i in range(segs):
+        t0, t1 = i / segs, (i + 1) / segs
+        axis = centre(min(t1 + 0.02, 1.0)) - centre(max(t0 - 0.02, 0.0))
+        tint = rnd.uniform(-0.08, 0.10)
+
+        def bark(co, nrm, t0=t0, t1=t1, tint=tint):
+            t = clamp01(co.z / height)
+            u = clamp01((t - t0) / max(t1 - t0, 1e-4))
+            c = lerp(TRUNK_LOW, TRUNK_HIGH, clamp01(t ** 0.7 + tint))
+            return lerp(TRUNK_SCAR, c, clamp01(0.25 + 1.3 * u))      # dark crease under every lip
+
+        p.tube([(centre(t0), girth(t0) * 0.90, axis), (centre(t0 * 0.3 + t1 * 0.7), girth(t1) * 1.07, axis),
+                (centre(t1), girth(t1) * 0.97, axis)], bark, sides=12, cap=(i == 0))
+    top = centre(1.0)
+    p.blob(top + Vector((0, 0, 0.10)), (0.40, 0.40, 0.36),
+           lambda co, nrm: lerp((0.30, 0.22, 0.10), LEAF_MID, clamp01((co.z - top.z) * 2.2 + 0.35)), seed, 0.12, 2, smooth=True)
+    crown = top + Vector((0, 0, 0.22))
+    n = fronds + 5
+    for k in range(n):                                              # upper, living fronds
+        a = heading + 2 * math.pi * k / n + rnd.uniform(-0.18, 0.18)
+        rise = rnd.uniform(0.35, 0.95) if k % 2 else rnd.uniform(0.0, 0.4)
+        frond(p, crown, Vector((math.cos(a), math.sin(a), rise)), rnd.uniform(3.0, 3.9), rnd.uniform(0.55, 0.85),
+              leaf_colour, rnd=rnd)
+    for k in range(fronds - 2):                                     # hanging skirt, yellowing
+        a = heading + 2 * math.pi * (k + 0.5) / (fronds - 2) + rnd.uniform(-0.2, 0.2)
+        dry = rnd.uniform(0.25, 0.9)
+        frond(p, top, Vector((math.cos(a), math.sin(a), rnd.uniform(-0.55, -0.15))), rnd.uniform(2.3, 3.0),
+              rnd.uniform(0.45, 0.7), lambda t, dry=dry: lerp(leaf_colour(t), FROND_DRY, dry * (0.35 + 0.65 * t)),
+              leaflets=10, width=0.8, rnd=rnd)
+    for k in range(rnd.randint(4, 6)):                              # coconuts
+        a = heading + 2 * math.pi * k / 5 + rnd.uniform(-0.3, 0.3)
+        p.blob(top + Vector((math.cos(a) * 0.36, math.sin(a) * 0.36, -0.20 - rnd.uniform(0, 0.12))), (0.19, 0.19, 0.22),
+               lambda co, nrm: lerp((0.20, 0.12, 0.05), (0.56, 0.40, 0.17), clamp01(nrm.z * 0.6 + 0.5)), seed + k, 0.05, 2, smooth=True)
+    p.export()
+
+
+def barrel(name):
+    p = Prop(name)
+    h, staves, segs, thick = 1.1, 14, 10, 0.035
+
+    def radius(z):
+        return 0.36 + 0.09 * math.sin(math.pi * clamp01(z / h)) ** 0.85
+
+    def pt(a, z, inset=0.0):
+        return Vector(((radius(z) - inset) * math.cos(a), (radius(z) - inset) * math.sin(a), z))
+
+    # dark core fills the joints between staves
+    core = [0.03 + (h - 0.06) * i / 6 for i in range(7)]
+    p.tube([(Vector((0, 0, z)), radius(z) - 0.012, Vector((0, 0, 1))) for z in core], lambda co, nrm: GAP, sides=20)
+    zs = [h * i / segs for i in range(segs + 1)]
+    for k in range(staves):
+        tint = wood_tint(k * 7 + 1)
+        a0 = 2 * math.pi * k / staves + 0.012
+        a1 = 2 * math.pi * (k + 1) / staves - 0.012
+        am = (a0 + a1) / 2
+
+        def wood(co, nrm, tint=tint):
+            t = clamp01(co.z / h)
+            c = lerp(lerp(tint, WOOD_DARK, 0.45), tint, clamp01(0.25 + 1.1 * t))   # grounded base, lit top
+            c = lerp(WOOD_DARK, c, clamp01(0.55 + min(t, 1 - t) * 6))              # worn dark ends
+            if nrm.z > 0.7:
+                c = lerp(c, EDGE_LIT, 0.55)                                         # sun-bleached rim
+            return c
+
+        def side(co, nrm, tint=tint):
+            return lerp(tint, GAP, 0.7)
+
+        def inside(co, nrm, tint=tint):
+            return lerp(tint, WOOD_DARK, 0.6)
+
+        outer0, outerm, outer1 = [pt(a0, z, 0.006) for z in zs], [pt(am, z) for z in zs], [pt(a1, z, 0.006) for z in zs]
+        inner0, inner1 = [pt(a0, z, thick) for z in zs], [pt(a1, z, thick) for z in zs]
+        # outer face in two facets so each stave has a soft crown
+        va = [p.bm.verts.new(v) for v in outer0]
+        vm = [p.bm.verts.new(v) for v in outerm]
+        vb = [p.bm.verts.new(v) for v in outer1]
+        faces = []
+        for i in range(segs):
+            faces.append(p.bm.faces.new((va[i], vm[i], vm[i + 1], va[i + 1])))
+            faces.append(p.bm.faces.new((vm[i], vb[i], vb[i + 1], vm[i + 1])))
+        for f in faces:
+            f.smooth = True
+        p.bm.normal_update()
+        p.paint(faces, wood)
+        strip(p, outer0, inner0, side)
+        strip(p, inner1, outer1, side)
+        strip(p, inner0, inner1, inside, smooth=True)
+        ngon(p, [outer0[-1], outerm[-1], outer1[-1], inner1[-1], inner0[-1]], wood)
+        ngon(p, [inner0[0], inner1[0], outer1[0], outerm[0], outer0[0]], wood)
+    # lids: five boards each, set in below the rim
+    for z, up in ((h - 0.07, True), (0.07, False)):
+        r, n = radius(z) - thick + 0.004, 5
+        for b in range(n):
+            x0, x1 = -r + 2 * r * b / n + 0.006, -r + 2 * r * (b + 1) / n - 0.006
+            xs = [x0 + (x1 - x0) * i / 4 for i in range(5)]
+            top = [Vector((x, math.sqrt(max(r * r - x * x, 0.0)), z)) for x in xs]
+            bot = [Vector((x, -math.sqrt(max(r * r - x * x, 0.0)), z)) for x in reversed(xs)]
+            pts = top + bot
+            if up:
+                pts.reverse()
+            tint = wood_tint(100 + b + (7 if up else 0))
+            ngon(p, pts, lambda co, nrm, tint=tint, r=r: lerp(tint, WOOD_DARK, 0.25 + 0.5 * (Vector((co.x, co.y)).length / r) ** 4))
+    for i, z in enumerate((0.10, 0.34, 0.76, 1.00)):
+        hoop(p, z, max(radius(z - 0.03), radius(z + 0.03)) + 0.001, 0.07 if i in (0, 3) else 0.055, 0.016, 40 + i)
+    # bung
+    p.tube([(Vector((radius(0.55) - 0.01, 0, 0.55)), 0.045, Vector((1, 0, 0))),
+            (Vector((radius(0.55) + 0.03, 0, 0.55)), 0.038, Vector((1, 0, 0)))],
+           lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.2 + 0.6 * clamp01(nrm.x)), sides=10, smooth=False)
+    p.export()
+
+
+def crate(name):
+    p = Prop(name)
+    s, beam, board = 0.9, 0.105, 0.03
+    e = s / 2
+
+    def painted(tint, lo):
+        def fn(co, nrm):
+            c = lerp(lerp(tint, WOOD_DARK, lo), tint, clamp01(0.2 + co.z / s))
+            if is_chamfer(nrm):
+                c = lerp(c, EDGE_LIT, 0.5)                             # chamfers read as worn, lit edges
+            elif nrm.z > 0.9:
+                c = lerp(c, EDGE_LIT, 0.18)
+            elif nrm.z < -0.9:
+                c = lerp(c, WOOD_DARK, 0.5)
+            return c
+        return fn
+
+    p.box((0, 0, e), (s - 0.07, s - 0.07, s - 0.07), lambda co, nrm: GAP)
+    # four boards per face, running a different way on neighbouring faces
+    n, inner = 4, s - 2 * beam + 0.02
+    w = inner / n
+    seed = 0
+    for axis in range(3):
+        run = 0 if axis == 2 else 2
+        across = 3 - axis - run
+        for sign in (-1, 1):
+            for b in range(n):
+                seed += 1
+                centre, size = [0, 0, e], [0, 0, 0]
+                centre[axis] += sign * (e - board / 2 - 0.012)
+                centre[across] += -inner / 2 + w * (b + 0.5)
+                size[axis], size[across], size[run] = board, w - 0.012, inner
+                p.box(centre, size, painted(wood_tint(seed * 3), 0.35), bevel=0.006)
+    # frame: uprights full height, rails between them a touch slimmer
+    i = 0
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            i += 1
+            p.box((sx * (e - beam / 2), sy * (e - beam / 2), e), (beam, beam, s),
+                  painted(lerp(wood_tint(500 + i), WOOD_DARK, 0.28), 0.4), bevel=0.012)
+    rail = beam - 0.012
+    for z in (rail / 2, s - rail / 2):
+        for sgn in (-1, 1):
+            i += 1
+            p.box((sgn * (e - rail / 2 - 0.006), 0, z), (rail, s - 2 * beam, rail),
+                  painted(lerp(wood_tint(500 + i), WOOD_DARK, 0.28), 0.4), bevel=0.01)
+            i += 1
+            p.box((0, sgn * (e - rail / 2 - 0.006), z), (s - 2 * beam, rail, rail),
+                  painted(lerp(wood_tint(500 + i), WOOD_DARK, 0.28), 0.4), bevel=0.01)
+    # diagonal brace on the four sides
+    span = s - 2 * beam + 0.03
+    for k in range(4):
+        tint = lerp(wood_tint(600 + k), WOOD_DARK, 0.2)
+        rot = (Matrix.Rotation(k * math.pi / 2, 4, 'Z') @ Matrix.Translation((e - 0.018, 0, e))
+               @ Matrix.Rotation(math.radians(45 if k % 2 else -45), 4, 'X'))
+        p.box((0, 0, 0), (0.03, 0.085, span * 1.36), None, bevel=0.008, xform=rot,
+              local_paint=lambda co, nrm, t=tint: lerp(t, EDGE_LIT, 0.5 if is_chamfer(nrm) else 0.0))
+    # iron corner caps with a rivet on each visible face
+    cap = 0.135
+
+    def iron(co, nrm):
+        c = lerp(IRON_DARK, IRON_LIGHT, clamp01(0.3 + 0.6 * nrm.z))
+        if is_chamfer(nrm):
+            c = lerp(c, (0.62, 0.56, 0.48), 0.6)
+        return lerp(c, RUST, 0.25 * clamp01(noise.noise(co * 6.0) + 0.3))
+
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            for sz in (-1, 1):
+                c = Vector((sx * (e - cap / 2 + 0.01), sy * (e - cap / 2 + 0.01), e + sz * (e - cap / 2 + 0.01)))
+                p.box(c, (cap, cap, cap), iron, bevel=0.014)
+                for d in (Vector((sx, 0, 0)), Vector((0, sy, 0)), Vector((0, 0, sz))):
+                    p.box(c + d * (cap / 2), (0.03, 0.03, 0.03), lambda co, nrm: (0.55, 0.50, 0.43), bevel=0.008)
+    p.export()
+
+
+# --- outpost buildings: weathered planks, chunky posts, nothing quite straight ------------------
+WEATHER = (0.47, 0.40, 0.33)
+THATCH_A, THATCH_B = (0.42, 0.33, 0.20), (0.70, 0.58, 0.32)
+
+
+def plank(p, centre, size, seed, rot=None, grey=0.45, bevel=0.012, lift=0.0):
+    """One weathered board. Painted in its own space so chamfers stay highlighted after it is turned."""
+    tint = lerp(wood_tint(seed), WEATHER, grey)
+    lo = min(size)
+    span = max(size[2], 0.01)
+
+    def paint(co, nrm, tint=tint):
+        k = clamp01((co.z - centre[2]) / span + 0.5)
+        c = lerp(lerp(tint, WOOD_DARK, 0.35), tint, 0.35 + 0.65 * k)
+        if is_chamfer(nrm):
+            c = lerp(c, EDGE_LIT, 0.45)
+        elif nrm.z > 0.9:
+            c = lerp(c, EDGE_LIT, 0.15 + lift)
+        return c
+
+    return p.box(centre, size, None, bevel=min(bevel, lo * 0.3), xform=rot, local_paint=paint)
+
+
+def post(p, x, y, z0, z1, r, seed, lean=(0.0, 0.0)):
+    """Round timber post with a darker waterline foot and a lit top."""
+    tint = lerp(wood_tint(seed), WEATHER, 0.35)
+    axis = Vector((lean[0], lean[1], 1.0))
+    rings = [(Vector((x + lean[0] * (z - z0), y + lean[1] * (z - z0), z)), r * (1.0 + 0.06 * math.sin(i * 2.1)), axis)
+             for i, z in enumerate([z0 + (z1 - z0) * k / 4 for k in range(5)])]
+
+    def paint(co, nrm):
+        k = clamp01((co.z - z0) / max(z1 - z0, 0.01))
+        c = lerp(lerp(tint, (0.16, 0.14, 0.12), 0.6), tint, clamp01(0.15 + 1.4 * k))
+        return lerp(c, EDGE_LIT, 0.5) if nrm.z > 0.8 else c
+
+    p.tube(rings, paint, sides=8, smooth=False)
+
+
+def roof_side(p, ridge_a, ridge_b, drop, out, rows, seed, thatch=True):
+    """Rows of overlapping shingle boards from the ridge down one slope."""
+    rnd = random.Random(seed)
+    along = ridge_b - ridge_a
+    length = along.length
+    along.normalize()
+    down = (out * 1.0 + Vector((0, 0, -drop))).normalized()
+    slope_len = math.hypot(out.length, drop)
+    normal = along.cross(down).normalized()
+    if normal.z < 0:
+        normal = -normal
+    rot3 = Matrix((along, down, normal)).transposed().to_4x4()
+    for r in range(rows):
+        t0 = r / rows
+        n = max(3, int(length / 0.55))
+        for k in range(n):
+            w = length / n
+            c = ridge_a + along * (w * (k + 0.5)) + down * (slope_len * (t0 + 0.6 / rows)) + normal * (0.03 + 0.05 * (rows - r) / rows)
+            base = lerp(THATCH_A, THATCH_B, rnd.uniform(0.0, 1.0)) if thatch else lerp(wood_tint(seed + k + r * 31), WEATHER, 0.6)
+            size = (w * rnd.uniform(0.86, 0.98), slope_len / rows * 1.35, 0.05)
+
+            def paint(co, nrm, base=base, sy=size[1]):
+                k2 = clamp01(co.y / sy + 0.5)
+                c = lerp(base, lerp(base, (0.18, 0.13, 0.09), 0.6), k2 ** 2)     # dark lower lip
+                return lerp(c, EDGE_LIT, 0.4) if is_chamfer(nrm) else c
+
+            m = Matrix.Translation(c) @ rot3 @ Matrix.Rotation(rnd.uniform(-0.05, 0.05), 4, 'Z')
+            p.box((0, 0, 0), size, None, bevel=0.012, xform=m, local_paint=paint)
+
+
+def hut(name, w, d, wall, stilts, seed, thatch=True, finish=True):
+    """Plank hut on posts: gapped vertical boards, a door and window, a steep overhanging roof."""
+    rnd = random.Random(seed)
+    p = Prop(name)
+    hx, hy = w / 2, d / 2
+    z0 = stilts
+    for sx in (-1, 1):
+        for sy in (-1, 0, 1):
+            post(p, sx * (hx - 0.12), sy * (hy - 0.12), -0.6, z0 + wall + 0.15, 0.14, seed + sx * 3 + sy,
+                 lean=(rnd.uniform(-0.02, 0.02), rnd.uniform(-0.02, 0.02)))
+    n = int(d / 0.34)
+    for k in range(n):                                              # floor boards
+        y = -hy + d * (k + 0.5) / n
+        plank(p, (0, y, z0 - 0.05), (w + 0.5, d / n * 0.93, 0.07), seed * 7 + k, grey=0.5)
+    for sx in (-1, 1):
+        plank(p, (sx * (hx - 0.1), 0, z0 - 0.18), (0.16, d + 0.3, 0.2), seed + 90 + sx, grey=0.3)
+    door_x = rnd.uniform(-hx * 0.4, hx * 0.2)
+    for side, (ax, half, fixed) in enumerate(((0, hx, -hy), (0, hx, hy), (1, hy, -hx), (1, hy, hx))):
+        m = int(2 * half / 0.30)
+        for k in range(m):
+            u = -half + 2 * half * (k + 0.5) / m
+            top = wall * rnd.uniform(0.94, 1.03)
+            bottom = 0.0
+            if side == 0 and abs(u - door_x) < 0.55:
+                bottom = 2.05                                       # doorway
+            if side == 2 and abs(u) < 0.5:
+                bottom, top = 0.0, 0.95                             # window sill
+            if side == 2 and abs(u) < 0.5:
+                plank(p, (fixed, u, z0 + 1.95 + (wall - 1.95) / 2) if ax else (u, fixed, z0 + 1.6),
+                      (0.05, 2 * half / m * 0.9, wall - 1.95) if ax else (2 * half / m * 0.9, 0.05, wall - 1.95), seed * 13 + side * 100 + k + 500)
+            if top - bottom < 0.2:
+                continue
+            c = (u, fixed, z0 + (top + bottom) / 2) if ax == 0 else (fixed, u, z0 + (top + bottom) / 2)
+            s = (2 * half / m * 0.9, 0.05, top - bottom) if ax == 0 else (0.05, 2 * half / m * 0.9, top - bottom)
+            plank(p, c, s, seed * 13 + side * 100 + k, rot=None, grey=rnd.uniform(0.3, 0.6))
+        for z in (0.25, wall - 0.2):                                # rails tying the boards together
+            c = (0, fixed * 1.0 + (0.05 if fixed > 0 else -0.05), z0 + z) if ax == 0 else (fixed + (0.05 if fixed > 0 else -0.05), 0, z0 + z)
+            s = (2 * half, 0.07, 0.13) if ax == 0 else (0.07, 2 * half, 0.13)
+            if not (side == 0 and z < 1.0):
+                plank(p, c, s, seed + 200 + side * 2 + int(z * 10), grey=0.25)
+    rise, over = w * 0.52, 0.55
+    ridge_a, ridge_b = Vector((0, -hy - over, z0 + wall + rise)), Vector((0, hy + over, z0 + wall + rise))
+    roof_side(p, ridge_a, ridge_b, rise + 0.35, Vector((hx + over, 0, 0)), 5, seed + 1, thatch)
+    roof_side(p, ridge_b, ridge_a, rise + 0.35, Vector((-hx - over, 0, 0)), 5, seed + 2, thatch)
+    plank(p, (0, 0, z0 + wall + rise + 0.06), (0.2, d + 2 * over + 0.2, 0.18), seed + 300, grey=0.2)
+    for sy in (-1, 1):                                              # gable infill
+        for k in range(int(w / 0.3)):
+            u = -hx + w * (k + 0.5) / int(w / 0.3)
+            hgt = rise * (1 - abs(u) / hx) - 0.05
+            if hgt > 0.12:
+                plank(p, (u, sy * hy, z0 + wall + hgt / 2), (w / int(w / 0.3) * 0.9, 0.05, hgt), seed * 17 + k + (50 if sy > 0 else 0), grey=0.5)
+    if stilts > 0.4:                                                # steps up to the door
+        steps = int(stilts / 0.22)
+        for k in range(steps):
+            plank(p, (door_x, -hy - 0.25 - 0.28 * (steps - k), 0.22 * (k + 0.5)), (1.0, 0.26, 0.06), seed + 400 + k, grey=0.4)
+        for sx in (-1, 1):
+            rot = Matrix.Translation((door_x + sx * 0.52, -hy - 0.25 - 0.14 * steps, stilts / 2)) @ Matrix.Rotation(math.atan2(stilts, 0.28 * steps), 4, 'X')
+            plank(p, (0, 0, 0), (0.07, math.hypot(stilts, 0.28 * steps) + 0.3, 0.14), seed + 450 + sx, rot=rot, grey=0.3)
+    if finish:
+        p.export()
+    return p
+
+
+def tower(name, seed):
+    """Lookout: splayed legs, cross braces, a round plank cabin under a conical roof."""
+    rnd = random.Random(seed)
+    p = Prop(name)
+    deck, foot, top = 9.0, 2.3, 1.5
+    for sx in (-1, 1):
+        for sy in (-1, 1):
+            lean = ((top - foot) * sx / (deck + 0.6), (top - foot) * sy / (deck + 0.6))
+            post(p, sx * foot, sy * foot, -0.6, deck, 0.17, seed + sx + 2 * sy, lean=lean)
+    for level in range(3):
+        z0, z1 = 0.6 + level * 2.8, 0.6 + (level + 1) * 2.8
+        r0 = foot + (top - foot) * z0 / deck
+        r1 = foot + (top - foot) * z1 / deck
+        for side in range(4):
+            turn = Matrix.Rotation(side * math.pi / 2, 4, 'Z')
+            for flip in (-1, 1):
+                a, b = Vector((-flip * r0, -(r0 + r1) / 2, z0)), Vector((flip * r1, -(r0 + r1) / 2, z1))
+                d = b - a
+                m = turn @ Matrix.Translation((a + b) / 2) @ Matrix.Rotation(math.atan2(d.z, d.x) * -1, 4, 'Y')
+                plank(p, (0, 0, 0), (d.length, 0.06, 0.13), seed + level * 20 + side * 3 + flip, rot=m, grey=0.3)
+            plank(p, (0, 0, 0), (2 * r1 + 0.3, 0.09, 0.14), seed + 70 + level * 4 + side, rot=turn @ Matrix.Translation((0, -r1, z1)), grey=0.2)
+    for k in range(12):                                             # deck
+        x = -2.4 + 4.8 * (k + 0.5) / 12
+        half = math.sqrt(max(2.5 ** 2 - x * x, 0.2))
+        plank(p, (x, 0, deck + 0.04), (0.37, 2 * half, 0.07), seed + 100 + k, grey=0.5)
+    n, r, h = 18, 1.75, 2.7
+    for k in range(n):                                              # cabin staves, one gap for the door
+        if k in (4, 5):
+            continue
+        a = 2 * math.pi * k / n
+        m = Matrix.Rotation(a, 4, 'Z') @ Matrix.Translation((r, 0, deck + 0.08 + h / 2))
+        plank(p, (0, 0, 0), (0.06, 2 * math.pi * r / n * 0.92, h * rnd.uniform(0.95, 1.0)), seed + 130 + k, rot=m, grey=rnd.uniform(0.2, 0.5))
+    for z in (deck + 0.5, deck + h - 0.3):
+        rings = [(Vector((0, 0, z - 0.06)), r + 0.05, Vector((0, 0, 1))), (Vector((0, 0, z + 0.06)), r + 0.05, Vector((0, 0, 1)))]
+        p.tube(rings, lambda co, nrm: lerp(IRON_DARK, IRON_LIGHT, clamp01(0.3 + nrm.z)), sides=18, cap=False)
+    roof = [(Vector((0, 0, deck + h + 0.0)), 2.55, Vector((0, 0, 1))), (Vector((0, 0, deck + h + 0.55)), 1.75, Vector((0, 0, 1))),
+            (Vector((0, 0, deck + h + 1.25)), 0.85, Vector((0, 0, 1))), (Vector((0, 0, deck + h + 1.9)), 0.12, Vector((0, 0, 1)))]
+
+    def thatch(co, nrm):
+        a = math.atan2(co.y, co.x)
+        k = clamp01((co.z - deck - h) / 1.9)
+        return lerp(lerp(THATCH_A, THATCH_B, 0.5 + 0.5 * math.sin(a * 9)), (0.86, 0.72, 0.42), 0.5 * k)
+
+    p.tube(roof, thatch, sides=18, smooth=False)
+    for k in range(int(deck / 0.42)):                               # ladder
+        plank(p, (0, -foot - 0.25 + (foot - top) * (0.42 * k) / deck, 0.42 * (k + 0.6)), (0.6, 0.06, 0.06), seed + 300 + k, grey=0.3, bevel=0.0)
+    p.export()
+
+
+def dock(name, length, seed):
+    """Pier running along +x from the beach: sagging boards, post pairs, a few braces."""
+    rnd = random.Random(seed)
+    p = Prop(name)
+    width, deck = 3.0, 1.25
+    n = int(length / 0.42)
+    for k in range(n):
+        if rnd.random() < 0.04:
+            continue                                                # a missing board
+        x = length * (k + 0.5) / n
+        m = Matrix.Translation((x, rnd.uniform(-0.06, 0.06), deck + rnd.uniform(-0.02, 0.02))) @ Matrix.Rotation(rnd.uniform(-0.03, 0.03), 4, 'Z')
+        plank(p, (0, 0, 0), (0.37, width + rnd.uniform(-0.15, 0.25), 0.07), seed * 5 + k, rot=m, grey=rnd.uniform(0.35, 0.65))
+    for sy in (-1, 1):
+        plank(p, (length / 2, sy * (width / 2 - 0.25), deck - 0.14), (length, 0.16, 0.2), seed + 500 + sy, grey=0.25)
+    for k in range(int(length / 4.5) + 1):
+        x = min(length - 0.3, 0.4 + k * 4.5)
+        for sy in (-1, 1):
+            tall = deck + rnd.uniform(0.5, 1.5)
+            post(p, x, sy * (width / 2 + 0.05), -5.5, tall, 0.16, seed + 600 + k * 2 + sy,
+                 lean=(rnd.uniform(-0.015, 0.015), sy * rnd.uniform(0.0, 0.02)))
+        plank(p, (x, 0, deck - 0.32), (0.14, width + 0.5, 0.16), seed + 700 + k, grey=0.2)
+        if k % 2 == 0:
+            m = Matrix.Translation((x, 0, deck - 1.3)) @ Matrix.Rotation(0.6, 4, 'X')
+            plank(p, (0, 0, 0), (0.08, width + 1.2, 0.12), seed + 800 + k, rot=m, grey=0.2)
+    p.export()
+
+
+def boulder(name, size, seed):
+    """Sun-warmed beach boulder: big soft facets, pale top, rosy shadow side."""
+    p = Prop(name)
+    rnd = random.Random(seed)
+
+    def colour(co, nrm):
+        k = clamp01(nrm.z * 0.6 + 0.45)
+        c = lerp((0.50, 0.34, 0.30), (0.93, 0.76, 0.58), k)
+        return lerp(c, (0.36, 0.26, 0.26), clamp01(0.5 - co.z / size[2]) * 0.6)
+
+    p.blob((0, 0, size[2] * 0.42), size, colour, seed, rough=0.22, subdiv=3, strata=0.0, smooth=False)
+    if rnd.random() < 0.7:
+        p.blob((size[0] * 0.7, size[1] * 0.3, size[2] * 0.22), (size[0] * 0.45, size[1] * 0.5, size[2] * 0.4), colour, seed + 3, rough=0.2, subdiv=2)
+    p.export()
+
+
+# --- outpost landmarks (see Docs/SoT-Reference-Notes.md): tavern, order hut, hoarder tent, shipwright, dock stall ---
+CLOTH_CREAM, CLOTH_SHADE = (0.93, 0.88, 0.74), (0.62, 0.58, 0.52)
+
+
+def cloth(p, pts, colour, shade=None):
+    """A sheet of canvas through the given corner points, lighter at the top."""
+    shade = shade or tuple(c * 0.6 for c in colour)
+    zs = [v.z for v in pts]
+    lo, hi = min(zs), max(zs)
+    ngon(p, [Vector(v) for v in pts], lambda co, nrm: lerp(shade, colour, clamp01((co.z - lo) / max(hi - lo, 0.01))))
+
+
+def lantern(p, at):
+    p.box(at, (0.22, 0.22, 0.30), lambda co, nrm: lerp((1.0, 0.55, 0.12), (1.0, 0.86, 0.40), clamp01((co.z - at[2]) * 4 + 0.5)), bevel=0.03)
+    p.box((at[0], at[1], at[2] + 0.2), (0.28, 0.28, 0.06), lambda co, nrm: IRON_DARK)
+
+
+def alehouse(name):
+    """The big one: plank hall, a keel beam riding the ridge and curling up like a prow, a sail canopy over the door."""
+    w, d, wall, stilts = 8.5, 12.0, 3.3, 0.5
+    p = hut(name, w, d, wall, stilts, 31, thatch=False, finish=False)
+    ridge = stilts + wall + w * 0.52
+    rings = []
+    for i in range(15):                                             # keel: along the ridge, then sweeping up past the front gable
+        t = i / 14
+        y = d / 2 + 1.2 - (d + 4.6) * t
+        lift = 2.6 * max(0.0, (-y - d / 2) / 3.4) ** 1.6
+        rings.append((Vector((0, y, ridge + 0.25 + lift)), 0.24 - 0.10 * max(0.0, (-y - d / 2) / 3.4), Vector((0, -1, 0.6 * lift))))
+    p.tube(rings, lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, clamp01(0.35 + 0.5 * nrm.z)), sides=8, smooth=False)
+    prow = rings[-1][0]
+    for sx in (-1, 1):                                              # canopy poles and the sail slung between them
+        post(p, sx * 3.4, -d / 2 - 3.6, -0.5, 3.0, 0.11, 77 + sx)
+    cloth(p, [prow, Vector((-3.4, -d / 2 - 3.6, 3.0)), Vector((0, -d / 2 - 4.2, 2.6)), Vector((3.4, -d / 2 - 3.6, 3.0))], CLOTH_CREAM, CLOTH_SHADE)
+    cloth(p, [prow, Vector((0.9, -d / 2 - 0.3, ridge - 0.8)), Vector((3.4, -d / 2 - 3.6, 3.0))], (0.86, 0.80, 0.66), CLOTH_SHADE)
+    cloth(p, [prow, Vector((-3.4, -d / 2 - 3.6, 3.0)), Vector((-0.9, -d / 2 - 0.3, ridge - 0.8))], (0.86, 0.80, 0.66), CLOTH_SHADE)
+    sign = [(Vector((0, -d / 2 - 0.22, stilts + wall + 0.9)), 0.95, Vector((0, 1, 0))), (Vector((0, -d / 2 - 0.10, stilts + wall + 0.9)), 0.95, Vector((0, 1, 0)))]
+    p.tube(sign, lambda co, nrm: (0.72, 0.38, 0.22) if nrm.y < -0.5 else IRON_DARK, sides=14, smooth=False)
+    p.box((0, -d / 2 - 0.26, stilts + wall + 0.9), (1.1, 0.05, 0.16), lambda co, nrm: (0.95, 0.82, 0.50), xform=None)
+    p.box((0, -d / 2 - 0.26, stilts + wall + 0.9), (0.16, 0.05, 1.1), lambda co, nrm: (0.95, 0.82, 0.50), xform=None)
+    for sx in (-1, 1):
+        lantern(p, (sx * 1.5, -d / 2 - 0.25, stilts + 2.1))
+        lantern(p, (sx * (w / 2 + 0.2), d * 0.2, stilts + 2.3))
+    for k in range(3):                                              # benches out front
+        plank(p, (-2.2 + k * 2.2, -d / 2 - 2.4, 0.45), (1.6, 0.4, 0.07), 900 + k, grey=0.3)
+        for sx in (-0.6, 0.6):
+            plank(p, (-2.2 + k * 2.2 + sx, -d / 2 - 2.4, 0.22), (0.08, 0.34, 0.44), 920 + k, grey=0.3, bevel=0.0)
+    p.export()
+
+
+def warden_hut(name):
+    """Lantern Wardens: leaning plank watch hut on a tall deck, crimson storm cloths."""
+    w, d, wall, stilts = 4.8, 5.2, 2.8, 1.7
+    p = hut(name, w, d, wall, stilts, 47, thatch=False, finish=False)
+    for v in p.bm.verts:                                            # settle the whole cabin to one side
+        if v.co.z > stilts:
+            v.co.x += 0.09 * (v.co.z - stilts) ** 1.15
+            v.co.y += 0.03 * (v.co.z - stilts)
+    purple, deep = (0.70, 0.16, 0.14), (0.26, 0.05, 0.07)
+    cloth(p, [Vector((-w / 2 - 0.1, -d / 2 - 0.12, stilts + wall)), Vector((-w / 2 + 1.3, -d / 2 - 0.12, stilts + wall)),
+              Vector((-w / 2 + 1.1, -d / 2 - 0.16, stilts + 0.5)), Vector((-w / 2 - 0.2, -d / 2 - 0.16, stilts + 0.2))], purple, deep)
+    cloth(p, [Vector((w / 2 + 0.1, -d / 2 + 0.4, stilts + wall - 0.2)), Vector((w / 2 + 0.1, d / 2 - 0.6, stilts + wall - 0.2)),
+              Vector((w / 2 + 0.16, d / 2 - 0.9, stilts + 0.6)), Vector((w / 2 + 0.16, -d / 2 + 0.7, stilts + 0.9))], purple, deep)
+    post(p, -w / 2 - 1.3, -d / 2 - 1.6, -0.5, 4.6, 0.09, 61, lean=(0.02, 0.0))
+    plank(p, (-w / 2 - 0.8, -d / 2 - 1.6, 4.3), (1.3, 0.07, 0.09), 62, grey=0.2, bevel=0.0)
+    cloth(p, [Vector((-w / 2 - 1.3, -d / 2 - 1.62, 4.25)), Vector((-w / 2 - 0.3, -d / 2 - 1.62, 4.25)),
+              Vector((-w / 2 - 0.35, -d / 2 - 1.62, 2.9)), Vector((-w / 2 - 0.8, -d / 2 - 1.62, 2.55)), Vector((-w / 2 - 1.25, -d / 2 - 1.62, 2.9))], purple, deep)
+    for k, c in enumerate(((0.40, 0.85, 0.75), (0.95, 0.80, 0.30), (0.70, 0.40, 0.90))):                       # hanging bottles
+        p.blob((-0.9 + k * 0.9, -d / 2 - 0.5, stilts + wall - 0.55), (0.11, 0.11, 0.16), lambda co, nrm, c=c: lerp(tuple(x * 0.5 for x in c), c, clamp01(nrm.z + 0.6)),
+               k, 0.02, 1, smooth=True)
+    lantern(p, (1.2, -d / 2 - 0.25, stilts + 2.0))
+    p.export()
+
+
+def salvage_tent(name):
+    """Deepfinders: sea-blue salvage tent on a ring of poles, open at the front, copper hem, rug and banner."""
+    p = Prop(name)
+    apex, r, n = Vector((0, 0, 4.3)), 3.5, 9
+    green, deep, gold = (0.12, 0.30, 0.46), (0.04, 0.10, 0.20), (0.84, 0.48, 0.24)
+    base = [Vector((math.cos(2 * math.pi * k / n - math.pi / 2) * r, math.sin(2 * math.pi * k / n - math.pi / 2) * r, 0.0)) for k in range(n)]
+    eave = [Vector((b.x * 0.92, b.y * 0.92, 1.9)) for b in base]
+    for k in range(n):
+        a, b = k, (k + 1) % n
+        tone = 0.85 + 0.3 * ((k * 7) % 3) / 2
+        gcol = tuple(c * tone for c in green)
+        ngon(p, [apex, eave[a], eave[b]], lambda co, nrm, gcol=gcol: lerp(deep, gcol, clamp01((co.z - 1.9) / 2.4 * 0.7 + 0.3)))
+        if k not in (0, n - 1):                                     # walls, with the front two left open
+            hem_a, hem_b = base[a] + Vector((0, 0, 0.32)), base[b] + Vector((0, 0, 0.32))
+            ngon(p, [eave[a], hem_a, hem_b, eave[b]], lambda co, nrm, gcol=gcol: lerp(deep, gcol, clamp01(co.z / 1.9)))
+            ngon(p, [hem_a, base[a], base[b], hem_b], lambda co, nrm: gold)
+        post(p, base[a].x * 0.98, base[a].y * 0.98, -0.3, 2.0, 0.07, 500 + k, lean=(-base[a].x * 0.03, -base[a].y * 0.03))
+    for k in (0, n - 1):                                            # door flaps tied back
+        a, b = k, (k + 1) % n
+        mid = (base[a] + base[b]) / 2
+        hinge = eave[b] if k == 0 else eave[a]
+        foot = base[b] if k == 0 else base[a]
+        ngon(p, [hinge, foot, mid * 0.9 + Vector((0, 0, 0.9))], lambda co, nrm: lerp(deep, green, clamp01(co.z / 1.9)))
+    post(p, 0, 0, 0.0, 4.5, 0.09, 520)
+    ngon(p, [Vector((-1.5, -0.6, 0.03)), Vector((1.5, -0.6, 0.03)), Vector((1.5, -3.8, 0.03)), Vector((-1.5, -3.8, 0.03))],
+         lambda co, nrm: lerp((0.62, 0.12, 0.10), (0.86, 0.68, 0.22), 1.0 if abs(co.x) > 1.25 or co.y < -3.55 or co.y > -0.85 else 0.0))
+    for k in range(3):                                              # chests of loot
+        plank(p, (-1.6 + k * 1.3, 1.2, 0.3), (0.8, 0.55, 0.55), 540 + k, grey=0.1)
+        p.box((-1.6 + k * 1.3, 1.2, 0.6), (0.86, 0.6, 0.08), lambda co, nrm: gold, bevel=0.02)
+    post(p, 4.3, -3.2, -0.5, 6.2, 0.11, 560, lean=(0.01, 0.01))
+    plank(p, (5.2, -3.2, 5.8), (2.3, 0.1, 0.12), 561, grey=0.2, bevel=0.0)
+    navy = (0.07, 0.10, 0.20)
+    cloth(p, [Vector((4.5, -3.22, 5.72)), Vector((6.2, -3.22, 5.72)), Vector((6.2, -3.22, 3.7)), Vector((5.35, -3.22, 3.3)), Vector((4.5, -3.22, 3.7))], navy, (0.03, 0.04, 0.09))
+    p.box((5.35, -3.25, 4.75), (0.55, 0.03, 0.55), lambda co, nrm: gold, xform=Matrix.Translation((5.35, -3.25, 4.75)) @ Matrix.Rotation(0.785, 4, 'Y') @ Matrix.Translation((-5.35, 3.25, -4.75)))
+    lantern(p, (-1.9, -3.4, 1.6))
+    p.export()
+
+
+def smooth_step(a, b, x):
+    t = clamp01((x - a) / (b - a))
+    return t * t * (3 - 2 * t)
+
+
+def keelwright(name):
+    """Open workshop on stilts over the water: deck, corner posts, tiled roof, lifting boom, stairs down to the dock."""
+    rnd = random.Random(71)
+    p = Prop(name)
+    w, d, deck, eave = 7.0, 6.0, 2.3, 5.2
+    for sx in (-1, 0, 1):
+        for sy in (-1, 0, 1):
+            tall = eave if sx != 0 and sy != 0 else deck
+            post(p, sx * (w / 2 - 0.15), sy * (d / 2 - 0.15), -5.5, tall, 0.16, 300 + sx * 3 + sy, lean=(rnd.uniform(-0.01, 0.01), rnd.uniform(-0.01, 0.01)))
+    n = int(w / 0.36)
+    for k in range(n):
+        plank(p, (-w / 2 + w * (k + 0.5) / n, 0, deck), (w / n * 0.92, d + 0.4, 0.08), 320 + k, grey=rnd.uniform(0.3, 0.55))
+    for sy in (-1, 1):
+        plank(p, (0, sy * (d / 2 - 0.15), eave), (w + 0.6, 0.18, 0.2), 360 + sy, grey=0.2)
+        plank(p, (0, sy * (d / 2 - 0.15), deck + 1.0), (w, 0.08, 0.1), 364 + sy, grey=0.3, bevel=0.0)
+    for sx in (-1, 1):
+        plank(p, (sx * (w / 2 - 0.15), 0, eave), (0.18, d + 0.6, 0.2), 370 + sx, grey=0.2)
+    rise = 1.9
+    a, b = Vector((-w / 2 - 0.6, 0, eave + rise)), Vector((w / 2 + 0.6, 0, eave + rise))
+    global THATCH_A, THATCH_B
+    keep = (THATCH_A, THATCH_B)
+    THATCH_A, THATCH_B = (0.42, 0.16, 0.10), (0.74, 0.34, 0.20)                 # fired clay tiles
+    roof_side(p, a, b, rise + 0.3, Vector((0, -d / 2 - 0.7, 0)), 5, 81, True)
+    roof_side(p, b, a, rise + 0.3, Vector((0, d / 2 + 0.7, 0)), 5, 82, True)
+    THATCH_A, THATCH_B = keep
+    plank(p, (0, 0, eave + rise + 0.05), (w + 1.4, 0.2, 0.2), 390, grey=0.2)
+    plank(p, (w / 2 + 1.2, 0.8, eave - 0.3), (3.4, 0.16, 0.18), 391, grey=0.2)                # lifting boom
+    p.box((w / 2 + 2.6, 0.8, eave - 1.3), (0.05, 0.05, 1.8), lambda co, nrm: (0.50, 0.42, 0.30))
+    p.box((w / 2 + 2.6, 0.8, eave - 2.3), (0.22, 0.08, 0.26), lambda co, nrm: IRON_LIGHT, bevel=0.03)
+    plank(p, (-1.6, 1.4, deck + 0.5), (2.2, 0.9, 0.9), 395, grey=0.25)                         # workbench
+    plank(p, (-1.6, 1.4, deck + 1.0), (2.5, 1.1, 0.08), 396, grey=0.4)
+    steps = 5                                                       # stairs toward -y, down to dock height
+    for k in range(steps):
+        plank(p, (1.8, -d / 2 - 0.2 - 0.32 * (k + 0.5), deck - 0.21 * (k + 1)), (1.5, 0.3, 0.07), 400 + k, grey=0.4)
+    lantern(p, (-w / 2 + 0.3, -d / 2 + 0.3, eave - 0.6))
+    lantern(p, (w / 2 - 0.3, d / 2 - 0.3, eave - 0.6))
+    p.export()
+
+
+def market_stall(name):
+    """Merchant stand for the dock: striped awning on four poles, counter, ledger board, stacked crates."""
+    p = Prop(name)
+    w, d = 3.6, 2.4
+    for sx in (-1, 1):
+        post(p, sx * w / 2, -d / 2, 0.0, 2.9, 0.07, 700 + sx)
+        post(p, sx * w / 2, d / 2, 0.0, 2.3, 0.07, 704 + sx)
+    stripes = 8
+    for k in range(stripes):
+        x0, x1 = -w / 2 - 0.3 + (w + 0.6) * k / stripes, -w / 2 - 0.3 + (w + 0.6) * (k + 1) / stripes
+        c = (0.93, 0.86, 0.66) if k % 2 else (0.16, 0.50, 0.50)
+        cloth(p, [Vector((x0, -d / 2 - 0.4, 3.0)), Vector((x1, -d / 2 - 0.4, 3.0)), Vector((x1, d / 2 + 0.5, 2.25)), Vector((x0, d / 2 + 0.5, 2.25))], c)
+        cloth(p, [Vector((x0, d / 2 + 0.5, 2.25)), Vector((x1, d / 2 + 0.5, 2.25)), Vector(((x0 + x1) / 2, d / 2 + 0.55, 1.95))], c)
+    plank(p, (0, 0.2, 0.95), (w - 0.3, 0.8, 0.08), 710, grey=0.3)
+    for sx in (-1, 1):
+        plank(p, (sx * (w / 2 - 0.4), 0.2, 0.47), (0.1, 0.7, 0.9), 712 + sx, grey=0.3, bevel=0.0)
+    board = Matrix.Translation((w / 2 + 0.7, 0.6, 0.85)) @ Matrix.Rotation(-0.28, 4, 'X')
+    p.box((0, 0, 0), (1.1, 0.06, 1.6), None, bevel=0.02, xform=board, local_paint=lambda co, nrm: (0.10, 0.20, 0.18) if abs(co.x) < 0.48 and abs(co.z) < 0.72 else (0.50, 0.36, 0.20))
+    for k, (x, y, s) in enumerate(((-1.2, -0.7, 0.7), (-0.5, -0.8, 0.55), (-1.1, -0.75, 0.5))):
+        plank(p, (x, y, s / 2 + (0.7 if k == 2 else 0.0)), (s, s, s), 730 + k, grey=0.2)
+    lantern(p, (w / 2 - 0.2, -d / 2 + 0.1, 2.3))
+    p.export()
+
+
+# --- rock kit: worn slabs. One mesh per shape; islands are built by stacking scaled, tilted instances -------------
+SLAB_SUN, SLAB_SHADE, SLAB_FOOT = (0.97, 0.89, 0.72), (0.46, 0.50, 0.61), (0.36, 0.38, 0.32)
+#            name            half extents (m)   cuts  shear  taper
+SLABS = [("SM_BW_Slab_01", (3.0, 2.6, 5.0), 4, 0.20, (0.62, 0.90)),      # tall block
+         ("SM_BW_Slab_02", (4.0, 3.4, 2.4), 4, 0.18, (0.70, 0.95)),      # squat block
+         ("SM_BW_Slab_03", (3.5, 2.4, 3.2), 5, 0.38, (0.50, 0.75)),      # wedge
+         ("SM_BW_Slab_04", (4.5, 3.6, 1.2), 3, 0.12, (0.80, 0.98)),      # plate
+         ("SM_BW_Slab_05", (1.8, 1.6, 6.0), 4, 0.16, (0.55, 0.85)),      # pillar
+         ("SM_BW_Slab_06", (3.0, 3.0, 3.0), 5, 0.22, (0.65, 0.92)),      # cube
+         ("SM_BW_Slab_07", (5.5, 2.4, 2.2), 4, 0.20, (0.70, 0.95)),      # long bar
+         ("SM_BW_Slab_08", (2.6, 2.2, 4.4), 5, 0.34, (0.55, 0.80)),      # leaning tooth
+         ("SM_BW_Slab_09", (4.2, 3.8, 3.0), 1, 0.06, (0.88, 0.98)),      # flat-topped terrace
+         ("SM_BW_Slab_10", (1.6, 1.3, 1.1), 3, 0.20, (0.65, 0.92)),      # beach boulder
+         ("SM_BW_Slab_11", (2.4, 2.0, 7.5), 3, 0.10, (0.35, 0.55)),      # spire tip
+         ("SM_BW_Slab_12", (5.0, 4.4, 4.0), 6, 0.25, (0.60, 0.85))]      # broken mass
+
+
+def slab_rock(name, half, cuts, shear_amount, taper_range, seed):
+    """A box cut by a few planes, then bevelled wide: broad faces, soft worn shoulders. Pivot at the base centre."""
+    rnd = random.Random(seed)
+    p = Prop(name)
+    tmp = bmesh.new()
+    bmesh.ops.create_cube(tmp, size=2.0)
+    taper = rnd.uniform(*taper_range)
+    shear = Vector((rnd.uniform(-1, 1), rnd.uniform(-1, 1))) * shear_amount
+    for v in tmp.verts:
+        if v.co.z > 0:
+            v.co.x = v.co.x * taper + shear.x
+            v.co.y = v.co.y * taper + shear.y
+    for _ in range(cuts):
+        nrm = Vector((rnd.uniform(-1, 1), rnd.uniform(-1, 1), rnd.uniform(-0.2, 0.9))).normalized()
+        res = bmesh.ops.bisect_plane(tmp, geom=tmp.verts[:] + tmp.edges[:] + tmp.faces[:], dist=1e-5,
+                                     plane_co=nrm * rnd.uniform(0.78, 1.05), plane_no=nrm, clear_outer=True)
+        edges = [g for g in res["geom_cut"] if isinstance(g, bmesh.types.BMEdge)]
+        if len(edges) >= 3:
+            bmesh.ops.edgeloop_fill(tmp, edges=edges)
+    bmesh.ops.recalc_face_normals(tmp, faces=tmp.faces[:])
+    bmesh.ops.bevel(tmp, geom=tmp.edges[:], offset=rnd.uniform(0.17, 0.25), segments=3, profile=0.5, affect='EDGES',
+                    clamp_overlap=True)
+    for v in tmp.verts:
+        v.co = Vector((v.co.x * half[0], v.co.y * half[1], v.co.z * half[2]))
+    low = min(v.co.z for v in tmp.verts)
+    for v in tmp.verts:
+        v.co.z -= low
+    tmp.normal_update()
+    tall = max(v.co.z for v in tmp.verts)
+    sun = Vector((0.30, -0.42, 0.86)).normalized()
+    made = {v: p.bm.verts.new(v.co) for v in tmp.verts}
+    for f in tmp.faces:
+        try:
+            nf = p.bm.faces.new([made[v] for v in f.verts])
+        except ValueError:
+            continue
+        nf.smooth = True
+        for loop, src in zip(nf.loops, f.verts):
+            n, z = src.normal, src.co.z
+            lit = max(0.0, n.dot(sun)) ** 0.8
+            c = lerp(SLAB_SHADE, SLAB_SUN, lit * 0.90 + 0.08)
+            band = 0.5 + 0.5 * math.sin(z * 1.2 + seed)
+            c = lerp(c, (c[0] * 0.90, c[1] * 0.90, c[2] * 0.93), 0.5 * band * (1.0 - abs(n.z)))     # faint bedding
+            c = lerp(SLAB_FOOT, c, clamp01(0.25 + z / max(tall * 0.35, 0.5)))                          # damp green foot
+            if n.z < -0.2:
+                c = lerp(c, (0.20, 0.23, 0.32), 0.6)
+            loop[p.col] = (c[0] ** 1.6, c[1] ** 1.6, c[2] ** 1.6, 1.0)
+    tmp.free()
+    p.export()
+
+
+# --- library, part two: ships and their parts, dock pieces, outpost dressing, a pirate figure ----------------------
+SAIL_LIGHT, SAIL_DARK = (0.95, 0.90, 0.76), (0.66, 0.60, 0.50)
+ROPE = (0.62, 0.50, 0.30)
+
+
+def spar(p, a, b, r0, r1, seed, sides=8):
+    """Round timber from a to b, tapering."""
+    a, b = Vector(a), Vector(b)
+    axis = b - a
+    tint = lerp(wood_tint(seed), WOOD_DARK, 0.25)
+    rings = [(a + axis * (k / 4), r0 + (r1 - r0) * k / 4, axis) for k in range(5)]
+    p.tube(rings, lambda co, nrm: lerp(lerp(tint, WOOD_DARK, 0.5), lerp(tint, EDGE_LIT, 0.35), clamp01(nrm.z * 0.5 + 0.5)), sides=sides, smooth=True)
+
+
+def sail_cloth(p, top_a, top_b, bot_a, bot_b, billow, stripe=None):
+    """A sail between a yard (top) and a boom (bottom), bellied out along `billow`."""
+    nu, nv = 8, 7
+    grid = []
+    for j in range(nv + 1):
+        v = j / nv
+        row = []
+        for i in range(nu + 1):
+            u = i / nu
+            pt = (Vector(top_a).lerp(Vector(top_b), u)).lerp(Vector(bot_a).lerp(Vector(bot_b), u), v)
+            row.append(pt + Vector(billow) * (math.sin(math.pi * u) * math.sin(math.pi * (0.15 + 0.8 * v))))
+        grid.append(row)
+    for j in range(nv):
+        for i in range(nu):
+            base = SAIL_LIGHT if stripe is None or i % 2 == 0 else stripe
+            shade = 0.25 + 0.5 * j / nv
+
+            def paint(co, nrm, base=base, shade=shade):
+                return lerp(base, lerp(base, SAIL_DARK, 0.7), shade * 0.6)
+
+            f = p.bm.faces.new([p.bm.verts.new(v) for v in (grid[j][i], grid[j][i + 1], grid[j + 1][i + 1], grid[j + 1][i])])
+            f.smooth = True
+            p.bm.normal_update()
+            p.paint([f], paint)
+
+
+def mast_rig(p, x, deck, height, yard, seed, stripe=None, nest=False):
+    """Mast with one square sail: yard up top, boom below, cloth bellied toward the bow (+x)."""
+    spar(p, (x, 0, deck - 0.4), (x, 0, deck + height), 0.24, 0.11, seed)
+    top, bot = deck + height * 0.86, deck + height * 0.26
+    spar(p, (x + 0.25, -yard / 2, top), (x + 0.25, yard / 2, top), 0.10, 0.10, seed + 1, sides=6)
+    spar(p, (x + 0.25, -yard * 0.46, bot), (x + 0.25, yard * 0.46, bot), 0.09, 0.09, seed + 2, sides=6)
+    sail_cloth(p, (x + 0.3, -yard / 2, top), (x + 0.3, yard / 2, top), (x + 0.3, -yard * 0.46, bot), (x + 0.3, yard * 0.46, bot),
+               (height * 0.14, 0, 0), stripe)
+    if nest:
+        rings = [(Vector((x, 0, deck + height * 0.92)), 0.55, Vector((0, 0, 1))), (Vector((x, 0, deck + height * 0.92 + 0.5)), 0.65, Vector((0, 0, 1)))]
+        p.tube(rings, lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.5), sides=10, smooth=False)
+    cloth(p, [Vector((x, 0, deck + height + 0.05)), Vector((x - 1.1, 0.05, deck + height - 0.15)), Vector((x, 0, deck + height - 0.45))],
+          stripe or (0.75, 0.16, 0.14))
+
+
+def cannon_at(p, x, y, z, yaw, seed):
+    m = Matrix.Translation((x, y, z)) @ Matrix.Rotation(yaw, 4, 'Z')
+    plank(p, (0, 0, 0), (0.95, 0.6, 0.3), seed, rot=m @ Matrix.Translation((0, 0, 0.3)), grey=0.15)
+    for sx in (-0.3, 0.3):
+        for sy in (-0.36, 0.36):
+            c = m @ Vector((sx, sy, 0.17))
+            ax = m.to_3x3() @ Vector((0, 1, 0))
+            p.tube([(c - ax * 0.05, 0.17, ax), (c + ax * 0.05, 0.17, ax)], lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.3), sides=10, smooth=False)
+    ax = m.to_3x3() @ Vector((1, 0, 0.08))
+    o = m @ Vector((-0.45, 0, 0.62))
+    rings = [(o, 0.20, ax), (o + ax * 0.25, 0.19, ax), (o + ax * 1.25, 0.14, ax), (o + ax * 1.32, 0.17, ax), (o + ax * 1.45, 0.16, ax)]
+    p.tube(rings, lambda co, nrm: lerp(IRON_DARK, IRON_LIGHT, clamp01(0.2 + 0.8 * nrm.z)), sides=10, smooth=True)
+
+
+def wheel_at(p, x, y, z, seed):
+    post(p, x, y, z, z + 0.95, 0.09, seed)
+    c = Vector((x - 0.14, y, z + 1.05))
+    for k in range(8):
+        a = math.pi * k / 4
+        d = Vector((0, math.cos(a), math.sin(a)))
+        spar(p, c, c + d * 0.62, 0.035, 0.03, seed + k, sides=5)
+    ax = Vector((1, 0, 0))
+    p.tube([(c - ax * 0.04, 0.47, ax), (c + ax * 0.04, 0.47, ax)], lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.55), sides=16, cap=False, smooth=False)
+    p.tube([(c - ax * 0.04, 0.40, ax), (c + ax * 0.04, 0.40, ax)], lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.3), sides=16, cap=False, smooth=False)
+
+
+def hull(p, length, beam, draft, free, seed, trim):
+    """Lofted clinker hull along x (bow at +x). Returns (deck_z(t), half_beam_at_deck(t), x(t))."""
+    n, rows = 18, 7
+
+    def x_at(t):
+        return -length / 2 + length * t
+
+    def half(t):
+        return beam / 2 * min(1.0, 0.70 + 0.95 * t) * (1.0 - t ** 3.4)
+
+    def sheer(t):
+        return free + 1.05 * (2 * t - 1) ** 2 * (1.35 if t > 0.5 else 0.9)
+
+    def keel(t):
+        return -draft * (1.0 - t ** 5) * (0.8 + 0.2 * min(1.0, t * 4))
+
+    def pt(t, s, side):
+        return Vector((x_at(t), side * half(t) * s ** 0.55, keel(t) + (sheer(t) - keel(t)) * s ** 1.5))
+
+    ts = [i / n for i in range(n + 1)]
+    for k in range(rows):
+        s0, s1 = k / rows, (k + 1) / rows
+        tint = lerp(wood_tint(seed + k * 5), WOOD_DARK, 0.30 if k < rows - 1 else 0.0)
+        if k == rows - 1:
+            tint = trim
+        if k == 3:
+            tint = (0.90, 0.86, 0.72)                                # painted waterline strake
+        for side in (-1, 1):
+            a = [pt(t, s0, side) for t in ts]
+            b = [pt(t, s1 * 1.0, side) + Vector((0, side * 0.035, 0)) for t in ts]     # each strake laps the one below
+            strip(p, a, b, lambda co, nrm, tint=tint: lerp(lerp(tint, WOOD_DARK, 0.45), tint, clamp01(0.35 + (co.z + draft) / (free + draft))))
+    ngon(p, [pt(0, k / rows, -1) for k in range(rows + 1)] + [pt(0, k / rows, 1) for k in range(rows, -1, -1)],
+         lambda co, nrm: lerp(WOOD_DARK, wood_tint(seed + 60), clamp01(0.3 + co.z / free)))
+
+    def deck_z(t):
+        return sheer(t) - 0.62
+
+    def deck_half(t):
+        s = clamp01((deck_z(t) - keel(t)) / max(sheer(t) - keel(t), 0.01)) ** (1 / 1.5)
+        return half(t) * s ** 0.55
+
+    lanes = 7
+    for lane in range(lanes):
+        u0, u1 = -1 + 2 * lane / lanes, -1 + 2 * (lane + 1) / lanes
+        tint = lerp(wood_tint(seed + 200 + lane), (0.80, 0.66, 0.44), 0.45)
+        a = [Vector((x_at(t), deck_half(t) * u0, deck_z(t))) for t in ts]
+        b = [Vector((x_at(t), deck_half(t) * u1, deck_z(t))) for t in ts]
+        strip(p, b, a, lambda co, nrm, tint=tint: tint)
+    for side in (-1, 1):                                            # gunwale rail and stanchions
+        rings = [(pt(t, 1.0, side) + Vector((0, 0, 0.06)), 0.09, pt(min(t + 0.05, 1), 1.0, side) - pt(max(t - 0.05, 0), 1.0, side)) for t in ts]
+        p.tube(rings, lambda co, nrm: lerp(lerp(trim, WOOD_DARK, 0.4), lerp(trim, EDGE_LIT, 0.3), clamp01(nrm.z)), sides=6, smooth=True)
+    stem = [(Vector((x_at(t), 0, keel(t) - 0.12)), 0.13, Vector((1, 0, 0.2))) for t in (0.0, 0.3, 0.6, 0.85)]
+    stem += [(Vector((x_at(1.0) + 0.1, 0, z)), 0.12, Vector((0.3, 0, 1))) for z in (keel(1.0) * 0.4, sheer(1.0) * 0.5, sheer(1.0) + 0.7)]
+    p.tube(stem, lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, 0.3), sides=6, smooth=True)
+    return deck_z, deck_half, x_at
+
+
+def ship(name, length, beam, masts, guns, seed, trim, stripe=None, cabin=False):
+    p = Prop(name)
+    deck_z, deck_half, x_at = hull(p, length, beam, 1.7 + length * 0.02, 1.9 + length * 0.03, seed, trim)
+    for i, t in enumerate(masts):
+        mast_rig(p, x_at(t), deck_z(t), length * (0.78 if len(masts) == 1 else 0.62 + 0.1 * (i == 0)), beam * 1.25, seed + 300 + i * 10,
+                 stripe, nest=(i == 0 and len(masts) > 1))
+    spar(p, (x_at(0.93), 0, deck_z(0.93) + 0.5), (x_at(1.0) + length * 0.16, 0, deck_z(1.0) + 1.9), 0.13, 0.06, seed + 400)     # bowsprit
+    for i in range(guns):
+        t = 0.34 + 0.34 * (i // 2) / max(1, guns // 2 - 1) if guns > 2 else 0.5
+        side = -1 if i % 2 == 0 else 1
+        cannon_at(p, x_at(t), side * (deck_half(t) - 0.75), deck_z(t), side * math.pi / 2, seed + 500 + i)
+    wheel_at(p, x_at(0.12), 0, deck_z(0.12) + (1.3 if cabin else 0.0), seed + 600)
+    if cabin:                                                       # raised quarterdeck with a lit stern cabin
+        t0, t1 = 0.02, 0.22
+        z0 = deck_z(0.1)
+        for k in range(6):
+            t = t0 + (t1 - t0) * (k + 0.5) / 6
+            plank(p, (x_at(t), 0, z0 + 1.3), ((t1 - t0) * length / 6 * 0.95, deck_half(t) * 1.9, 0.08), seed + 700 + k, grey=0.3)
+        for k in range(int(deck_half(t1) * 2 / 0.32)):
+            y = -deck_half(t1) + 0.16 + k * 0.32
+            if abs(y) > 0.5:
+                plank(p, (x_at(t1), y, z0 + 0.65), (0.06, 0.29, 1.3), seed + 720 + k, grey=0.3)
+        for y in (-0.9, 0.0, 0.9):
+            p.box((x_at(0.0) - 0.04, y, deck_z(0.0) - 0.2), (0.05, 0.5, 0.55), lambda co, nrm: (1.0, 0.78, 0.30), bevel=0.02)
+        for k in range(5):
+            plank(p, (x_at(t1) + 0.2 + 0.26 * k, deck_half(t1) - 0.9, z0 + 1.3 - 0.24 * (k + 0.5)), (0.25, 0.9, 0.06), seed + 760 + k, grey=0.4)
+    lantern(p, (x_at(0.01), 0, deck_z(0.0) + (2.6 if cabin else 1.5)))
+    post(p, x_at(0.01), 0, deck_z(0.0), deck_z(0.0) + (2.5 if cabin else 1.4), 0.05, seed + 800)
+    for k in range(3):
+        cx = x_at(0.55 + 0.05 * k)
+        p.blob((cx, (-1) ** k * 0.9, deck_z(0.6) + 0.3), (0.34, 0.34, 0.36), lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, clamp01(nrm.z * 0.5 + 0.4)), k, 0.05, 2)
+    p.export()
+
+
+def ship_part(name, kind):
+    p = Prop(name)
+    if kind == "mast":
+        mast_rig(p, 0, 0.4, 11.0, 6.0, 5)
+    elif kind == "sail":
+        sail_cloth(p, (0, -3, 7), (0, 3, 7), (0, -2.8, 0.6), (0, 2.8, 0.6), (1.4, 0, 0), (0.16, 0.50, 0.50))
+    elif kind == "wheel":
+        wheel_at(p, 0, 0, 0, 3)
+    elif kind == "cannon":
+        cannon_at(p, 0, 0, 0, 0, 3)
+    elif kind == "capstan":
+        rings = [(Vector((0, 0, z)), r, Vector((0, 0, 1))) for z, r in ((0, 0.42), (0.12, 0.42), (0.2, 0.30), (0.75, 0.24), (0.85, 0.36), (1.0, 0.36))]
+        p.tube(rings, lambda co, nrm: lerp(WOOD_DARK, WOOD_LIGHT, clamp01(0.3 + 0.4 * nrm.z + co.z * 0.3)), sides=10, smooth=False)
+        for k in range(6):
+            a = math.pi * k / 3
+            spar(p, (0, 0, 0.92), (math.cos(a) * 1.15, math.sin(a) * 1.15, 0.92), 0.05, 0.04, k, sides=5)
+    p.export()
+
+
+def rowboat(name):
+    p = Prop(name)
+    deck_z, deck_half, x_at = hull(p, 4.6, 1.7, 0.35, 0.45, 12, (0.16, 0.45, 0.48))
+    for t in (0.3, 0.6):
+        plank(p, (x_at(t), 0, deck_z(t) + 0.28), (0.3, deck_half(t) * 2.0, 0.05), 40 + int(t * 10), grey=0.3)
+    for side in (-1, 1):
+        spar(p, (x_at(0.45), side * 0.6, deck_z(0.45) + 0.5), (x_at(0.45) - 0.5, side * 2.3, 0.05), 0.035, 0.03, 50 + side, sides=5)
+    for v in p.bm.verts:
+        v.co.z += 0.36
+    p.export()
+
+
+def dressing(name, kind):
+    p = Prop(name)
+    if kind == "lantern_post":
+        post(p, 0, 0, -0.4, 3.1, 0.09, 3, lean=(0.015, 0.0))
+        plank(p, (0.45, 0, 2.95), (1.0, 0.08, 0.09), 4, grey=0.2, bevel=0.0)
+        p.box((0.85, 0, 2.72), (0.02, 0.02, 0.4), lambda co, nrm: IRON_DARK)
+        lantern(p, (0.85, 0, 2.4))
+    elif kind == "banner_pole":
+        post(p, 0, 0, -0.5, 6.0, 0.11, 5, lean=(0.01, 0.0))
+        plank(p, (0.9, 0, 5.6), (2.2, 0.1, 0.12), 6, grey=0.2, bevel=0.0)
+        teal = (0.10, 0.42, 0.44)
+        cloth(p, [Vector((0.15, -0.02, 5.52)), Vector((1.85, -0.02, 5.52)), Vector((1.85, -0.02, 3.6)), Vector((1.0, -0.02, 3.1)), Vector((0.15, -0.02, 3.6))], teal, (0.03, 0.14, 0.16))
+        p.box((1.0, -0.05, 4.6), (0.9, 0.03, 0.12), lambda co, nrm: (0.95, 0.82, 0.50))
+        p.box((1.0, -0.05, 4.3), (0.5, 0.03, 0.12), lambda co, nrm: (0.95, 0.82, 0.50))
+    elif kind == "bench":
+        plank(p, (0, 0, 0.46), (1.8, 0.42, 0.07), 7, grey=0.3)
+        plank(p, (0, 0.2, 0.8), (1.8, 0.06, 0.3), 8, grey=0.3)
+        for sx in (-0.75, 0.75):
+            plank(p, (sx, 0, 0.23), (0.09, 0.38, 0.46), 9, grey=0.3, bevel=0.0)
+            plank(p, (sx, 0.2, 0.62), (0.07, 0.06, 0.4), 10, grey=0.3, bevel=0.0)
+    elif kind == "net_rack":
+        for sx in (-1.4, 1.4):
+            post(p, sx, 0, -0.3, 2.2, 0.07, 11, lean=(0.0, 0.03))
+        plank(p, (0, 0.07, 2.1), (3.1, 0.07, 0.08), 12, grey=0.2, bevel=0.0)
+        for i in range(9):                                          # net: a lattice of thin cords
+            x = -1.3 + 2.6 * i / 8
+            p.box((x, 0.06, 1.2), (0.02, 0.02, 1.75), lambda co, nrm: ROPE)
+        for j in range(6):
+            p.box((0, 0.06, 0.45 + j * 0.3), (2.6, 0.02, 0.02), lambda co, nrm: ROPE)
+        for k in range(4):
+            p.blob((-1.0 + k * 0.7, 0.08, 0.38), (0.11, 0.11, 0.11), lambda co, nrm: lerp((0.45, 0.20, 0.10), (0.90, 0.55, 0.25), clamp01(nrm.z + 0.5)), k, 0.03, 1, smooth=True)
+    elif kind == "anchor":
+        iron = lambda co, nrm: lerp(IRON_DARK, IRON_LIGHT, clamp01(0.3 + 0.7 * nrm.z))
+        m = Matrix.Rotation(1.15, 4, 'Y')
+        p.box((0, 0, 0), (0.14, 0.14, 2.2), iron, bevel=0.03, xform=Matrix.Translation((0, 0, 0.55)) @ m)
+        p.box((0, 0, 0), (0.12, 1.2, 0.12), iron, bevel=0.03, xform=Matrix.Translation((0, 0, 0.55)) @ m @ Matrix.Translation((0, 0, 0.9)))
+        for s in (-1, 1):
+            p.box((0, 0, 0), (0.14, 0.9, 0.16), iron, bevel=0.03,
+                  xform=Matrix.Translation((0, 0, 0.55)) @ m @ Matrix.Translation((0, s * 0.38, -1.0)) @ Matrix.Rotation(s * 0.7, 4, 'X'))
+    elif kind == "mooring_post":
+        post(p, 0, 0, -3.0, 1.3, 0.2, 13)
+        p.tube([(Vector((0, 0, 0.95)), 0.24, Vector((0, 0, 1))), (Vector((0, 0, 1.12)), 0.24, Vector((0, 0, 1)))], lambda co, nrm: ROPE, sides=10, cap=False)
+    elif kind == "ladder":
+        for sx in (-0.3, 0.3):
+            plank(p, (sx, 0, 1.6), (0.07, 0.07, 3.2), 14, grey=0.3, bevel=0.0)
+        for k in range(9):
+            plank(p, (0, 0, 0.3 + k * 0.34), (0.62, 0.06, 0.05), 15 + k, grey=0.3, bevel=0.0)
+    elif kind in ("dock_end", "dock_corner"):
+        rnd = random.Random(17)
+        size = 5.0
+        for k in range(int(size / 0.42)):
+            plank(p, (size * (k + 0.5) / int(size / 0.42), 0, 1.25), (0.37, size, 0.07), 300 + k, grey=rnd.uniform(0.35, 0.65))
+        for sx in (0.2, size - 0.2):
+            for sy in (-size / 2 + 0.1, size / 2 - 0.1):
+                post(p, sx, sy, -5.5, 1.25 + rnd.uniform(0.5, 1.4), 0.17, 320 + int(sx + sy))
+        for sy in (-size / 2 + 0.3, size / 2 - 0.3):
+            plank(p, (size / 2, sy, 1.1), (size, 0.16, 0.2), 340, grey=0.25)
+        if kind == "dock_end":
+            for k, (x, y) in enumerate(((3.9, 1.5), (3.3, -1.6), (4.2, -0.4))):
+                plank(p, (x, y, 1.55 + (0.5 if k == 2 else 0)), (0.6, 0.6, 0.55), 360 + k, grey=0.2)
+    p.export()
+
+
+def pirate(name, coat):
+    """A chunky stand-in pirate: big hands and boots, small hat, coat in the crew colour."""
+    p = Prop(name)
+    skin, boot, trouser = (0.86, 0.62, 0.46), (0.20, 0.12, 0.08), (0.30, 0.26, 0.22)
+    soft = lambda base: (lambda co, nrm: lerp(tuple(c * 0.55 for c in base), base, clamp01(nrm.z * 0.5 + 0.6)))
+    up = Vector((0, 0, 1))
+    for sx in (-1, 1):
+        p.tube([(Vector((sx * 0.17, 0, 0.42)), 0.13, up), (Vector((sx * 0.16, 0, 0.95)), 0.15, up)], soft(trouser), sides=8)
+        p.tube([(Vector((sx * 0.18, 0.02, 0.0)), 0.16, up), (Vector((sx * 0.18, 0, 0.30)), 0.15, up), (Vector((sx * 0.17, 0, 0.46)), 0.18, up)], soft(boot), sides=8)
+        p.blob((sx * 0.18, -0.12, 0.08), (0.13, 0.2, 0.09), soft(boot), 1, 0.02, 1, smooth=True)
+        a, b = Vector((sx * 0.36, 0, 1.46)), Vector((sx * 0.52, -0.04, 0.98))
+        p.tube([(a, 0.12, b - a), (a.lerp(b, 0.55), 0.11, b - a), (b, 0.10, b - a)], soft(coat), sides=8)
+        p.blob((b.x + sx * 0.02, b.y, b.z - 0.1), (0.10, 0.10, 0.12), soft(skin), 2, 0.02, 1, smooth=True)
+    p.tube([(Vector((0, 0, 0.82)), 0.34, up), (Vector((0, 0, 1.05)), 0.30, up), (Vector((0, 0, 1.38)), 0.34, up), (Vector((0, 0, 1.56)), 0.26, up)], soft(coat), sides=10)
+    p.tube([(Vector((0, 0, 0.98)), 0.325, up), (Vector((0, 0, 1.08)), 0.315, up)], soft((0.22, 0.13, 0.08)), sides=10, cap=False)
+    p.box((0, -0.32, 1.03), (0.12, 0.04, 0.12), lambda co, nrm: (0.92, 0.74, 0.30), bevel=0.02)
+    p.blob((0, 0, 1.78), (0.20, 0.21, 0.23), soft(skin), 3, 0.03, 2, smooth=True)
+    p.blob((0, -0.19, 1.74), (0.05, 0.06, 0.05), soft((0.80, 0.52, 0.40)), 4, 0.0, 1, smooth=True)
+    p.blob((0, 0.02, 1.96), (0.30, 0.30, 0.09), soft((0.12, 0.10, 0.10)), 5, 0.02, 2, smooth=True)
+    p.blob((0, 0.02, 2.04), (0.17, 0.17, 0.12), soft((0.12, 0.10, 0.10)), 6, 0.02, 2, smooth=True)
+    p.export()
+
+
+BUILD = {
+    "SM_BW_Palm_A": lambda n: palm(n, 7.5, 1.6, 0.9, 3),
+    "SM_BW_Palm_B": lambda n: palm(n, 9.5, 3.2, 1.6, 8, fronds=10),
+    "SM_BW_Palm_C": lambda n: palm(n, 5.2, 0.6, 0.5, 21, fronds=8),
+    "SM_BW_Rock_A": lambda n: rock(n, (1.6, 1.3, 1.0), 2, moss=0.5),
+    "SM_BW_Rock_B": lambda n: rock(n, (2.8, 2.2, 2.4), 9, moss=0.7, pieces=3),
+    "SM_BW_Rock_C": lambda n: rock(n, (1.0, 1.2, 0.6), 14, pieces=2),
+    "SM_BW_SeaStack": lambda n: rock(n, (3.2, 2.8, 7.5), 30, moss=0.8, pieces=2),
+    "SM_BW_Bush_A": lambda n: bush(n, 5),
+    "SM_BW_Fern_A": lambda n: bush(n, 12, leaves=9, scale=0.7),
+    "SM_BW_Hut_A": lambda n: hut(n, 4.6, 5.4, 2.6, 0.9, 3),
+    "SM_BW_Hut_B": lambda n: hut(n, 6.4, 8.0, 3.0, 1.8, 9, thatch=False),
+    "SM_BW_Tower": lambda n: tower(n, 4),
+    "SM_BW_Alehouse": alehouse,
+    "SM_BW_WardenHut": warden_hut,
+    "SM_BW_SalvageTent": salvage_tent,
+    "SM_BW_Keelwright": keelwright,
+    "SM_BW_MarketStall": market_stall,
+    "SM_BW_Dock": lambda n: dock(n, 46.0, 6),
+    "SM_BW_Boulder_A": lambda n: boulder(n, (2.2, 1.8, 1.5), 2),
+    "SM_BW_Boulder_B": lambda n: boulder(n, (3.4, 2.6, 1.9), 7),
+    "SM_BW_Sloop": lambda n: ship(n, 14.0, 5.0, (0.48,), 2, 11, (0.16, 0.45, 0.48)),
+    "SM_BW_Brigantine": lambda n: ship(n, 22.0, 6.6, (0.62, 0.34), 4, 23, (0.62, 0.14, 0.12), stripe=(0.72, 0.20, 0.16), cabin=True),
+    "SM_BW_Mast": lambda n: ship_part(n, "mast"),
+    "SM_BW_Sail": lambda n: ship_part(n, "sail"),
+    "SM_BW_ShipWheel": lambda n: ship_part(n, "wheel"),
+    "SM_BW_Cannon": lambda n: ship_part(n, "cannon"),
+    "SM_BW_Capstan": lambda n: ship_part(n, "capstan"),
+    "SM_BW_Rowboat": rowboat,
+    "SM_BW_LanternPost": lambda n: dressing(n, "lantern_post"),
+    "SM_BW_BannerPole": lambda n: dressing(n, "banner_pole"),
+    "SM_BW_Bench": lambda n: dressing(n, "bench"),
+    "SM_BW_NetRack": lambda n: dressing(n, "net_rack"),
+    "SM_BW_Anchor": lambda n: dressing(n, "anchor"),
+    "SM_BW_MooringPost": lambda n: dressing(n, "mooring_post"),
+    "SM_BW_Ladder": lambda n: dressing(n, "ladder"),
+    "SM_BW_DockEnd": lambda n: dressing(n, "dock_end"),
+    "SM_BW_DockCorner": lambda n: dressing(n, "dock_corner"),
+    "SM_BW_Pirate_Red": lambda n: pirate(n, (0.62, 0.08, 0.07)),
+    "SM_BW_Pirate_Blue": lambda n: pirate(n, (0.06, 0.14, 0.40)),
+    "SM_BW_Pirate_Green": lambda n: pirate(n, (0.14, 0.36, 0.14)),
+    "SM_BW_Barrel": barrel,
+    "SM_BW_Crate": crate,
+}
+for _i, (_n, _h, _c, _s, _t) in enumerate(SLABS):
+    BUILD[_n] = (lambda n, h=_h, c=_c, s=_s, t=_t, i=_i: slab_rock(n, h, c, s, t, 100 + i * 7))
+bpy.ops.wm.read_factory_settings(use_empty=True)
+ONLY = [a for a in (sys.argv[sys.argv.index("--") + 2:] if "--" in sys.argv else []) if a.startswith("SM_")]
+for name, fn in BUILD.items():
+    if not ONLY or name in ONLY:
+        fn(name)
+if not ONLY:
+    blend = os.path.join(os.path.dirname(OUT.rstrip("/\\")), "Brinewake_Kit.blend") if "--blend" not in sys.argv else sys.argv[sys.argv.index("--blend") + 1]
+    bpy.ops.wm.save_as_mainfile(filepath=blend)
+    print("BW saved", blend, len(SHELF), "assets")
+print("BW done")

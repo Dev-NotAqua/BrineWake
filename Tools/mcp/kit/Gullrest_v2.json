@@ -1,0 +1,13838 @@
+{
+"props": [
+{
+"mesh": "SM_BW_Alehouse",
+"x": -6.0,
+"y": -22.0,
+"yaw": 95.0,
+"z": 1.77,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_WardenHut",
+"x": -26.0,
+"y": -34.0,
+"yaw": 60.0,
+"z": 1.45,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_SalvageTent",
+"x": 18.0,
+"y": -46.0,
+"yaw": 120.0,
+"z": 0.85,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_Hut_A",
+"x": 22.0,
+"y": -22.0,
+"yaw": 150.0,
+"z": 2.01,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_Tower",
+"x": 34.0,
+"y": -36.0,
+"yaw": 15.0,
+"z": 1.45,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_Dock",
+"x": 18.01,
+"y": -50.49,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_Keelwright",
+"x": 36.23,
+"y": -61.63,
+"z": 0.0,
+"yaw": 38.0,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_MarketStall",
+"x": 38.33,
+"y": -76.49,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_DockEnd",
+"x": 46.33,
+"y": -86.74,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Outpost"
+},
+{
+"mesh": "SM_BW_MooringPost",
+"x": 25.9,
+"y": -57.02,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_MooringPost",
+"x": 33.51,
+"y": -73.91,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_MooringPost",
+"x": 46.99,
+"y": -83.68,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Ladder",
+"x": 37.98,
+"y": -72.96,
+"z": -2.0,
+"yaw": 38.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Capstan",
+"x": 48.35,
+"y": -87.7,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Rowboat",
+"x": 30.0,
+"y": -44.0,
+"z": 0.04,
+"yaw": 20.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Rowboat",
+"x": -22.0,
+"y": -50.0,
+"z": 1.77,
+"yaw": 140.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_NetRack",
+"x": 26.0,
+"y": -40.0,
+"z": 1.01,
+"yaw": 100.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Anchor",
+"x": 12.0,
+"y": -48.0,
+"z": 1.52,
+"yaw": 30.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_BannerPole",
+"x": 2.0,
+"y": -36.0,
+"z": 1.7,
+"yaw": 90.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_BannerPole",
+"x": -14.0,
+"y": -30.0,
+"z": 1.61,
+"yaw": 70.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Bench",
+"x": -2.0,
+"y": -32.0,
+"z": 1.72,
+"yaw": 5.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Bench",
+"x": 8.0,
+"y": -30.0,
+"z": 1.71,
+"yaw": 200.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_LanternPost",
+"x": 4.0,
+"y": -40.0,
+"z": 1.72,
+"yaw": 0.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_LanternPost_B",
+"x": -12.0,
+"y": -38.0,
+"z": 1.72,
+"yaw": 180.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_LanternPost_C",
+"x": 16.0,
+"y": -30.0,
+"z": 1.67,
+"yaw": 90.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_LanternPost_C",
+"x": 26.0,
+"y": -30.0,
+"z": 1.67,
+"yaw": 270.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Cannon",
+"x": 30.0,
+"y": -34.0,
+"z": 1.52,
+"yaw": 60.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 17.21,
+"y": 19.69,
+"z": -3.5,
+"yaw": 181.8,
+"pitch": 3.5,
+"roll": 14.5,
+"sx": 2.635,
+"sy": 2.482,
+"sz": 3.277,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 11.31,
+"y": 29.29,
+"z": -3.25,
+"yaw": 249.8,
+"pitch": -3.0,
+"roll": 7.4,
+"sx": 2.371,
+"sy": 2.575,
+"sz": 3.032,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": 7.0,
+"y": 42.29,
+"z": -3.4,
+"yaw": 233.6,
+"pitch": -10.4,
+"roll": 5.3,
+"sx": 3.694,
+"sy": 2.74,
+"sz": 2.922,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": -11.24,
+"y": 36.77,
+"z": -6.84,
+"yaw": 144.5,
+"pitch": -6.4,
+"roll": -3.1,
+"sx": 2.193,
+"sy": 1.651,
+"sz": 2.559,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": -13.79,
+"y": 40.39,
+"z": -5.05,
+"yaw": 44.1,
+"pitch": -11.8,
+"roll": -6.0,
+"sx": 3.293,
+"sy": 3.153,
+"sz": 2.433,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": -25.83,
+"y": 29.78,
+"z": -5.81,
+"yaw": 180.5,
+"pitch": -2.8,
+"roll": -9.1,
+"sx": 3.386,
+"sy": 4.441,
+"sz": 2.398,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": -23.98,
+"y": 21.29,
+"z": -3.64,
+"yaw": 177.0,
+"pitch": 2.7,
+"roll": -16.8,
+"sx": 3.021,
+"sy": 3.167,
+"sz": 2.545,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": -17.97,
+"y": 9.27,
+"z": -4.6,
+"yaw": 225.5,
+"pitch": 5.7,
+"roll": -4.6,
+"sx": 2.222,
+"sy": 2.596,
+"sz": 3.844,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": -2.27,
+"y": 7.87,
+"z": -5.43,
+"yaw": 279.7,
+"pitch": 16.2,
+"roll": 1.5,
+"sx": 2.762,
+"sy": 2.879,
+"sz": 3.326,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": 3.27,
+"y": 6.57,
+"z": -5.94,
+"yaw": 317.9,
+"pitch": 16.1,
+"roll": 5.7,
+"sx": 3.568,
+"sy": 3.232,
+"sz": 3.611,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_10",
+"x": 12.25,
+"y": 15.0,
+"z": -5.58,
+"yaw": 20.7,
+"pitch": 8.1,
+"roll": 12.4,
+"sx": 5.618,
+"sy": 7.406,
+"sz": 6.954,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": 10.52,
+"y": 22.15,
+"z": 2.53,
+"yaw": 323.7,
+"pitch": 1.9,
+"roll": 12.9,
+"sx": 2.85,
+"sy": 2.946,
+"sz": 3.748,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": 2.12,
+"y": 34.85,
+"z": 1.7,
+"yaw": 343.0,
+"pitch": -10.5,
+"roll": 5.0,
+"sx": 3.146,
+"sy": 2.886,
+"sz": 2.967,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": -7.39,
+"y": 34.04,
+"z": 1.89,
+"yaw": 110.9,
+"pitch": -12.8,
+"roll": -3.7,
+"sx": 3.254,
+"sy": 3.517,
+"sz": 3.203,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": -12.58,
+"y": 30.95,
+"z": 3.45,
+"yaw": 117.4,
+"pitch": -3.1,
+"roll": -3.3,
+"sx": 2.944,
+"sy": 2.925,
+"sz": 4.294,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": -18.95,
+"y": 26.25,
+"z": 2.91,
+"yaw": 34.1,
+"pitch": -1.0,
+"roll": -5.6,
+"sx": 3.088,
+"sy": 3.218,
+"sz": 2.801,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": -13.32,
+"y": 19.66,
+"z": 2.24,
+"yaw": 339.2,
+"pitch": 2.7,
+"roll": -4.9,
+"sx": 2.669,
+"sy": 3.034,
+"sz": 4.522,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": -5.08,
+"y": 11.41,
+"z": 0.9,
+"yaw": 217.4,
+"pitch": 11.7,
+"roll": -0.9,
+"sx": 3.288,
+"sy": 2.832,
+"sz": 2.886,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": 6.04,
+"y": 15.52,
+"z": 3.7,
+"yaw": 63.1,
+"pitch": 5.8,
+"roll": 5.9,
+"sx": 2.334,
+"sy": 3.691,
+"sz": 3.922,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": 2.63,
+"y": 24.84,
+"z": 16.88,
+"yaw": 294.3,
+"pitch": -1.0,
+"roll": 6.4,
+"sx": 3.228,
+"sy": 3.012,
+"sz": 2.529,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": -1.74,
+"y": 29.96,
+"z": 17.48,
+"yaw": 111.7,
+"pitch": -6.3,
+"roll": 2.0,
+"sx": 2.327,
+"sy": 2.955,
+"sz": 3.494,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": -8.6,
+"y": 29.01,
+"z": 17.65,
+"yaw": 236.9,
+"pitch": -5.4,
+"roll": -4.3,
+"sx": 3.124,
+"sy": 2.785,
+"sz": 3.055,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": -12.42,
+"y": 24.4,
+"z": 17.66,
+"yaw": 244.8,
+"pitch": -0.5,
+"roll": -8.2,
+"sx": 2.768,
+"sy": 2.79,
+"sz": 2.685,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": -6.71,
+"y": 18.22,
+"z": 15.75,
+"yaw": 88.9,
+"pitch": 8.9,
+"roll": -3.6,
+"sx": 2.675,
+"sy": 2.981,
+"sz": 2.242,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_03",
+"x": 1.12,
+"y": 18.46,
+"z": 16.62,
+"yaw": 329.3,
+"pitch": 6.3,
+"roll": 5.0,
+"sx": 2.414,
+"sy": 2.88,
+"sz": 3.659,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": -0.97,
+"y": 24.28,
+"z": 30.07,
+"yaw": 88.3,
+"pitch": -0.7,
+"roll": 6.3,
+"sx": 2.4,
+"sy": 2.78,
+"sz": 1.575,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": -5.02,
+"y": 26.88,
+"z": 31.92,
+"yaw": 72.7,
+"pitch": -3.0,
+"roll": -0.9,
+"sx": 2.676,
+"sy": 3.119,
+"sz": 1.719,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": -7.87,
+"y": 23.12,
+"z": 31.39,
+"yaw": 353.9,
+"pitch": 1.5,
+"roll": -5.6,
+"sx": 2.348,
+"sy": 2.631,
+"sz": 1.542,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_05",
+"x": -2.91,
+"y": 21.41,
+"z": 31.47,
+"yaw": 342.4,
+"pitch": 4.2,
+"roll": 1.5,
+"sx": 3.417,
+"sy": 3.761,
+"sz": 1.853,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": -3.2,
+"y": 23.6,
+"z": 45.18,
+"yaw": 340.2,
+"pitch": -5.7,
+"roll": -0.5,
+"sx": 2.083,
+"sy": 2.2,
+"sz": 1.2,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_05",
+"x": -2.2,
+"y": 23.1,
+"z": 58.65,
+"yaw": 182.5,
+"pitch": 4.6,
+"roll": -3.4,
+"sx": 2.111,
+"sy": 2.062,
+"sz": 1.25,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_05",
+"x": -1.4,
+"y": 22.7,
+"z": 69.12,
+"yaw": 99.9,
+"pitch": -4.7,
+"roll": -3.3,
+"sx": 1.444,
+"sy": 1.437,
+"sz": 1.0,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_09",
+"x": -8.85,
+"y": 11.7,
+"z": 3.12,
+"yaw": 141.4,
+"pitch": 0.0,
+"roll": 0.0,
+"sx": 1.786,
+"sy": 1.711,
+"sz": 2.0,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_09",
+"x": -0.71,
+"y": 11.32,
+"z": 6.64,
+"yaw": 222.2,
+"pitch": -0.0,
+"roll": 0.0,
+"sx": 1.786,
+"sy": 1.711,
+"sz": 2.333,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_09",
+"x": 6.45,
+"y": 14.67,
+"z": 10.16,
+"yaw": 240.4,
+"pitch": -0.0,
+"roll": -0.0,
+"sx": 1.786,
+"sy": 1.711,
+"sz": 2.667,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_09",
+"x": 10.53,
+"y": 20.78,
+"z": 13.68,
+"yaw": 351.1,
+"pitch": 0.0,
+"roll": 0.0,
+"sx": 1.786,
+"sy": 1.711,
+"sz": 3.0,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_09",
+"x": 10.33,
+"y": 27.84,
+"z": 17.2,
+"yaw": 291.8,
+"pitch": 0.0,
+"roll": 0.0,
+"sx": 1.786,
+"sy": 1.711,
+"sz": 3.333,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 66.46,
+"y": 6.79,
+"z": -2.88,
+"yaw": 356.7,
+"pitch": -4.1,
+"roll": 13.0,
+"sx": 1.514,
+"sy": 1.839,
+"sz": 2.132,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_10",
+"x": 59.14,
+"y": 11.0,
+"z": -5.12,
+"yaw": 190.6,
+"pitch": -6.7,
+"roll": 2.5,
+"sx": 5.574,
+"sy": 4.212,
+"sz": 5.556,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_10",
+"x": 56.82,
+"y": 11.59,
+"z": -2.53,
+"yaw": 318.1,
+"pitch": -15.2,
+"roll": 1.4,
+"sx": 4.506,
+"sy": 4.907,
+"sz": 5.159,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": 48.59,
+"y": 10.31,
+"z": -3.34,
+"yaw": 179.0,
+"pitch": -5.3,
+"roll": -5.2,
+"sx": 2.08,
+"sy": 2.416,
+"sz": 2.414,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": 46.79,
+"y": 0.05,
+"z": -5.06,
+"yaw": 107.3,
+"pitch": 3.2,
+"roll": -6.3,
+"sx": 1.495,
+"sy": 1.522,
+"sz": 1.757,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": 54.42,
+"y": -5.83,
+"z": -3.28,
+"yaw": 126.9,
+"pitch": 7.4,
+"roll": -1.0,
+"sx": 2.39,
+"sy": 2.35,
+"sz": 1.485,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": 60.44,
+"y": -4.09,
+"z": -5.07,
+"yaw": 193.9,
+"pitch": 7.2,
+"roll": 3.4,
+"sx": 1.365,
+"sy": 1.585,
+"sz": 1.55,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_01",
+"x": 61.44,
+"y": 3.7,
+"z": 2.44,
+"yaw": 262.0,
+"pitch": 0.4,
+"roll": 5.7,
+"sx": 2.319,
+"sy": 2.226,
+"sz": 1.647,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": 55.6,
+"y": 8.53,
+"z": 1.02,
+"yaw": 290.4,
+"pitch": -11.4,
+"roll": -0.9,
+"sx": 2.61,
+"sy": 2.287,
+"sz": 2.069,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": 50.79,
+"y": 2.7,
+"z": 0.5,
+"yaw": 140.5,
+"pitch": 3.3,
+"roll": -11.3,
+"sx": 2.473,
+"sy": 3.083,
+"sz": 1.428,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": 57.8,
+"y": -0.8,
+"z": 1.45,
+"yaw": 232.9,
+"pitch": 8.7,
+"roll": 2.8,
+"sx": 2.726,
+"sy": 2.28,
+"sz": 2.058,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_08",
+"x": 58.09,
+"y": 3.57,
+"z": 13.31,
+"yaw": 266.4,
+"pitch": 1.4,
+"roll": 5.8,
+"sx": 1.848,
+"sy": 2.037,
+"sz": 1.685,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_11",
+"x": 54.31,
+"y": 3.61,
+"z": 11.96,
+"yaw": 206.2,
+"pitch": 2.0,
+"roll": -7.2,
+"sx": 1.718,
+"sy": 2.003,
+"sz": 0.981,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_05",
+"x": 57.0,
+"y": 4.0,
+"z": 21.14,
+"yaw": 343.7,
+"pitch": 3.9,
+"roll": -2.4,
+"sx": 1.667,
+"sy": 1.625,
+"sz": 1.167,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -27.45,
+"y": -9.16,
+"z": -0.1,
+"yaw": 185.0,
+"pitch": 8.4,
+"roll": -6.5,
+"sx": 1.149,
+"sy": 1.92,
+"sz": 1.308,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": -33.77,
+"y": -16.6,
+"z": 0.14,
+"yaw": 154.8,
+"pitch": -0.3,
+"roll": 15.1,
+"sx": 0.742,
+"sy": 0.661,
+"sz": 0.768,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -31.22,
+"y": -14.1,
+"z": 0.61,
+"yaw": 289.0,
+"pitch": -0.6,
+"roll": -0.4,
+"sx": 0.445,
+"sy": 0.805,
+"sz": 0.624,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 36.37,
+"y": -19.69,
+"z": -0.43,
+"yaw": 359.2,
+"pitch": -0.1,
+"roll": -0.0,
+"sx": 1.171,
+"sy": 2.258,
+"sz": 1.694,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 30.97,
+"y": -24.73,
+"z": 0.44,
+"yaw": 47.6,
+"pitch": 1.0,
+"roll": -0.6,
+"sx": 0.733,
+"sy": 1.195,
+"sz": 0.937,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": 32.34,
+"y": -23.46,
+"z": 0.5,
+"yaw": 135.0,
+"pitch": 0.0,
+"roll": -1.4,
+"sx": 0.618,
+"sy": 0.574,
+"sz": 0.506,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -20.5,
+"y": -55.18,
+"z": -0.05,
+"yaw": 89.5,
+"pitch": -0.4,
+"roll": -17.0,
+"sx": 1.554,
+"sy": 1.327,
+"sz": 2.467,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": -21.7,
+"y": -55.48,
+"z": 0.03,
+"yaw": 277.6,
+"pitch": 8.6,
+"roll": 9.7,
+"sx": 0.86,
+"sy": 0.962,
+"sz": 1.044,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -18.05,
+"y": -62.68,
+"z": 0.39,
+"yaw": 94.5,
+"pitch": -0.0,
+"roll": 0.2,
+"sx": 1.039,
+"sy": 0.889,
+"sz": 1.955,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": 65.25,
+"y": -34.4,
+"z": -2.49,
+"yaw": 159.8,
+"pitch": -16.6,
+"roll": -11.2,
+"sx": 1.347,
+"sy": 1.294,
+"sz": 2.83,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 62.01,
+"y": -25.38,
+"z": 0.45,
+"yaw": 159.7,
+"pitch": -6.0,
+"roll": 4.2,
+"sx": 0.515,
+"sy": 0.895,
+"sz": 0.754,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 63.48,
+"y": -27.81,
+"z": 0.39,
+"yaw": 278.9,
+"pitch": 9.5,
+"roll": -14.2,
+"sx": 0.57,
+"sy": 1.072,
+"sz": 0.738,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -65.98,
+"y": 36.49,
+"z": 0.3,
+"yaw": 347.2,
+"pitch": -1.7,
+"roll": 5.2,
+"sx": 0.655,
+"sy": 1.393,
+"sz": 0.843,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -70.43,
+"y": 31.02,
+"z": 0.81,
+"yaw": 41.6,
+"pitch": -10.8,
+"roll": -2.4,
+"sx": 0.341,
+"sy": 0.395,
+"sz": 0.715,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -70.95,
+"y": 36.61,
+"z": 0.62,
+"yaw": 204.5,
+"pitch": 0.3,
+"roll": 1.7,
+"sx": 0.542,
+"sy": 0.502,
+"sz": 1.112,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -72.55,
+"y": 33.32,
+"z": -0.26,
+"yaw": 114.5,
+"pitch": -5.3,
+"roll": 15.4,
+"sx": 0.793,
+"sy": 1.241,
+"sz": 1.075,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_10",
+"x": 24.13,
+"y": 42.58,
+"z": 0.45,
+"yaw": 333.4,
+"pitch": 7.4,
+"roll": 16.3,
+"sx": 3.021,
+"sy": 3.655,
+"sz": 3.129,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 15.8,
+"y": 48.65,
+"z": 1.29,
+"yaw": 176.8,
+"pitch": -2.3,
+"roll": 2.4,
+"sx": 0.73,
+"sy": 1.23,
+"sz": 0.987,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 17.64,
+"y": 48.16,
+"z": 1.89,
+"yaw": 53.8,
+"pitch": 0.2,
+"roll": -9.8,
+"sx": 0.525,
+"sy": 0.584,
+"sz": 0.625,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -45.92,
+"y": 6.12,
+"z": -0.31,
+"yaw": 38.3,
+"pitch": -7.5,
+"roll": -0.6,
+"sx": 0.968,
+"sy": 1.816,
+"sz": 1.25,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": -39.28,
+"y": 7.18,
+"z": 0.7,
+"yaw": 277.4,
+"pitch": -11.5,
+"roll": 5.0,
+"sx": 0.785,
+"sy": 1.319,
+"sz": 0.815,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -48.81,
+"y": 10.03,
+"z": 0.93,
+"yaw": 83.0,
+"pitch": -9.6,
+"roll": -16.8,
+"sx": 0.425,
+"sy": 0.479,
+"sz": 0.874,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": 71.51,
+"y": -56.5,
+"z": -0.2,
+"yaw": 172.8,
+"pitch": -2.0,
+"roll": -5.2,
+"sx": 1.291,
+"sy": 1.277,
+"sz": 2.61,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_06",
+"x": 68.29,
+"y": -52.09,
+"z": -0.39,
+"yaw": 88.6,
+"pitch": 11.2,
+"roll": -10.7,
+"sx": 1.106,
+"sy": 1.031,
+"sz": 0.812,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 74.97,
+"y": -57.72,
+"z": 1.27,
+"yaw": 76.3,
+"pitch": 6.9,
+"roll": -4.0,
+"sx": 0.584,
+"sy": 0.9,
+"sz": 0.597,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 12.84,
+"y": -73.33,
+"z": -1.79,
+"yaw": 179.8,
+"pitch": 4.2,
+"roll": -0.6,
+"sx": 0.574,
+"sy": 1.241,
+"sz": 0.756,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_07",
+"x": 10.02,
+"y": -75.86,
+"z": -2.0,
+"yaw": 186.9,
+"pitch": 1.7,
+"roll": -13.2,
+"sx": 0.806,
+"sy": 1.391,
+"sz": 1.063,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -62.52,
+"y": -37.87,
+"z": -2.32,
+"yaw": 40.1,
+"pitch": -6.2,
+"roll": -7.2,
+"sx": 1.12,
+"sy": 1.293,
+"sz": 2.284,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -57.9,
+"y": -42.04,
+"z": 0.77,
+"yaw": 2.0,
+"pitch": -1.4,
+"roll": 7.7,
+"sx": 0.691,
+"sy": 0.637,
+"sz": 1.327,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": -58.91,
+"y": -37.08,
+"z": -0.74,
+"yaw": 48.6,
+"pitch": 10.0,
+"roll": -14.5,
+"sx": 0.777,
+"sy": 0.717,
+"sz": 0.684,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 42.45,
+"y": 34.36,
+"z": -0.39,
+"yaw": 122.6,
+"pitch": 5.6,
+"roll": 0.1,
+"sx": 1.108,
+"sy": 0.99,
+"sz": 1.174,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_02",
+"x": 40.67,
+"y": 28.46,
+"z": 0.81,
+"yaw": 304.9,
+"pitch": 2.0,
+"roll": -2.8,
+"sx": 0.462,
+"sy": 0.537,
+"sz": 0.632,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_12",
+"x": 45.22,
+"y": 26.69,
+"z": -0.1,
+"yaw": 261.8,
+"pitch": -2.9,
+"roll": 5.5,
+"sx": 0.613,
+"sy": 0.664,
+"sz": 0.639,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -93.16,
+"y": 52.95,
+"z": -1.14,
+"yaw": 156.0,
+"pitch": -2.0,
+"roll": 5.7,
+"sx": 1.037,
+"sy": 0.886,
+"sz": 1.5,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Slab_04",
+"x": -88.26,
+"y": 54.96,
+"z": 0.01,
+"yaw": 221.7,
+"pitch": 3.6,
+"roll": 8.5,
+"sx": 0.516,
+"sy": 0.435,
+"sz": 1.138,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": -27.73,
+"y": -15.04,
+"z": 1.29,
+"yaw": 182.8,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": -35.73,
+"y": -9.06,
+"z": 1.23,
+"yaw": 221.0,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": -32.08,
+"y": -3.48,
+"z": 1.56,
+"yaw": 291.5,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -23.45,
+"y": -9.18,
+"z": 1.7,
+"yaw": 234.0,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -33.72,
+"y": -13.63,
+"z": 1.28,
+"yaw": 275.9,
+"scale": 0.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": -41.55,
+"y": -2.55,
+"z": 0.55,
+"yaw": 305.0,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": -31.69,
+"y": -7.99,
+"z": 1.34,
+"yaw": 135.2,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -38.96,
+"y": -5.27,
+"z": 1.13,
+"yaw": 243.0,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -35.62,
+"y": -5.34,
+"z": 1.48,
+"yaw": 147.6,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -27.98,
+"y": -8.16,
+"z": 1.65,
+"yaw": 15.2,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -32.13,
+"y": -11.38,
+"z": 1.46,
+"yaw": 75.1,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": -39.58,
+"y": -12.64,
+"z": 0.63,
+"yaw": 226.4,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -40.48,
+"y": -10.28,
+"z": 0.55,
+"yaw": 173.7,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -22.79,
+"y": -5.22,
+"z": 2.15,
+"yaw": 253.6,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -34.43,
+"y": 1.88,
+"z": 1.63,
+"yaw": 105.6,
+"scale": 1.6,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -30.1,
+"y": -0.29,
+"z": 1.94,
+"yaw": 82.2,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -40.93,
+"y": 0.15,
+"z": 1.01,
+"yaw": 236.5,
+"scale": 1.98,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 26.12,
+"y": -11.38,
+"z": 2.17,
+"yaw": 7.7,
+"scale": 0.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 29.57,
+"y": -15.48,
+"z": 1.93,
+"yaw": 163.1,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": 37.47,
+"y": -15.16,
+"z": 2.07,
+"yaw": 126.7,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 32.39,
+"y": -21.19,
+"z": 1.77,
+"yaw": 238.4,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 30.9,
+"y": -11.56,
+"z": 2.13,
+"yaw": 316.7,
+"scale": 0.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 24.38,
+"y": -7.26,
+"z": 2.38,
+"yaw": 158.6,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 30.87,
+"y": -5.07,
+"z": 2.3,
+"yaw": 221.2,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 34.38,
+"y": -4.07,
+"z": 2.28,
+"yaw": 159.1,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 32.54,
+"y": -14.06,
+"z": 2.1,
+"yaw": 71.5,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 21.63,
+"y": -11.81,
+"z": 2.23,
+"yaw": 256.0,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 19.07,
+"y": -10.01,
+"z": 2.38,
+"yaw": 137.7,
+"scale": 1.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 29.18,
+"y": -7.83,
+"z": 2.27,
+"yaw": 203.1,
+"scale": 1.65,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 29.04,
+"y": -2.7,
+"z": 2.34,
+"yaw": 354.2,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 33.17,
+"y": -2.64,
+"z": 2.38,
+"yaw": 257.1,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 31.16,
+"y": -18.37,
+"z": 1.96,
+"yaw": 180.1,
+"scale": 1.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 34.88,
+"y": -18.83,
+"z": 2.08,
+"yaw": 147.8,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 47.42,
+"y": 23.63,
+"z": 1.7,
+"yaw": 135.6,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 35.22,
+"y": 15.95,
+"z": 2.24,
+"yaw": 166.9,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 42.69,
+"y": 18.17,
+"z": 2.23,
+"yaw": 332.7,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 40.05,
+"y": 29.99,
+"z": 1.54,
+"yaw": 327.6,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 46.36,
+"y": 16.98,
+"z": 2.63,
+"yaw": 123.1,
+"scale": 0.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": 40.09,
+"y": 10.71,
+"z": 2.59,
+"yaw": 324.2,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": 35.0,
+"y": 23.55,
+"z": 2.0,
+"yaw": 31.0,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 38.81,
+"y": 22.08,
+"z": 2.0,
+"yaw": 202.2,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 43.53,
+"y": 21.33,
+"z": 2.05,
+"yaw": 98.3,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 52.83,
+"y": 22.5,
+"z": 1.88,
+"yaw": 356.2,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 48.65,
+"y": 28.06,
+"z": 1.46,
+"yaw": 331.5,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 43.32,
+"y": 25.64,
+"z": 1.82,
+"yaw": 156.1,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 40.23,
+"y": 20.56,
+"z": 2.2,
+"yaw": 222.4,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 45.39,
+"y": 19.3,
+"z": 2.3,
+"yaw": 8.2,
+"scale": 1.78,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 44.94,
+"y": 22.56,
+"z": 1.94,
+"yaw": 115.9,
+"scale": 1.69,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 39.43,
+"y": 25.87,
+"z": 1.94,
+"yaw": 263.1,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 38.85,
+"y": 19.01,
+"z": 2.28,
+"yaw": 148.8,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 46.15,
+"y": 27.27,
+"z": 1.58,
+"yaw": 190.7,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -24.12,
+"y": 38.23,
+"z": 0.82,
+"yaw": 119.9,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -28.84,
+"y": 39.91,
+"z": 0.74,
+"yaw": 151.0,
+"scale": 1.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -26.09,
+"y": 38.09,
+"z": 1.22,
+"yaw": 1.3,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -59.82,
+"y": 29.6,
+"z": 1.27,
+"yaw": 212.1,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": -71.0,
+"y": 30.26,
+"z": 0.89,
+"yaw": 196.0,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": -59.88,
+"y": 34.73,
+"z": 1.19,
+"yaw": 159.2,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -65.6,
+"y": 35.62,
+"z": 1.1,
+"yaw": 223.3,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -54.86,
+"y": 26.2,
+"z": 1.91,
+"yaw": 197.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -66.67,
+"y": 27.49,
+"z": 0.58,
+"yaw": 160.4,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -63.12,
+"y": 31.25,
+"z": 1.21,
+"yaw": 32.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -61.81,
+"y": 28.09,
+"z": 1.24,
+"yaw": 32.7,
+"scale": 1.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -63.34,
+"y": 41.07,
+"z": 1.25,
+"yaw": 350.5,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -57.31,
+"y": 29.96,
+"z": 1.55,
+"yaw": 3.7,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -55.98,
+"y": 39.45,
+"z": 1.15,
+"yaw": 286.3,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": -79.81,
+"y": 44.92,
+"z": 1.86,
+"yaw": 212.1,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -75.15,
+"y": 43.34,
+"z": 1.74,
+"yaw": 182.2,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -80.83,
+"y": 37.53,
+"z": 1.52,
+"yaw": 318.6,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -87.0,
+"y": 46.53,
+"z": 1.42,
+"yaw": 6.8,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": -85.31,
+"y": 42.88,
+"z": 1.6,
+"yaw": 209.1,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -76.42,
+"y": 55.55,
+"z": 1.2,
+"yaw": 164.3,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": -82.04,
+"y": 41.42,
+"z": 1.93,
+"yaw": 172.4,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -73.37,
+"y": 50.63,
+"z": 1.35,
+"yaw": 10.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -80.89,
+"y": 47.68,
+"z": 1.77,
+"yaw": 267.5,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": -77.94,
+"y": 42.73,
+"z": 1.86,
+"yaw": 71.7,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -71.71,
+"y": 45.05,
+"z": 1.56,
+"yaw": 155.7,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -77.56,
+"y": 37.32,
+"z": 1.65,
+"yaw": 250.3,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -88.42,
+"y": 41.07,
+"z": 1.43,
+"yaw": 91.8,
+"scale": 1.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -79.21,
+"y": 35.71,
+"z": 1.59,
+"yaw": 23.9,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -72.26,
+"y": 52.6,
+"z": 1.26,
+"yaw": 109.4,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -79.92,
+"y": 52.11,
+"z": 1.47,
+"yaw": 187.6,
+"scale": 1.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 64.91,
+"y": -14.57,
+"z": 2.09,
+"yaw": 137.1,
+"scale": 0.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 58.18,
+"y": -27.86,
+"z": 1.19,
+"yaw": 156.1,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 56.18,
+"y": -19.19,
+"z": 2.08,
+"yaw": 344.9,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 60.85,
+"y": -12.08,
+"z": 2.57,
+"yaw": 31.0,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 66.26,
+"y": -20.15,
+"z": 1.5,
+"yaw": 207.8,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 58.44,
+"y": -16.63,
+"z": 2.4,
+"yaw": 144.8,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 49.41,
+"y": -21.62,
+"z": 2.07,
+"yaw": 50.9,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 59.19,
+"y": -13.82,
+"z": 2.52,
+"yaw": 171.0,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 55.23,
+"y": -24.16,
+"z": 1.71,
+"yaw": 140.8,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 53.17,
+"y": -28.71,
+"z": 1.38,
+"yaw": 56.8,
+"scale": 1.59,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 58.84,
+"y": -23.66,
+"z": 1.75,
+"yaw": 244.8,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 64.67,
+"y": -9.83,
+"z": 2.65,
+"yaw": 309.3,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 47.21,
+"y": -18.38,
+"z": 2.21,
+"yaw": 277.2,
+"scale": 1.71,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 51.33,
+"y": -16.73,
+"z": 2.39,
+"yaw": 166.5,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 62.58,
+"y": -25.92,
+"z": 1.35,
+"yaw": 342.5,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 54.12,
+"y": -14.72,
+"z": 2.6,
+"yaw": 314.0,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": -4.98,
+"y": -59.57,
+"z": 1.88,
+"yaw": 84.7,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": -10.89,
+"y": -57.53,
+"z": 1.97,
+"yaw": 164.1,
+"scale": 0.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -8.42,
+"y": -51.48,
+"z": 2.03,
+"yaw": 292.2,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 3.61,
+"y": -53.45,
+"z": 1.73,
+"yaw": 348.6,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -0.78,
+"y": -59.67,
+"z": 1.97,
+"yaw": 70.8,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -10.94,
+"y": -51.3,
+"z": 2.14,
+"yaw": 5.4,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": -7.04,
+"y": -55.2,
+"z": 2.04,
+"yaw": 3.9,
+"scale": 1.59,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 3.09,
+"y": -60.51,
+"z": 1.87,
+"yaw": 129.0,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -0.33,
+"y": -63.22,
+"z": 1.96,
+"yaw": 291.3,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -16.97,
+"y": -55.65,
+"z": 2.06,
+"yaw": 316.9,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -6.17,
+"y": -51.33,
+"z": 2.07,
+"yaw": 149.6,
+"scale": 1.98,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -0.35,
+"y": -49.48,
+"z": 2.07,
+"yaw": 193.4,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -1.87,
+"y": -55.11,
+"z": 2.16,
+"yaw": 15.4,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -3.52,
+"y": -62.29,
+"z": 2.01,
+"yaw": 324.1,
+"scale": 1.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -6.75,
+"y": -61.28,
+"z": 2.02,
+"yaw": 7.1,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": 6.23,
+"y": 47.02,
+"z": 2.27,
+"yaw": 310.0,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 15.83,
+"y": 44.56,
+"z": 2.81,
+"yaw": 109.3,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 17.66,
+"y": 39.12,
+"z": 3.13,
+"yaw": 109.5,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 11.82,
+"y": 44.77,
+"z": 2.76,
+"yaw": 107.8,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 10.45,
+"y": 49.23,
+"z": 2.35,
+"yaw": 171.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 13.95,
+"y": 41.27,
+"z": 3.26,
+"yaw": 53.9,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 9.5,
+"y": 45.41,
+"z": 2.99,
+"yaw": 278.2,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 7.33,
+"y": 49.57,
+"z": 2.01,
+"yaw": 12.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 16.68,
+"y": 48.69,
+"z": 2.72,
+"yaw": 270.0,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 14.0,
+"y": 50.57,
+"z": 2.46,
+"yaw": 276.2,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 10.68,
+"y": 43.08,
+"z": 3.15,
+"yaw": 263.3,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 18.57,
+"y": 41.97,
+"z": 3.13,
+"yaw": 302.7,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 20.86,
+"y": 43.16,
+"z": 2.91,
+"yaw": 200.3,
+"scale": 1.67,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 79.36,
+"y": -61.86,
+"z": 1.28,
+"yaw": 323.9,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 69.51,
+"y": -56.46,
+"z": 1.5,
+"yaw": 122.9,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 77.69,
+"y": -51.09,
+"z": 0.79,
+"yaw": 297.3,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 75.19,
+"y": -65.93,
+"z": 1.29,
+"yaw": 66.1,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 74.12,
+"y": -61.44,
+"z": 1.82,
+"yaw": 112.6,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": 75.05,
+"y": -55.44,
+"z": 1.64,
+"yaw": 81.2,
+"scale": 0.91,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 67.02,
+"y": -60.73,
+"z": 1.28,
+"yaw": 11.3,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 72.11,
+"y": -58.37,
+"z": 1.98,
+"yaw": 243.9,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 69.4,
+"y": -60.17,
+"z": 1.7,
+"yaw": 14.7,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 72.69,
+"y": -65.24,
+"z": 1.5,
+"yaw": 33.7,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 71.86,
+"y": -60.92,
+"z": 1.92,
+"yaw": 189.5,
+"scale": 1.62,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 72.68,
+"y": -55.96,
+"z": 1.88,
+"yaw": 105.9,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 81.25,
+"y": -56.22,
+"z": 1.34,
+"yaw": 358.7,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 74.72,
+"y": -57.59,
+"z": 1.89,
+"yaw": 245.1,
+"scale": 1.91,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 64.87,
+"y": -60.85,
+"z": 1.08,
+"yaw": 271.8,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -38.61,
+"y": -39.9,
+"z": 0.67,
+"yaw": 220.9,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": -44.97,
+"y": -45.66,
+"z": 1.61,
+"yaw": 184.4,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": -50.58,
+"y": -47.36,
+"z": 2.01,
+"yaw": 7.9,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -56.97,
+"y": -38.97,
+"z": 1.47,
+"yaw": 105.1,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -52.74,
+"y": -39.14,
+"z": 1.95,
+"yaw": 100.0,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -50.04,
+"y": -36.51,
+"z": 1.51,
+"yaw": 345.7,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -39.53,
+"y": -44.03,
+"z": 1.23,
+"yaw": 86.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -54.12,
+"y": -48.52,
+"z": 1.87,
+"yaw": 268.3,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -48.55,
+"y": -45.76,
+"z": 2.19,
+"yaw": 8.8,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -44.84,
+"y": -43.64,
+"z": 1.89,
+"yaw": 82.8,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -48.0,
+"y": -42.0,
+"z": 2.29,
+"yaw": 23.9,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -47.43,
+"y": -50.44,
+"z": 1.46,
+"yaw": 150.4,
+"scale": 1.7,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -40.31,
+"y": -38.52,
+"z": 1.28,
+"yaw": 22.5,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 26.52,
+"y": 54.36,
+"z": 2.21,
+"yaw": 203.7,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": 19.22,
+"y": 52.5,
+"z": 2.43,
+"yaw": 20.3,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": 25.54,
+"y": 49.29,
+"z": 2.34,
+"yaw": 116.9,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": 34.99,
+"y": 51.64,
+"z": 2.0,
+"yaw": 351.6,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 22.9,
+"y": 52.48,
+"z": 2.42,
+"yaw": 289.8,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 31.85,
+"y": 47.06,
+"z": 2.23,
+"yaw": 300.5,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 28.11,
+"y": 60.0,
+"z": 2.09,
+"yaw": 83.5,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 29.37,
+"y": 47.59,
+"z": 2.34,
+"yaw": 105.0,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 35.16,
+"y": 57.41,
+"z": 1.91,
+"yaw": 242.7,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 18.2,
+"y": 56.42,
+"z": 2.07,
+"yaw": 275.1,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 21.35,
+"y": 55.27,
+"z": 2.42,
+"yaw": 262.5,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 28.58,
+"y": 55.56,
+"z": 2.31,
+"yaw": 82.2,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 32.1,
+"y": 56.66,
+"z": 2.21,
+"yaw": 328.0,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 24.01,
+"y": 50.75,
+"z": 2.48,
+"yaw": 138.5,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 37.04,
+"y": 49.95,
+"z": 1.99,
+"yaw": 178.4,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 24.57,
+"y": 53.94,
+"z": 2.43,
+"yaw": 293.8,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 27.56,
+"y": 51.88,
+"z": 2.22,
+"yaw": 247.3,
+"scale": 1.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 3.99,
+"y": -28.53,
+"z": 1.46,
+"yaw": 238.8,
+"scale": 0.75,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": 6.49,
+"y": -17.54,
+"z": 1.79,
+"yaw": 273.5,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_C",
+"x": -9.63,
+"y": -34.4,
+"z": 1.4,
+"yaw": 186.5,
+"scale": 0.98,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 6.33,
+"y": -34.34,
+"z": 1.33,
+"yaw": 106.1,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": -2.15,
+"y": -41.42,
+"z": 1.57,
+"yaw": 355.5,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_D",
+"x": -21.19,
+"y": -25.42,
+"z": 1.3,
+"yaw": 213.7,
+"scale": 0.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_F",
+"x": 10.28,
+"y": -23.95,
+"z": 1.53,
+"yaw": 164.3,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_A",
+"x": 15.33,
+"y": -31.81,
+"z": 1.34,
+"yaw": 17.1,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_B",
+"x": -0.44,
+"y": -35.24,
+"z": 1.43,
+"yaw": 344.3,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_E",
+"x": 11.43,
+"y": -61.82,
+"z": 1.2,
+"yaw": 94.8,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 45.23,
+"y": -20.66,
+"z": 2.12,
+"yaw": 345.6,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 36.93,
+"y": 39.32,
+"z": 2.01,
+"yaw": 317.8,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -21.43,
+"y": -51.65,
+"z": 1.64,
+"yaw": 273.5,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -85.43,
+"y": 50.14,
+"z": 1.45,
+"yaw": 72.8,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 74.11,
+"y": -1.72,
+"z": 1.84,
+"yaw": 343.7,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": -1.39,
+"y": -6.07,
+"z": 2.77,
+"yaw": 241.2,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 1.0,
+"y": -68.19,
+"z": 1.72,
+"yaw": 300.6,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": -43.99,
+"y": 13.68,
+"z": 2.13,
+"yaw": 327.5,
+"scale": 0.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 73.39,
+"y": 4.27,
+"z": 1.89,
+"yaw": 17.1,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 62.02,
+"y": 15.1,
+"z": 2.91,
+"yaw": 187.3,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": -23.22,
+"y": -48.37,
+"z": 1.38,
+"yaw": 43.6,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -58.51,
+"y": 25.07,
+"z": 1.53,
+"yaw": 20.4,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 1.96,
+"y": -9.92,
+"z": 2.49,
+"yaw": 307.4,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 47.88,
+"y": -28.03,
+"z": 1.48,
+"yaw": 62.1,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -23.26,
+"y": -55.48,
+"z": 1.47,
+"yaw": 195.8,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -17.78,
+"y": -1.0,
+"z": 2.84,
+"yaw": 109.0,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 5.7,
+"y": -13.91,
+"z": 2.17,
+"yaw": 328.8,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 73.24,
+"y": -7.33,
+"z": 1.84,
+"yaw": 116.1,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 37.62,
+"y": -5.53,
+"z": 2.33,
+"yaw": 165.9,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 22.97,
+"y": 4.01,
+"z": 2.81,
+"yaw": 273.6,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": 64.61,
+"y": -22.35,
+"z": 1.6,
+"yaw": 347.3,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 71.41,
+"y": 11.1,
+"z": 1.89,
+"yaw": 145.3,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 0.07,
+"y": -11.75,
+"z": 2.2,
+"yaw": 26.0,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -13.51,
+"y": -56.98,
+"z": 2.06,
+"yaw": 56.2,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -5.93,
+"y": -71.93,
+"z": 1.76,
+"yaw": 205.4,
+"scale": 1.6,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 32.21,
+"y": 61.03,
+"z": 1.91,
+"yaw": 280.3,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 45.93,
+"y": -6.65,
+"z": 2.83,
+"yaw": 153.5,
+"scale": 1.67,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 16.27,
+"y": -13.07,
+"z": 2.35,
+"yaw": 119.9,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -2.72,
+"y": -73.65,
+"z": 1.53,
+"yaw": 3.0,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 31.58,
+"y": -25.16,
+"z": 1.78,
+"yaw": 13.0,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 76.66,
+"y": -64.26,
+"z": 1.56,
+"yaw": 190.4,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 10.05,
+"y": -7.39,
+"z": 2.7,
+"yaw": 287.1,
+"scale": 1.6,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 41.98,
+"y": 41.23,
+"z": 1.65,
+"yaw": 162.6,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 25.43,
+"y": 33.55,
+"z": 2.79,
+"yaw": 66.1,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -3.65,
+"y": -48.75,
+"z": 2.06,
+"yaw": 299.3,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 34.13,
+"y": 2.83,
+"z": 2.4,
+"yaw": 18.3,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 25.41,
+"y": 63.14,
+"z": 1.68,
+"yaw": 120.0,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 26.61,
+"y": -1.75,
+"z": 2.46,
+"yaw": 96.2,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -71.1,
+"y": 40.71,
+"z": 1.52,
+"yaw": 236.8,
+"scale": 1.59,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -73.8,
+"y": 37.98,
+"z": 1.61,
+"yaw": 255.8,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -24.0,
+"y": -46.3,
+"z": 1.35,
+"yaw": 239.8,
+"scale": 1.5,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 27.07,
+"y": 43.67,
+"z": 2.46,
+"yaw": 69.1,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 42.31,
+"y": 52.17,
+"z": 1.53,
+"yaw": 107.5,
+"scale": 1.78,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 1.55,
+"y": -13.75,
+"z": 2.08,
+"yaw": 137.5,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 21.78,
+"y": -6.37,
+"z": 2.48,
+"yaw": 62.2,
+"scale": 1.78,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 8.2,
+"y": -61.89,
+"z": 1.43,
+"yaw": 297.2,
+"scale": 1.57,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 38.31,
+"y": 51.53,
+"z": 2.01,
+"yaw": 128.4,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 70.22,
+"y": -8.29,
+"z": 2.16,
+"yaw": 84.6,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 10.98,
+"y": -1.47,
+"z": 3.37,
+"yaw": 114.3,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -2.37,
+"y": -4.29,
+"z": 3.07,
+"yaw": 118.6,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -13.41,
+"y": -36.45,
+"z": 1.45,
+"yaw": 238.3,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -51.44,
+"y": 29.79,
+"z": 2.25,
+"yaw": 180.0,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 8.4,
+"y": -50.63,
+"z": 1.47,
+"yaw": 253.1,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 35.33,
+"y": 42.81,
+"z": 2.25,
+"yaw": 226.0,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 67.06,
+"y": -6.6,
+"z": 2.68,
+"yaw": 216.0,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -17.07,
+"y": -58.3,
+"z": 2.06,
+"yaw": 95.0,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -15.99,
+"y": -15.57,
+"z": 1.8,
+"yaw": 321.1,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -80.74,
+"y": 32.41,
+"z": 1.34,
+"yaw": 339.0,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 6.6,
+"y": -2.44,
+"z": 3.33,
+"yaw": 248.7,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 32.47,
+"y": 37.92,
+"z": 2.33,
+"yaw": 309.2,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 12.61,
+"y": -36.02,
+"z": 1.57,
+"yaw": 331.4,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 4.92,
+"y": -25.48,
+"z": 1.83,
+"yaw": 352.4,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 6.9,
+"y": -31.2,
+"z": 1.7,
+"yaw": 11.1,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 4.79,
+"y": -29.89,
+"z": 1.72,
+"yaw": 35.9,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 2.27,
+"y": -28.28,
+"z": 1.75,
+"yaw": 124.2,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel",
+"x": 6.64,
+"y": -42.31,
+"z": 1.69,
+"yaw": 39.6,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 1.59,
+"y": -31.98,
+"z": 1.7,
+"yaw": 231.2,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 12.88,
+"y": -23.85,
+"z": 1.93,
+"yaw": 330.6,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 5.27,
+"y": -40.96,
+"z": 1.71,
+"yaw": 328.8,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 8.76,
+"y": -19.61,
+"z": 2.12,
+"yaw": 345.9,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 3.5,
+"y": -42.8,
+"z": 1.81,
+"yaw": 167.7,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate",
+"x": 5.62,
+"y": -16.44,
+"z": 2.2,
+"yaw": 262.2,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Sloop",
+"x": 44.62,
+"y": -72.85,
+"z": 0.0,
+"yaw": 128.0,
+"scale": 1.0,
+"folder": "Ships"
+},
+{
+"mesh": "SM_BW_Brigantine",
+"x": 24.94,
+"y": -73.0,
+"z": 0.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Ships"
+},
+{
+"mesh": "SM_BW_Galleon",
+"x": 55.25,
+"y": -153.38,
+"z": 0.0,
+"yaw": 10.0,
+"scale": 1.0,
+"folder": "Ships"
+},
+{
+"mesh": "SM_BW_Rowboat",
+"x": 57.12,
+"y": -85.93,
+"z": 0.0,
+"yaw": -32.0,
+"scale": 1.0,
+"folder": "Ships"
+},
+{
+"mesh": "SM_BW_Campfire_Spit",
+"x": 5.5,
+"y": -33.5,
+"z": 1.68,
+"yaw": 20,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Table_Set",
+"x": -1.5,
+"y": -25.5,
+"z": 1.8,
+"yaw": 95,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Table",
+"x": 1.5,
+"y": -23.0,
+"z": 1.89,
+"yaw": 10,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Stool",
+"x": 2.9,
+"y": -24.6,
+"z": 1.85,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Chair",
+"x": 0.2,
+"y": -22.1,
+"z": 1.9,
+"yaw": 200,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel_Stack",
+"x": -9.5,
+"y": -26.5,
+"z": 1.69,
+"yaw": 40,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel_Rack",
+"x": -11.0,
+"y": -23.0,
+"z": 1.75,
+"yaw": 95,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate_Stack_Tarp",
+"x": 12.5,
+"y": -34.5,
+"z": 1.59,
+"yaw": 30,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate_Stack",
+"x": 15.0,
+"y": -37.5,
+"z": 1.52,
+"yaw": 110,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Sack_Pile",
+"x": 10.5,
+"y": -36.5,
+"z": 1.6,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Cart",
+"x": 8.5,
+"y": -43.5,
+"z": 1.63,
+"yaw": 150,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Well",
+"x": -8.0,
+"y": -38.5,
+"z": 1.79,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Signpost",
+"x": 5.0,
+"y": -45.0,
+"z": 1.82,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Signpost_Hanging",
+"x": -2.5,
+"y": -28.0,
+"z": 1.75,
+"yaw": 185,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Bell_Post",
+"x": -0.5,
+"y": -41.5,
+"z": 1.86,
+"yaw": 20,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Bunting",
+"x": 2.5,
+"y": -36.0,
+"z": 1.7,
+"yaw": 8,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Weapon_Rack",
+"x": -21.0,
+"y": -31.0,
+"z": 1.54,
+"yaw": 150,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Brazier",
+"x": -19.0,
+"y": -36.5,
+"z": 1.56,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Brazier",
+"x": -25.5,
+"y": -29.5,
+"z": 1.51,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Basket_Fruit",
+"x": 11.6,
+"y": -37.9,
+"z": 1.56,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Basket_Fish",
+"x": 22.5,
+"y": -41.5,
+"z": 0.98,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_FishRack",
+"x": 25.5,
+"y": -43.5,
+"z": 0.39,
+"yaw": 120,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Chest",
+"x": 17.0,
+"y": -45.5,
+"z": 1.15,
+"yaw": 200,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Gold_Small",
+"x": 17.6,
+"y": -44.6,
+"z": 1.12,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Bottles",
+"x": 1.0,
+"y": -25.6,
+"z": 1.81,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_PowderKeg",
+"x": 29.0,
+"y": -33.0,
+"z": 1.55,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Cannonballs",
+"x": 31.0,
+"y": -35.0,
+"z": 1.51,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Tent",
+"x": 26.0,
+"y": -49.5,
+"z": 0.0,
+"yaw": 35,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Lookout_Platform",
+"x": -13.5,
+"y": -44.0,
+"z": 1.99,
+"yaw": 20,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Gibbet",
+"x": 23.0,
+"y": -26.5,
+"z": 1.85,
+"yaw": 250,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Skull_Pike",
+"x": -15.5,
+"y": -33.0,
+"z": 1.58,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_FlagPole",
+"x": 7.5,
+"y": -39.5,
+"z": 1.64,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Hammock",
+"x": 30.5,
+"y": -23.5,
+"z": 2.0,
+"yaw": 60,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_TikiTorch",
+"x": 3.0,
+"y": -47.5,
+"z": 2.01,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_TikiTorch",
+"x": 7.5,
+"y": -49.0,
+"z": 1.75,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_TikiTorch",
+"x": -4.0,
+"y": -44.5,
+"z": 2.08,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_TikiTorch",
+"x": 14.0,
+"y": -41.5,
+"z": 1.51,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Spyglass_Stand",
+"x": -12.6,
+"y": -43.4,
+"z": 6.23,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Stool",
+"x": 7.2,
+"y": -32.2,
+"z": 1.68,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Stool",
+"x": 4.2,
+"y": -35.4,
+"z": 1.68,
+"yaw": 0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Fence_Rope",
+"x": -7.0,
+"y": -47.5,
+"z": 2.28,
+"yaw": 15,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Fence_Plank",
+"x": 19.5,
+"y": -28.5,
+"z": 1.75,
+"yaw": 100,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Dock_Crane",
+"x": 45.85,
+"y": -80.77,
+"z": 0.0,
+"yaw": 128.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Barrel_Stack",
+"x": 26.76,
+"y": -60.15,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Crate_Stack",
+"x": 32.69,
+"y": -70.74,
+"z": 1.3,
+"yaw": 38.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_RopeCoil",
+"x": 30.27,
+"y": -64.39,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Lantern_Ground",
+"x": 36.38,
+"y": -76.11,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_CrabPot",
+"x": 41.04,
+"y": -78.18,
+"z": 1.3,
+"yaw": -12.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Buoy",
+"x": 43.7,
+"y": -84.99,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Sack_Pile",
+"x": 22.23,
+"y": -57.35,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Spyglass_Stand",
+"x": 47.47,
+"y": -89.66,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_MooringPost_B",
+"x": 50.33,
+"y": -91.86,
+"z": -3.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_MooringPost_B",
+"x": 32.61,
+"y": -64.46,
+"z": -3.0,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Lantern_Ground",
+"x": 22.65,
+"y": -54.48,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Cannon",
+"x": 47.43,
+"y": -86.52,
+"z": 1.3,
+"yaw": -142.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Cannonballs",
+"x": 46.77,
+"y": -85.51,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_PowderKeg",
+"x": 45.78,
+"y": -85.39,
+"z": 1.3,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Buoy",
+"x": 41.21,
+"y": -70.44,
+"z": -0.2,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Buoy",
+"x": 48.99,
+"y": -99.89,
+"z": -0.2,
+"yaw": -52.0,
+"scale": 1.0,
+"folder": "Dressing"
+},
+{
+"mesh": "SM_BW_Skeleton_Captain",
+"x": -60.87,
+"y": 19.78,
+"z": 1.46,
+"yaw": 65.7,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Leviathan_Bones",
+"x": -25.48,
+"y": -70.01,
+"z": 1.31,
+"yaw": 70.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Wreck_Hull",
+"x": -6.26,
+"y": 44.56,
+"z": -0.12,
+"yaw": 25.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Wreck_Mast",
+"x": 65.83,
+"y": 26.6,
+"z": 0.39,
+"yaw": 200.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Wreck_Rowboat",
+"x": -33.59,
+"y": -23.52,
+"z": 1.21,
+"yaw": 40.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_DigSpot",
+"x": 19.75,
+"y": -34.21,
+"z": 1.53,
+"yaw": 9.8,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skeleton_Buried",
+"x": 23.49,
+"y": -34.82,
+"z": 1.52,
+"yaw": 304.8,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skull_Pikes",
+"x": -32.79,
+"y": 36.41,
+"z": 2.44,
+"yaw": 132.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Anchor_Buried",
+"x": 61.81,
+"y": -32.86,
+"z": 0.74,
+"yaw": 126.6,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skeleton_Lie",
+"x": 18.19,
+"y": 63.44,
+"z": 1.59,
+"yaw": 247.4,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Wreck_Hull_Small",
+"x": -45.55,
+"y": -6.4,
+"z": -0.15,
+"yaw": 110.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Anchor",
+"x": 49.79,
+"y": 41.78,
+"z": 1.13,
+"yaw": 285.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skeleton_Sit",
+"x": 77.74,
+"y": -10.93,
+"z": 1.55,
+"yaw": 78.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Sword_Stuck",
+"x": -56.99,
+"y": 15.27,
+"z": 1.54,
+"yaw": 223.5,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Chest_Open",
+"x": 19.31,
+"y": -32.14,
+"z": 1.59,
+"yaw": 120.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Gold_Pile",
+"x": 16.48,
+"y": -29.74,
+"z": 1.68,
+"yaw": 101.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Campfire",
+"x": -18.5,
+"y": 32.04,
+"z": 4.18,
+"yaw": 270.4,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Tent",
+"x": -18.17,
+"y": 26.94,
+"z": 5.0,
+"yaw": 300.0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Bone_Pile",
+"x": -22.71,
+"y": -69.9,
+"z": 1.55,
+"yaw": 263.1,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skull_Pile",
+"x": -27.05,
+"y": -60.75,
+"z": 1.51,
+"yaw": 205.1,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Arch",
+"x": 34.86,
+"y": 26.67,
+"z": 2.31,
+"yaw": 20,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Pillar",
+"x": 29.36,
+"y": 29.17,
+"z": 2.67,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Pillar_Broken",
+"x": 40.36,
+"y": 24.17,
+"z": 2.15,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Pillar_Stub",
+"x": 31.86,
+"y": 20.67,
+"z": 2.57,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Wall",
+"x": 36.86,
+"y": 34.17,
+"z": 2.16,
+"yaw": 15,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Ruin_Wall_Low",
+"x": 26.86,
+"y": 23.67,
+"z": 2.85,
+"yaw": 100,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Idol_Head",
+"x": 35.86,
+"y": 30.27,
+"z": 2.21,
+"yaw": 200,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skeleton_Chest",
+"x": 38.36,
+"y": 32.17,
+"z": 2.03,
+"yaw": 160,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Brazier",
+"x": 32.66,
+"y": 25.07,
+"z": 2.44,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Brazier",
+"x": 37.06,
+"y": 25.07,
+"z": 2.24,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Vines_Hang_A",
+"x": 34.86,
+"y": 26.67,
+"z": 6.61,
+"yaw": 20,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Mushrooms_Glow",
+"x": 39.36,
+"y": 28.17,
+"z": 2.04,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Cross",
+"x": -47.55,
+"y": 10.38,
+"z": 1.72,
+"yaw": 183.1,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Cross",
+"x": -45.15,
+"y": 10.38,
+"z": 1.85,
+"yaw": 175.5,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Cross",
+"x": -42.75,
+"y": 10.38,
+"z": 1.96,
+"yaw": 188.1,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Stone_B",
+"x": -40.35,
+"y": 10.38,
+"z": 2.07,
+"yaw": 190.4,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Stone",
+"x": -47.55,
+"y": 13.78,
+"z": 2.07,
+"yaw": 174.3,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Stone",
+"x": -45.15,
+"y": 13.78,
+"z": 2.23,
+"yaw": 168.3,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Grave_Stone_B",
+"x": -42.75,
+"y": 13.78,
+"z": 2.36,
+"yaw": 177.9,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Tree_Dead_A",
+"x": -50.45,
+"y": 13.08,
+"z": 1.78,
+"yaw": 5.6,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Lantern_Ground",
+"x": -43.65,
+"y": 8.48,
+"z": 1.78,
+"yaw": 34.7,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Fence_Plank",
+"x": -43.95,
+"y": 17.28,
+"z": 2.64,
+"yaw": 0,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Totem",
+"x": -58.13,
+"y": 32.36,
+"z": 1.69,
+"yaw": 300,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Skull_Pile",
+"x": -56.53,
+"y": 31.36,
+"z": 1.86,
+"yaw": 280.7,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Campfire",
+"x": -60.63,
+"y": 30.16,
+"z": 1.58,
+"yaw": 218.6,
+"scale": 1.0,
+"folder": "SetPieces"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": 15.22,
+"y": 45.16,
+"z": 2.93,
+"yaw": 42.6,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": 3.51,
+"y": -52.98,
+"z": 1.81,
+"yaw": 20.3,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": -10.18,
+"y": -11.62,
+"z": 2.05,
+"yaw": 67.6,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": 23.18,
+"y": 59.26,
+"z": 2.12,
+"yaw": 106.3,
+"scale": 0.91,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_B",
+"x": -54.91,
+"y": -45.64,
+"z": 2.05,
+"yaw": 96.3,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_B",
+"x": -10.68,
+"y": -69.89,
+"z": 1.99,
+"yaw": 244.8,
+"scale": 0.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_B",
+"x": 45.1,
+"y": -22.54,
+"z": 1.88,
+"yaw": 257.3,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": 18.74,
+"y": -11.75,
+"z": 2.31,
+"yaw": 55.1,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": -0.26,
+"y": -63.01,
+"z": 1.98,
+"yaw": 282.5,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": 32.72,
+"y": 43.22,
+"z": 2.29,
+"yaw": 197.9,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": -8.99,
+"y": -57.91,
+"z": 2.07,
+"yaw": 200.1,
+"scale": 0.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": 38.89,
+"y": -9.36,
+"z": 2.31,
+"yaw": 269.2,
+"scale": 0.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_A",
+"x": 16.69,
+"y": 0.15,
+"z": 3.11,
+"yaw": 234.1,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": -23.07,
+"y": -55.81,
+"z": 1.52,
+"yaw": 341.4,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": 75.02,
+"y": -60.58,
+"z": 1.96,
+"yaw": 232.0,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Tree_Jungle_C",
+"x": 63.1,
+"y": -21.74,
+"z": 1.66,
+"yaw": 114.9,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 17.66,
+"y": 42.12,
+"z": 3.33,
+"yaw": 188.6,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 14.09,
+"y": 44.96,
+"z": 3.15,
+"yaw": 189.8,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": 14.39,
+"y": 48.38,
+"z": 2.84,
+"yaw": 254.8,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 3.9,
+"y": -55.61,
+"z": 2.08,
+"yaw": 111.2,
+"scale": 0.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 3.46,
+"y": -52.48,
+"z": 2.09,
+"yaw": 330.3,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 2.29,
+"y": -53.88,
+"z": 2.18,
+"yaw": 238.0,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -11.77,
+"y": -10.56,
+"z": 2.4,
+"yaw": 243.2,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -6.32,
+"y": -12.22,
+"z": 2.36,
+"yaw": 210.4,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -11.64,
+"y": -12.31,
+"z": 2.26,
+"yaw": 264.8,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 24.11,
+"y": 55.86,
+"z": 2.62,
+"yaw": 167.8,
+"scale": 0.81,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 20.08,
+"y": 56.91,
+"z": 2.42,
+"yaw": 285.6,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 24.29,
+"y": 60.25,
+"z": 2.26,
+"yaw": 329.2,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": -53.8,
+"y": -45.98,
+"z": 2.4,
+"yaw": 28.0,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": -53.49,
+"y": -42.79,
+"z": 2.48,
+"yaw": 194.3,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": -57.67,
+"y": -45.92,
+"z": 1.87,
+"yaw": 314.7,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": -10.27,
+"y": -66.79,
+"z": 2.33,
+"yaw": 285.9,
+"scale": 0.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -8.29,
+"y": -68.73,
+"z": 2.29,
+"yaw": 13.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -14.17,
+"y": -68.52,
+"z": 2.17,
+"yaw": 147.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": 43.0,
+"y": -20.33,
+"z": 2.3,
+"yaw": 335.1,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 44.52,
+"y": -22.19,
+"z": 2.2,
+"yaw": 59.4,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 42.63,
+"y": -21.79,
+"z": 2.22,
+"yaw": 228.8,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 18.75,
+"y": -11.75,
+"z": 2.57,
+"yaw": 286.7,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 20.39,
+"y": -11.81,
+"z": 2.55,
+"yaw": 198.9,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 17.91,
+"y": -9.36,
+"z": 2.71,
+"yaw": 248.3,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": -1.79,
+"y": -62.66,
+"z": 2.3,
+"yaw": 61.5,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 0.13,
+"y": -61.94,
+"z": 2.27,
+"yaw": 211.7,
+"scale": 0.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 0.0,
+"y": -67.22,
+"z": 2.11,
+"yaw": 48.7,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 36.31,
+"y": 43.05,
+"z": 2.37,
+"yaw": 356.1,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 30.35,
+"y": 46.7,
+"z": 2.5,
+"yaw": 228.7,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 34.06,
+"y": 43.51,
+"z": 2.46,
+"yaw": 320.2,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": -5.95,
+"y": -58.92,
+"z": 2.29,
+"yaw": 93.0,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -9.81,
+"y": -59.58,
+"z": 2.28,
+"yaw": 107.5,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -6.92,
+"y": -61.52,
+"z": 2.29,
+"yaw": 32.4,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 39.17,
+"y": -8.49,
+"z": 2.56,
+"yaw": 354.4,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 39.73,
+"y": -6.67,
+"z": 2.65,
+"yaw": 179.6,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 37.06,
+"y": -9.6,
+"z": 2.48,
+"yaw": 78.8,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 14.78,
+"y": 2.52,
+"z": 3.67,
+"yaw": 248.4,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": 19.4,
+"y": 1.26,
+"z": 3.23,
+"yaw": 195.0,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 16.62,
+"y": 3.0,
+"z": 3.56,
+"yaw": 193.4,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": -22.84,
+"y": -58.66,
+"z": 1.78,
+"yaw": 156.0,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": -22.86,
+"y": -55.9,
+"z": 1.8,
+"yaw": 52.5,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -24.05,
+"y": -57.34,
+"z": 1.7,
+"yaw": 344.7,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": 74.93,
+"y": -59.49,
+"z": 2.2,
+"yaw": 100.2,
+"scale": 0.91,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Red",
+"x": 76.0,
+"y": -56.4,
+"z": 2.02,
+"yaw": 266.4,
+"scale": 0.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mushrooms_Brown",
+"x": 73.47,
+"y": -60.85,
+"z": 2.2,
+"yaw": 293.2,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 62.69,
+"y": -23.04,
+"z": 1.85,
+"yaw": 103.0,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Creeper_A",
+"x": 64.19,
+"y": -24.0,
+"z": 1.7,
+"yaw": 135.3,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 62.45,
+"y": -21.03,
+"z": 2.04,
+"yaw": 206.2,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_B",
+"x": -10.01,
+"y": -62.57,
+"z": 2.18,
+"yaw": 224.0,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_B",
+"x": -8.37,
+"y": -12.25,
+"z": 2.21,
+"yaw": 249.9,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_B",
+"x": -17.13,
+"y": -42.4,
+"z": 1.69,
+"yaw": 42.9,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_A",
+"x": 23.59,
+"y": -4.06,
+"z": 2.64,
+"yaw": 134.4,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_A",
+"x": 6.31,
+"y": -1.74,
+"z": 3.52,
+"yaw": 322.7,
+"scale": 0.98,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_A",
+"x": -14.9,
+"y": -0.1,
+"z": 3.32,
+"yaw": 279.4,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_B",
+"x": 41.3,
+"y": -8.78,
+"z": 2.54,
+"yaw": 196.2,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_B",
+"x": -47.47,
+"y": 25.74,
+"z": 2.56,
+"yaw": 49.0,
+"scale": 0.81,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bamboo_A",
+"x": 23.48,
+"y": 40.33,
+"z": 3.0,
+"yaw": 315.7,
+"scale": 0.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 36.82,
+"y": 6.62,
+"z": 2.64,
+"yaw": 199.7,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_B",
+"x": 65.47,
+"y": 14.69,
+"z": 2.57,
+"yaw": 73.7,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_A",
+"x": 2.55,
+"y": -64.58,
+"z": 1.97,
+"yaw": 310.0,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 41.18,
+"y": -28.83,
+"z": 1.61,
+"yaw": 167.1,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_A",
+"x": 64.08,
+"y": -17.45,
+"z": 2.11,
+"yaw": 228.6,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_A",
+"x": 11.56,
+"y": -2.59,
+"z": 3.27,
+"yaw": 238.1,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 20.18,
+"y": 4.54,
+"z": 3.22,
+"yaw": 119.6,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_A",
+"x": 39.43,
+"y": -15.57,
+"z": 2.27,
+"yaw": 22.7,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 74.41,
+"y": -63.46,
+"z": 1.89,
+"yaw": 155.6,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_B",
+"x": 16.35,
+"y": 49.83,
+"z": 2.71,
+"yaw": 239.3,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 34.57,
+"y": 55.0,
+"z": 2.21,
+"yaw": 65.2,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_B",
+"x": -2.27,
+"y": -73.21,
+"z": 1.68,
+"yaw": 178.5,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_B",
+"x": 0.23,
+"y": -9.05,
+"z": 2.63,
+"yaw": 78.2,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Banana_Young",
+"x": 70.5,
+"y": -17.88,
+"z": 1.62,
+"yaw": 10.5,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 35.73,
+"y": 41.03,
+"z": 2.37,
+"yaw": 330.9,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 17.89,
+"y": 50.38,
+"z": 2.83,
+"yaw": 341.1,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 16.57,
+"y": -14.4,
+"z": 2.43,
+"yaw": 150.3,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 36.25,
+"y": -24.23,
+"z": 2.01,
+"yaw": 285.1,
+"scale": 0.95,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -88.65,
+"y": 38.33,
+"z": 1.61,
+"yaw": 106.6,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -1.59,
+"y": -55.46,
+"z": 2.31,
+"yaw": 278.4,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 41.14,
+"y": 35.87,
+"z": 1.82,
+"yaw": 175.8,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 0.56,
+"y": -69.59,
+"z": 1.91,
+"yaw": 94.1,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -23.21,
+"y": -50.13,
+"z": 1.67,
+"yaw": 4.7,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": -71.54,
+"y": 48.12,
+"z": 1.68,
+"yaw": 160.5,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 33.72,
+"y": -12.6,
+"z": 2.38,
+"yaw": 278.0,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": -5.33,
+"y": -61.33,
+"z": 2.26,
+"yaw": 90.7,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -52.51,
+"y": 22.56,
+"z": 2.36,
+"yaw": 101.7,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 5.54,
+"y": -62.73,
+"z": 1.86,
+"yaw": 75.2,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": 33.7,
+"y": 48.2,
+"z": 2.34,
+"yaw": 167.0,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 47.61,
+"y": -14.72,
+"z": 2.6,
+"yaw": 161.2,
+"scale": 0.81,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": -13.41,
+"y": -61.36,
+"z": 2.26,
+"yaw": 117.8,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 21.94,
+"y": 48.02,
+"z": 2.88,
+"yaw": 171.2,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_A",
+"x": -11.73,
+"y": -0.09,
+"z": 3.6,
+"yaw": 167.8,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 64.39,
+"y": -19.26,
+"z": 2.03,
+"yaw": 5.0,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_B",
+"x": 79.74,
+"y": -59.48,
+"z": 1.67,
+"yaw": 325.2,
+"scale": 0.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 59.59,
+"y": -12.32,
+"z": 2.94,
+"yaw": 126.4,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 39.16,
+"y": 54.2,
+"z": 2.03,
+"yaw": 196.6,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 68.99,
+"y": 11.7,
+"z": 2.44,
+"yaw": 104.2,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_BigLeaf_Dark",
+"x": 69.43,
+"y": -3.48,
+"z": 2.75,
+"yaw": 107.0,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 18.75,
+"y": 39.04,
+"z": 3.37,
+"yaw": 60.6,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 13.05,
+"y": -1.37,
+"z": 3.33,
+"yaw": 266.6,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 24.89,
+"y": 58.99,
+"z": 2.32,
+"yaw": 270.5,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -12.13,
+"y": -1.07,
+"z": 3.36,
+"yaw": 13.0,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 8.39,
+"y": -4.86,
+"z": 3.08,
+"yaw": 13.1,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 48.78,
+"y": -27.54,
+"z": 1.63,
+"yaw": 301.4,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": -49.35,
+"y": -41.47,
+"z": 2.37,
+"yaw": 102.0,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 31.41,
+"y": -11.28,
+"z": 2.33,
+"yaw": 87.6,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": -0.29,
+"y": -9.39,
+"z": 2.55,
+"yaw": 299.7,
+"scale": 1.5,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": 36.98,
+"y": 3.58,
+"z": 2.63,
+"yaw": 226.4,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 64.87,
+"y": -22.49,
+"z": 1.66,
+"yaw": 2.4,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 51.97,
+"y": -22.3,
+"z": 2.05,
+"yaw": 158.4,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 30.71,
+"y": 7.57,
+"z": 2.61,
+"yaw": 133.9,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": -17.42,
+"y": -0.07,
+"z": 3.1,
+"yaw": 190.1,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -17.95,
+"y": -52.39,
+"z": 2.01,
+"yaw": 279.4,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -50.13,
+"y": 25.11,
+"z": 2.44,
+"yaw": 169.1,
+"scale": 0.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 8.33,
+"y": -10.39,
+"z": 2.53,
+"yaw": 243.7,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 30.61,
+"y": -27.15,
+"z": 1.72,
+"yaw": 235.8,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": -8.74,
+"y": -57.66,
+"z": 2.17,
+"yaw": 243.0,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 21.15,
+"y": -7.89,
+"z": 2.57,
+"yaw": 281.7,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": 66.66,
+"y": 15.99,
+"z": 2.22,
+"yaw": 16.9,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 22.05,
+"y": 57.7,
+"z": 2.36,
+"yaw": 88.2,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 9.59,
+"y": -59.12,
+"z": 1.49,
+"yaw": 182.8,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 70.66,
+"y": -6.9,
+"z": 2.27,
+"yaw": 285.6,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -16.29,
+"y": -14.21,
+"z": 1.93,
+"yaw": 289.3,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 2.46,
+"y": -54.56,
+"z": 2.07,
+"yaw": 358.8,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": 71.17,
+"y": 3.4,
+"z": 2.48,
+"yaw": 30.1,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 35.99,
+"y": -21.14,
+"z": 2.04,
+"yaw": 72.0,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 73.32,
+"y": -8.77,
+"z": 1.83,
+"yaw": 310.6,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 59.12,
+"y": -25.47,
+"z": 1.63,
+"yaw": 341.0,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": 1.01,
+"y": -72.46,
+"z": 1.55,
+"yaw": 80.1,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 62.94,
+"y": -8.35,
+"z": 3.08,
+"yaw": 226.7,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -9.35,
+"y": -66.08,
+"z": 2.18,
+"yaw": 159.1,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": -45.0,
+"y": 21.58,
+"z": 2.55,
+"yaw": 49.2,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_A",
+"x": 4.2,
+"y": -68.22,
+"z": 1.64,
+"yaw": 112.1,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 51.08,
+"y": -19.37,
+"z": 2.33,
+"yaw": 177.5,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -2.02,
+"y": -56.89,
+"z": 2.24,
+"yaw": 308.5,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 31.04,
+"y": 55.18,
+"z": 2.32,
+"yaw": 246.7,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_C",
+"x": -87.73,
+"y": 49.13,
+"z": 1.54,
+"yaw": 182.6,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_B",
+"x": 32.64,
+"y": -15.45,
+"z": 2.26,
+"yaw": 209.2,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 31.57,
+"y": -7.99,
+"z": 2.39,
+"yaw": 169.9,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Hedge_Long",
+"x": 59.84,
+"y": 18.82,
+"z": 2.45,
+"yaw": 250.5,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": 6.12,
+"y": -8.62,
+"z": 2.67,
+"yaw": 181.2,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_B",
+"x": -77.65,
+"y": 41.97,
+"z": 2.01,
+"yaw": 111.3,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Flower_A",
+"x": -16.7,
+"y": -10.92,
+"z": 2.12,
+"yaw": 186.1,
+"scale": 0.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -77.03,
+"y": 50.02,
+"z": 1.89,
+"yaw": 37.7,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -8.17,
+"y": -8.56,
+"z": 2.66,
+"yaw": 262.2,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 34.28,
+"y": -5.91,
+"z": 2.5,
+"yaw": 164.8,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 19.49,
+"y": 54.45,
+"z": 2.59,
+"yaw": 54.8,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 8.63,
+"y": 0.41,
+"z": 3.79,
+"yaw": 44.9,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -6.52,
+"y": -3.11,
+"z": 3.39,
+"yaw": 34.1,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -19.89,
+"y": -9.67,
+"z": 2.16,
+"yaw": 132.6,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -87.91,
+"y": 43.43,
+"z": 1.76,
+"yaw": 218.8,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -83.5,
+"y": 40.0,
+"z": 1.98,
+"yaw": 17.7,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 27.04,
+"y": 48.8,
+"z": 2.55,
+"yaw": 165.2,
+"scale": 1.66,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -17.0,
+"y": -13.14,
+"z": 2.03,
+"yaw": 212.1,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 55.32,
+"y": -24.61,
+"z": 1.9,
+"yaw": 167.7,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -0.08,
+"y": -58.44,
+"z": 2.26,
+"yaw": 42.1,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 69.06,
+"y": -5.56,
+"z": 2.68,
+"yaw": 197.0,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 24.77,
+"y": -9.97,
+"z": 2.54,
+"yaw": 106.2,
+"scale": 0.98,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -53.96,
+"y": 14.92,
+"z": 1.65,
+"yaw": 102.8,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 69.39,
+"y": -10.73,
+"z": 2.27,
+"yaw": 36.3,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 39.51,
+"y": 58.89,
+"z": 1.71,
+"yaw": 259.1,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 35.4,
+"y": 45.17,
+"z": 2.36,
+"yaw": 138.1,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 79.78,
+"y": -58.16,
+"z": 1.64,
+"yaw": 251.9,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 29.74,
+"y": 47.86,
+"z": 2.48,
+"yaw": 89.1,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -14.66,
+"y": -72.36,
+"z": 1.8,
+"yaw": 108.9,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 44.29,
+"y": 49.53,
+"z": 1.64,
+"yaw": 19.3,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -13.88,
+"y": -51.97,
+"z": 2.28,
+"yaw": 110.8,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 30.89,
+"y": 39.3,
+"z": 2.65,
+"yaw": 23.4,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 40.07,
+"y": 41.91,
+"z": 2.04,
+"yaw": 293.1,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 2.84,
+"y": -8.23,
+"z": 2.8,
+"yaw": 178.6,
+"scale": 1.7,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -6.26,
+"y": -63.2,
+"z": 2.27,
+"yaw": 139.2,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -8.1,
+"y": -12.55,
+"z": 2.28,
+"yaw": 7.8,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": 48.28,
+"y": -19.89,
+"z": 2.36,
+"yaw": 316.4,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 31.58,
+"y": 45.93,
+"z": 2.45,
+"yaw": 18.5,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -55.81,
+"y": 19.27,
+"z": 1.78,
+"yaw": 38.2,
+"scale": 1.69,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -21.98,
+"y": -56.33,
+"z": 1.84,
+"yaw": 208.1,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 23.5,
+"y": 39.69,
+"z": 3.07,
+"yaw": 64.9,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -80.07,
+"y": 53.38,
+"z": 1.61,
+"yaw": 303.6,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 17.6,
+"y": 48.22,
+"z": 2.97,
+"yaw": 288.8,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 65.36,
+"y": -14.26,
+"z": 2.39,
+"yaw": 294.4,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_C",
+"x": -10.7,
+"y": -69.68,
+"z": 2.19,
+"yaw": 135.3,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -2.09,
+"y": -55.69,
+"z": 2.31,
+"yaw": 149.4,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 44.7,
+"y": -19.98,
+"z": 2.31,
+"yaw": 312.5,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 23.98,
+"y": -1.31,
+"z": 2.79,
+"yaw": 137.6,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -25.87,
+"y": -51.93,
+"z": 1.54,
+"yaw": 71.2,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": -19.72,
+"y": -57.87,
+"z": 2.01,
+"yaw": 271.3,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_B",
+"x": 45.43,
+"y": -11.31,
+"z": 2.67,
+"yaw": 284.4,
+"scale": 1.66,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": 0.64,
+"y": -12.44,
+"z": 2.39,
+"yaw": 184.2,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Fern_A",
+"x": -6.72,
+"y": -70.46,
+"z": 2.15,
+"yaw": 28.4,
+"scale": 1.62,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -18.36,
+"y": 0.61,
+"z": 3.18,
+"yaw": 54.2,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 24.69,
+"y": -0.02,
+"z": 2.82,
+"yaw": 29.5,
+"scale": 1.7,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -19.25,
+"y": -5.21,
+"z": 2.55,
+"yaw": 273.2,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 60.47,
+"y": -14.56,
+"z": 2.73,
+"yaw": 307.8,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -85.34,
+"y": 39.95,
+"z": 1.92,
+"yaw": 124.7,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -7.91,
+"y": -64.94,
+"z": 2.32,
+"yaw": 120.3,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 3.37,
+"y": -6.98,
+"z": 2.98,
+"yaw": 202.0,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 75.2,
+"y": -4.47,
+"z": 1.89,
+"yaw": 108.0,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -50.52,
+"y": 25.88,
+"z": 2.51,
+"yaw": 159.4,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 39.66,
+"y": -28.59,
+"z": 1.75,
+"yaw": 149.9,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 33.87,
+"y": 6.1,
+"z": 2.66,
+"yaw": 313.8,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -48.63,
+"y": -45.17,
+"z": 2.45,
+"yaw": 344.2,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -8.11,
+"y": -67.51,
+"z": 2.33,
+"yaw": 140.4,
+"scale": 1.72,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -84.78,
+"y": 36.39,
+"z": 1.77,
+"yaw": 308.5,
+"scale": 1.76,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -9.34,
+"y": -8.33,
+"z": 2.68,
+"yaw": 12.4,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 35.96,
+"y": 48.37,
+"z": 2.32,
+"yaw": 339.1,
+"scale": 1.6,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -72.81,
+"y": 45.62,
+"z": 1.9,
+"yaw": 106.2,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -57.57,
+"y": 19.97,
+"z": 1.67,
+"yaw": 122.7,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 69.88,
+"y": -15.78,
+"z": 1.89,
+"yaw": 100.8,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -22.45,
+"y": -43.12,
+"z": 1.59,
+"yaw": 163.6,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 29.18,
+"y": 39.94,
+"z": 2.75,
+"yaw": 166.3,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 16.76,
+"y": 56.4,
+"z": 2.18,
+"yaw": 102.8,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 22.76,
+"y": 60.36,
+"z": 2.17,
+"yaw": 41.4,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 36.03,
+"y": 55.94,
+"z": 2.23,
+"yaw": 77.8,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 24.46,
+"y": 39.52,
+"z": 3.03,
+"yaw": 84.6,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -52.86,
+"y": -49.07,
+"z": 2.08,
+"yaw": 102.2,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 47.16,
+"y": -28.04,
+"z": 1.73,
+"yaw": 105.1,
+"scale": 1.57,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 38.07,
+"y": -13.68,
+"z": 2.4,
+"yaw": 60.9,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -47.41,
+"y": -41.85,
+"z": 2.41,
+"yaw": 135.9,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 56.86,
+"y": -20.5,
+"z": 2.33,
+"yaw": 185.4,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 26.67,
+"y": 43.83,
+"z": 2.75,
+"yaw": 237.0,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 43.14,
+"y": -13.28,
+"z": 2.52,
+"yaw": 97.2,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 78.68,
+"y": -62.26,
+"z": 1.74,
+"yaw": 0.8,
+"scale": 1.65,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -11.61,
+"y": -60.09,
+"z": 2.28,
+"yaw": 288.1,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 42.04,
+"y": -12.0,
+"z": 2.53,
+"yaw": 4.2,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -13.43,
+"y": -70.95,
+"z": 2.02,
+"yaw": 136.1,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 39.67,
+"y": 0.59,
+"z": 2.88,
+"yaw": 179.9,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 0.2,
+"y": -11.2,
+"z": 2.52,
+"yaw": 118.3,
+"scale": 1.71,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -19.25,
+"y": -52.34,
+"z": 2.04,
+"yaw": 89.6,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -6.07,
+"y": -65.94,
+"z": 2.33,
+"yaw": 350.8,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 76.0,
+"y": -61.48,
+"z": 2.08,
+"yaw": 105.1,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 23.71,
+"y": -4.3,
+"z": 2.75,
+"yaw": 156.2,
+"scale": 1.76,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -11.23,
+"y": -68.47,
+"z": 2.27,
+"yaw": 21.4,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -6.58,
+"y": -53.2,
+"z": 2.35,
+"yaw": 277.2,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -11.74,
+"y": -14.29,
+"z": 2.12,
+"yaw": 341.7,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 6.31,
+"y": -65.94,
+"z": 1.69,
+"yaw": 29.3,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 35.5,
+"y": -18.83,
+"z": 2.27,
+"yaw": 359.4,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -0.91,
+"y": -51.5,
+"z": 2.3,
+"yaw": 86.6,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -73.16,
+"y": 37.6,
+"z": 1.73,
+"yaw": 33.7,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 72.46,
+"y": 5.87,
+"z": 2.27,
+"yaw": 86.3,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 46.7,
+"y": -18.79,
+"z": 2.43,
+"yaw": 135.6,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 73.96,
+"y": -62.03,
+"z": 2.14,
+"yaw": 211.3,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 38.72,
+"y": 37.57,
+"z": 2.06,
+"yaw": 80.8,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 0.03,
+"y": -60.67,
+"z": 2.28,
+"yaw": 232.8,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 14.69,
+"y": 0.86,
+"z": 3.54,
+"yaw": 114.2,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 43.32,
+"y": -8.52,
+"z": 2.76,
+"yaw": 242.3,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 34.42,
+"y": -11.14,
+"z": 2.42,
+"yaw": 354.2,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -15.99,
+"y": -41.7,
+"z": 1.78,
+"yaw": 170.3,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 39.5,
+"y": 57.3,
+"z": 1.86,
+"yaw": 79.5,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -0.98,
+"y": -68.18,
+"z": 2.12,
+"yaw": 224.0,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 74.24,
+"y": 3.98,
+"z": 2.05,
+"yaw": 130.1,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 69.23,
+"y": -9.28,
+"z": 2.42,
+"yaw": 334.9,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -77.94,
+"y": 51.85,
+"z": 1.77,
+"yaw": 67.7,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 49.09,
+"y": -15.65,
+"z": 2.62,
+"yaw": 16.4,
+"scale": 1.73,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 63.87,
+"y": -17.9,
+"z": 2.22,
+"yaw": 0.3,
+"scale": 1.72,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 43.28,
+"y": -20.47,
+"z": 2.3,
+"yaw": 357.3,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 42.11,
+"y": 34.94,
+"z": 1.78,
+"yaw": 107.6,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 39.26,
+"y": -6.12,
+"z": 2.65,
+"yaw": 80.3,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 23.74,
+"y": 2.07,
+"z": 2.94,
+"yaw": 211.7,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 34.28,
+"y": -21.72,
+"z": 2.13,
+"yaw": 45.9,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 12.1,
+"y": 44.98,
+"z": 3.15,
+"yaw": 111.3,
+"scale": 1.66,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 36.78,
+"y": 54.7,
+"z": 2.22,
+"yaw": 224.8,
+"scale": 1.49,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 59.56,
+"y": -24.25,
+"z": 1.87,
+"yaw": 356.4,
+"scale": 1.71,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -18.37,
+"y": -20.47,
+"z": 1.75,
+"yaw": 289.6,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -12.8,
+"y": -61.41,
+"z": 2.29,
+"yaw": 236.8,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 44.62,
+"y": 46.82,
+"z": 1.67,
+"yaw": 257.5,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -7.9,
+"y": -6.42,
+"z": 2.94,
+"yaw": 165.4,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -88.23,
+"y": 43.92,
+"z": 1.75,
+"yaw": 239.1,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 49.24,
+"y": -24.05,
+"z": 2.04,
+"yaw": 181.9,
+"scale": 1.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 4.57,
+"y": -12.9,
+"z": 2.41,
+"yaw": 140.6,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 30.57,
+"y": 42.06,
+"z": 2.63,
+"yaw": 240.1,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 17.2,
+"y": 38.65,
+"z": 3.5,
+"yaw": 47.9,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 5.95,
+"y": -59.97,
+"z": 1.91,
+"yaw": 279.4,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 59.18,
+"y": 17.37,
+"z": 2.89,
+"yaw": 150.1,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 24.47,
+"y": -1.23,
+"z": 2.8,
+"yaw": 348.6,
+"scale": 1.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 72.04,
+"y": 7.25,
+"z": 2.28,
+"yaw": 243.3,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 30.85,
+"y": 48.44,
+"z": 2.45,
+"yaw": 198.8,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 68.34,
+"y": -13.75,
+"z": 2.18,
+"yaw": 63.8,
+"scale": 1.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 40.32,
+"y": 38.82,
+"z": 1.96,
+"yaw": 33.0,
+"scale": 1.67,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -6.77,
+"y": -56.07,
+"z": 2.31,
+"yaw": 33.2,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -3.35,
+"y": -7.48,
+"z": 2.88,
+"yaw": 128.0,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 38.09,
+"y": -11.0,
+"z": 2.46,
+"yaw": 19.9,
+"scale": 1.57,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 56.04,
+"y": -21.88,
+"z": 2.21,
+"yaw": 63.4,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 30.4,
+"y": 10.68,
+"z": 2.76,
+"yaw": 241.1,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -17.15,
+"y": -7.81,
+"z": 2.44,
+"yaw": 133.3,
+"scale": 1.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -16.59,
+"y": -65.14,
+"z": 2.17,
+"yaw": 277.1,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 61.3,
+"y": 19.91,
+"z": 2.26,
+"yaw": 312.5,
+"scale": 1.73,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 56.99,
+"y": 18.26,
+"z": 2.82,
+"yaw": 68.0,
+"scale": 1.67,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 42.05,
+"y": 53.41,
+"z": 1.78,
+"yaw": 184.2,
+"scale": 1.67,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -55.39,
+"y": 18.33,
+"z": 1.8,
+"yaw": 117.8,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 21.81,
+"y": 4.34,
+"z": 3.17,
+"yaw": 257.3,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 46.96,
+"y": -24.45,
+"z": 2.01,
+"yaw": 9.2,
+"scale": 1.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 31.59,
+"y": -16.12,
+"z": 2.33,
+"yaw": 193.8,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -82.58,
+"y": 52.04,
+"z": 1.7,
+"yaw": 244.7,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 25.6,
+"y": 36.57,
+"z": 2.99,
+"yaw": 350.0,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 56.68,
+"y": -23.96,
+"z": 1.97,
+"yaw": 331.4,
+"scale": 1.69,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 73.41,
+"y": -4.36,
+"z": 2.12,
+"yaw": 165.3,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 31.56,
+"y": -14.25,
+"z": 2.38,
+"yaw": 334.2,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -13.99,
+"y": -54.09,
+"z": 2.31,
+"yaw": 95.6,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -20.23,
+"y": -11.06,
+"z": 2.08,
+"yaw": 81.0,
+"scale": 1.73,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 22.47,
+"y": -5.53,
+"z": 2.76,
+"yaw": 95.4,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -15.94,
+"y": -21.89,
+"z": 1.76,
+"yaw": 133.8,
+"scale": 1.63,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 21.93,
+"y": 54.18,
+"z": 2.71,
+"yaw": 119.0,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 16.78,
+"y": 50.55,
+"z": 2.79,
+"yaw": 211.4,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -17.45,
+"y": -12.23,
+"z": 2.1,
+"yaw": 46.1,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 65.85,
+"y": -8.32,
+"z": 2.9,
+"yaw": 45.5,
+"scale": 1.73,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 39.0,
+"y": 47.94,
+"z": 2.19,
+"yaw": 62.0,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 26.5,
+"y": 48.41,
+"z": 2.62,
+"yaw": 308.9,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 49.18,
+"y": -21.05,
+"z": 2.31,
+"yaw": 64.5,
+"scale": 1.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -88.46,
+"y": 39.71,
+"z": 1.7,
+"yaw": 196.0,
+"scale": 1.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -51.9,
+"y": 24.57,
+"z": 2.45,
+"yaw": 218.1,
+"scale": 1.71,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 23.55,
+"y": 6.48,
+"z": 3.09,
+"yaw": 272.6,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 19.53,
+"y": 5.19,
+"z": 3.42,
+"yaw": 357.1,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -17.56,
+"y": -0.79,
+"z": 3.1,
+"yaw": 149.5,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 51.36,
+"y": -17.2,
+"z": 2.6,
+"yaw": 224.7,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 35.9,
+"y": 50.14,
+"z": 2.3,
+"yaw": 245.6,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -53.55,
+"y": 27.55,
+"z": 2.35,
+"yaw": 41.8,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 37.76,
+"y": 61.42,
+"z": 1.66,
+"yaw": 94.4,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -77.43,
+"y": 50.27,
+"z": 1.9,
+"yaw": 26.9,
+"scale": 1.66,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -19.42,
+"y": -59.55,
+"z": 2.05,
+"yaw": 91.5,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 4.89,
+"y": -58.0,
+"z": 2.01,
+"yaw": 224.7,
+"scale": 1.63,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 40.91,
+"y": 47.21,
+"z": 2.03,
+"yaw": 334.3,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 73.41,
+"y": -6.65,
+"z": 2.03,
+"yaw": 160.1,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 33.94,
+"y": 49.05,
+"z": 2.36,
+"yaw": 319.8,
+"scale": 1.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -19.03,
+"y": -45.01,
+"z": 1.79,
+"yaw": 275.7,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -83.92,
+"y": 46.36,
+"z": 2.01,
+"yaw": 137.4,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -23.4,
+"y": -58.75,
+"z": 1.74,
+"yaw": 221.9,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 22.85,
+"y": 33.19,
+"z": 3.23,
+"yaw": 120.3,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -0.69,
+"y": -12.98,
+"z": 2.36,
+"yaw": 37.0,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 25.43,
+"y": 7.71,
+"z": 2.98,
+"yaw": 344.7,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 57.7,
+"y": -21.57,
+"z": 2.2,
+"yaw": 307.3,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -13.89,
+"y": -47.61,
+"z": 2.19,
+"yaw": 166.1,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -15.58,
+"y": -64.18,
+"z": 2.23,
+"yaw": 61.9,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 38.25,
+"y": -19.01,
+"z": 2.29,
+"yaw": 112.6,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 74.15,
+"y": -2.92,
+"z": 2.06,
+"yaw": 5.3,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 23.51,
+"y": 46.32,
+"z": 2.86,
+"yaw": 219.3,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -51.41,
+"y": 20.99,
+"z": 2.41,
+"yaw": 341.9,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -19.12,
+"y": -13.17,
+"z": 2.0,
+"yaw": 164.6,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 8.82,
+"y": -11.97,
+"z": 2.54,
+"yaw": 332.5,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 66.23,
+"y": -15.64,
+"z": 2.22,
+"yaw": 100.0,
+"scale": 1.52,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 3.69,
+"y": -56.47,
+"z": 2.1,
+"yaw": 179.3,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 15.59,
+"y": -7.7,
+"z": 2.86,
+"yaw": 357.9,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -70.77,
+"y": 45.44,
+"z": 1.74,
+"yaw": 5.0,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -2.57,
+"y": -12.1,
+"z": 2.42,
+"yaw": 267.4,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -45.57,
+"y": 22.83,
+"z": 2.69,
+"yaw": 85.1,
+"scale": 1.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -81.71,
+"y": 47.39,
+"z": 2.07,
+"yaw": 246.4,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 28.58,
+"y": 59.05,
+"z": 2.42,
+"yaw": 43.3,
+"scale": 1.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -17.21,
+"y": -19.07,
+"z": 1.81,
+"yaw": 110.4,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 71.07,
+"y": -56.31,
+"z": 1.99,
+"yaw": 347.5,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -11.85,
+"y": -57.36,
+"z": 2.29,
+"yaw": 163.9,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -89.68,
+"y": 42.02,
+"z": 1.64,
+"yaw": 357.0,
+"scale": 1.5,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 72.44,
+"y": -58.54,
+"z": 2.2,
+"yaw": 151.9,
+"scale": 1.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 38.12,
+"y": 47.14,
+"z": 2.25,
+"yaw": 211.7,
+"scale": 1.87,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 0.29,
+"y": -59.0,
+"z": 2.28,
+"yaw": 76.9,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -56.7,
+"y": -46.84,
+"z": 1.96,
+"yaw": 269.1,
+"scale": 1.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -14.01,
+"y": -39.32,
+"z": 1.72,
+"yaw": 252.9,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -79.97,
+"y": 43.37,
+"z": 2.16,
+"yaw": 46.6,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 53.77,
+"y": -20.67,
+"z": 2.35,
+"yaw": 267.7,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -45.95,
+"y": -39.29,
+"z": 1.99,
+"yaw": 267.1,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 28.89,
+"y": 47.08,
+"z": 2.55,
+"yaw": 104.5,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -82.46,
+"y": 48.48,
+"z": 1.98,
+"yaw": 7.4,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -83.65,
+"y": 36.01,
+"z": 1.79,
+"yaw": 312.9,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -11.51,
+"y": -8.67,
+"z": 2.58,
+"yaw": 208.9,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -54.25,
+"y": -48.87,
+"z": 2.0,
+"yaw": 114.5,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 5.08,
+"y": -6.31,
+"z": 3.05,
+"yaw": 122.6,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -12.75,
+"y": -68.32,
+"z": 2.24,
+"yaw": 5.1,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 10.35,
+"y": -3.8,
+"z": 3.29,
+"yaw": 191.9,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 12.86,
+"y": -0.23,
+"z": 3.55,
+"yaw": 231.4,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -0.8,
+"y": -7.27,
+"z": 2.93,
+"yaw": 8.9,
+"scale": 1.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 4.09,
+"y": -0.91,
+"z": 3.78,
+"yaw": 134.4,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -86.56,
+"y": 47.36,
+"z": 1.79,
+"yaw": 145.2,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -11.64,
+"y": -5.67,
+"z": 2.91,
+"yaw": 248.1,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 3.65,
+"y": -52.07,
+"z": 2.07,
+"yaw": 340.8,
+"scale": 1.65,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 13.93,
+"y": 42.43,
+"z": 3.39,
+"yaw": 18.8,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -55.05,
+"y": -43.3,
+"z": 2.42,
+"yaw": 36.4,
+"scale": 1.5,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 31.16,
+"y": 50.45,
+"z": 2.42,
+"yaw": 37.5,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 66.87,
+"y": -20.05,
+"z": 1.81,
+"yaw": 65.4,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 27.16,
+"y": 55.53,
+"z": 2.53,
+"yaw": 132.7,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 63.77,
+"y": -21.57,
+"z": 1.91,
+"yaw": 75.1,
+"scale": 1.59,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 42.15,
+"y": -24.49,
+"z": 2.03,
+"yaw": 75.5,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 61.51,
+"y": -23.28,
+"z": 1.89,
+"yaw": 42.7,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 49.94,
+"y": -12.53,
+"z": 2.83,
+"yaw": 280.5,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -87.38,
+"y": 40.88,
+"z": 1.81,
+"yaw": 86.1,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 8.45,
+"y": -3.66,
+"z": 3.34,
+"yaw": 69.4,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 71.62,
+"y": -15.52,
+"z": 1.77,
+"yaw": 10.1,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -21.34,
+"y": -49.21,
+"z": 1.8,
+"yaw": 34.4,
+"scale": 1.72,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 16.29,
+"y": -4.13,
+"z": 3.08,
+"yaw": 333.9,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -22.41,
+"y": -50.66,
+"z": 1.76,
+"yaw": 237.9,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 23.6,
+"y": 56.68,
+"z": 2.59,
+"yaw": 194.3,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 3.76,
+"y": -63.71,
+"z": 2.0,
+"yaw": 305.3,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 30.69,
+"y": 45.02,
+"z": 2.53,
+"yaw": 186.3,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 16.47,
+"y": 43.97,
+"z": 3.25,
+"yaw": 332.9,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 35.8,
+"y": 2.96,
+"z": 2.67,
+"yaw": 10.8,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -13.7,
+"y": -52.25,
+"z": 2.31,
+"yaw": 106.9,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 25.96,
+"y": -13.85,
+"z": 2.42,
+"yaw": 260.7,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -16.52,
+"y": -14.36,
+"z": 2.01,
+"yaw": 12.9,
+"scale": 1.76,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -75.03,
+"y": 38.91,
+"z": 1.89,
+"yaw": 201.9,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -8.54,
+"y": -4.38,
+"z": 3.18,
+"yaw": 214.5,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 23.49,
+"y": -2.08,
+"z": 2.83,
+"yaw": 109.3,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -5.2,
+"y": -1.65,
+"z": 3.65,
+"yaw": 303.1,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 33.9,
+"y": 58.27,
+"z": 2.25,
+"yaw": 357.7,
+"scale": 1.75,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -19.07,
+"y": -62.06,
+"z": 2.05,
+"yaw": 219.4,
+"scale": 1.69,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -53.73,
+"y": 20.1,
+"z": 2.13,
+"yaw": 319.7,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -8.93,
+"y": -66.09,
+"z": 2.33,
+"yaw": 333.4,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -89.45,
+"y": 44.79,
+"z": 1.64,
+"yaw": 79.8,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -24.62,
+"y": -57.74,
+"z": 1.65,
+"yaw": 272.8,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -16.53,
+"y": -9.67,
+"z": 2.31,
+"yaw": 344.8,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 29.06,
+"y": 55.69,
+"z": 2.47,
+"yaw": 52.5,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -54.54,
+"y": -45.73,
+"z": 2.37,
+"yaw": 225.7,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 6.42,
+"y": -6.35,
+"z": 3.05,
+"yaw": 205.5,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 35.76,
+"y": 45.13,
+"z": 2.38,
+"yaw": 346.4,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 44.3,
+"y": -28.06,
+"z": 1.74,
+"yaw": 69.0,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 15.04,
+"y": 53.72,
+"z": 2.35,
+"yaw": 208.6,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -8.52,
+"y": -11.7,
+"z": 2.37,
+"yaw": 78.2,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 0.8,
+"y": -2.28,
+"z": 3.61,
+"yaw": 270.0,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 32.35,
+"y": 48.09,
+"z": 2.41,
+"yaw": 139.8,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 2.02,
+"y": -52.66,
+"z": 2.18,
+"yaw": 62.8,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -0.1,
+"y": -71.02,
+"z": 1.86,
+"yaw": 21.3,
+"scale": 1.72,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -6.05,
+"y": -2.75,
+"z": 3.47,
+"yaw": 297.7,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -3.12,
+"y": -10.64,
+"z": 2.55,
+"yaw": 147.9,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -70.32,
+"y": 44.2,
+"z": 1.73,
+"yaw": 318.4,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -17.16,
+"y": -38.58,
+"z": 1.63,
+"yaw": 178.9,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 26.03,
+"y": 6.05,
+"z": 2.89,
+"yaw": 26.9,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 70.09,
+"y": 0.81,
+"z": 2.81,
+"yaw": 119.6,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 26.23,
+"y": 1.17,
+"z": 2.77,
+"yaw": 218.9,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -79.02,
+"y": 44.57,
+"z": 2.17,
+"yaw": 94.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 1.98,
+"y": -62.27,
+"z": 2.18,
+"yaw": 292.1,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 21.15,
+"y": -0.84,
+"z": 3.01,
+"yaw": 209.4,
+"scale": 1.79,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 35.45,
+"y": 43.51,
+"z": 2.41,
+"yaw": 176.8,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 26.38,
+"y": -2.4,
+"z": 2.69,
+"yaw": 93.0,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 49.65,
+"y": -25.68,
+"z": 1.88,
+"yaw": 329.5,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -19.67,
+"y": -17.66,
+"z": 1.8,
+"yaw": 244.5,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -5.51,
+"y": -67.54,
+"z": 2.31,
+"yaw": 1.0,
+"scale": 1.55,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -78.56,
+"y": 48.65,
+"z": 2.04,
+"yaw": 153.8,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": -81.19,
+"y": 39.96,
+"z": 2.06,
+"yaw": 73.8,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 15.28,
+"y": -11.21,
+"z": 2.63,
+"yaw": 255.0,
+"scale": 1.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 34.65,
+"y": 56.25,
+"z": 2.3,
+"yaw": 230.3,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -3.51,
+"y": -1.35,
+"z": 3.73,
+"yaw": 8.7,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -70.56,
+"y": 41.88,
+"z": 1.74,
+"yaw": 174.4,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 18.13,
+"y": 55.92,
+"z": 2.36,
+"yaw": 126.5,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 0.03,
+"y": -52.85,
+"z": 2.28,
+"yaw": 108.2,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -45.1,
+"y": -47.61,
+"z": 1.86,
+"yaw": 201.2,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 35.86,
+"y": 53.12,
+"z": 2.29,
+"yaw": 292.7,
+"scale": 1.57,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 33.6,
+"y": -22.76,
+"z": 2.08,
+"yaw": 278.8,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 39.11,
+"y": 2.15,
+"z": 2.86,
+"yaw": 93.8,
+"scale": 1.5,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 44.41,
+"y": -18.11,
+"z": 2.42,
+"yaw": 93.6,
+"scale": 1.86,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 20.7,
+"y": 43.55,
+"z": 3.16,
+"yaw": 94.1,
+"scale": 1.46,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 67.02,
+"y": -16.54,
+"z": 2.07,
+"yaw": 123.8,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 5.86,
+"y": -51.17,
+"z": 1.89,
+"yaw": 161.2,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 70.43,
+"y": -10.05,
+"z": 2.22,
+"yaw": 199.8,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -85.24,
+"y": 46.51,
+"z": 1.92,
+"yaw": 207.4,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 19.26,
+"y": -8.81,
+"z": 2.71,
+"yaw": 98.7,
+"scale": 1.62,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 1.69,
+"y": -65.1,
+"z": 2.11,
+"yaw": 114.9,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 51.14,
+"y": -26.54,
+"z": 1.8,
+"yaw": 304.5,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 37.05,
+"y": 3.84,
+"z": 2.74,
+"yaw": 247.1,
+"scale": 1.58,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -15.41,
+"y": -13.63,
+"z": 2.07,
+"yaw": 31.3,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 27.14,
+"y": 8.3,
+"z": 2.87,
+"yaw": 225.6,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -21.04,
+"y": -60.73,
+"z": 1.91,
+"yaw": 155.3,
+"scale": 1.78,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -49.24,
+"y": -49.31,
+"z": 2.04,
+"yaw": 358.9,
+"scale": 1.81,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 34.01,
+"y": 52.92,
+"z": 2.33,
+"yaw": 16.4,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 48.55,
+"y": -13.79,
+"z": 2.69,
+"yaw": 339.5,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 68.92,
+"y": 8.67,
+"z": 2.76,
+"yaw": 263.9,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 39.3,
+"y": -11.87,
+"z": 2.46,
+"yaw": 249.3,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 76.19,
+"y": -57.61,
+"z": 2.09,
+"yaw": 53.0,
+"scale": 1.69,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -10.75,
+"y": -1.62,
+"z": 3.47,
+"yaw": 357.0,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 25.87,
+"y": -0.22,
+"z": 2.76,
+"yaw": 300.7,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 36.53,
+"y": -27.14,
+"z": 1.86,
+"yaw": 341.9,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 31.28,
+"y": 6.28,
+"z": 2.67,
+"yaw": 292.2,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 21.98,
+"y": 47.57,
+"z": 2.92,
+"yaw": 292.7,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 2.25,
+"y": -56.13,
+"z": 2.19,
+"yaw": 107.8,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 4.33,
+"y": -11.13,
+"z": 2.56,
+"yaw": 160.6,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -55.29,
+"y": 21.17,
+"z": 2.0,
+"yaw": 248.7,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -2.85,
+"y": -49.79,
+"z": 2.32,
+"yaw": 352.6,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 17.88,
+"y": 58.0,
+"z": 2.09,
+"yaw": 354.0,
+"scale": 1.78,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -16.93,
+"y": -70.73,
+"z": 1.84,
+"yaw": 1.1,
+"scale": 1.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 67.47,
+"y": -11.86,
+"z": 2.43,
+"yaw": 125.5,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 19.01,
+"y": 37.64,
+"z": 3.42,
+"yaw": 162.5,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -15.18,
+"y": -16.86,
+"z": 1.93,
+"yaw": 14.2,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 28.98,
+"y": 5.28,
+"z": 2.72,
+"yaw": 75.7,
+"scale": 1.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -10.65,
+"y": -63.56,
+"z": 2.3,
+"yaw": 275.8,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": -17.03,
+"y": -59.39,
+"z": 2.2,
+"yaw": 136.9,
+"scale": 1.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -19.58,
+"y": -48.78,
+"z": 1.9,
+"yaw": 106.4,
+"scale": 1.52,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 38.15,
+"y": 58.65,
+"z": 1.88,
+"yaw": 172.9,
+"scale": 1.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 23.7,
+"y": 36.22,
+"z": 3.12,
+"yaw": 315.3,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": -14.24,
+"y": -6.88,
+"z": 2.66,
+"yaw": 35.0,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 26.14,
+"y": 9.21,
+"z": 2.96,
+"yaw": 314.1,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -82.67,
+"y": 41.52,
+"z": 2.08,
+"yaw": 260.5,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Tall",
+"x": 27.93,
+"y": 45.22,
+"z": 2.64,
+"yaw": 200.2,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_A",
+"x": 28.4,
+"y": 52.97,
+"z": 2.49,
+"yaw": 179.8,
+"scale": 1.54,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_B",
+"x": 17.46,
+"y": 52.68,
+"z": 2.64,
+"yaw": 234.5,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 44.56,
+"y": 50.77,
+"z": 1.62,
+"yaw": 267.8,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 10.94,
+"y": 45.47,
+"z": 3.11,
+"yaw": 305.5,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 40.37,
+"y": 60.59,
+"z": 1.57,
+"yaw": 170.1,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -21.04,
+"y": -5.47,
+"z": 2.42,
+"yaw": 4.8,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -7.01,
+"y": -43.56,
+"z": 2.03,
+"yaw": 313.0,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -20.15,
+"y": -1.11,
+"z": 2.85,
+"yaw": 231.7,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 71.0,
+"y": 13.94,
+"z": 1.99,
+"yaw": 19.6,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -41.88,
+"y": -43.97,
+"z": 1.59,
+"yaw": 77.6,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 44.47,
+"y": 35.44,
+"z": 1.65,
+"yaw": 62.8,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 9.14,
+"y": -15.34,
+"z": 2.34,
+"yaw": 159.1,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -76.02,
+"y": 52.97,
+"z": 1.62,
+"yaw": 143.2,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -21.26,
+"y": -23.09,
+"z": 1.63,
+"yaw": 64.7,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 44.76,
+"y": 39.92,
+"z": 1.65,
+"yaw": 342.4,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 75.79,
+"y": -65.62,
+"z": 1.64,
+"yaw": 102.7,
+"scale": 1.41,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 53.95,
+"y": -27.22,
+"z": 1.71,
+"yaw": 29.6,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -49.14,
+"y": 30.06,
+"z": 2.57,
+"yaw": 130.1,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 12.28,
+"y": -19.22,
+"z": 2.19,
+"yaw": 98.8,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 10.6,
+"y": -18.24,
+"z": 2.22,
+"yaw": 52.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 75.96,
+"y": -5.72,
+"z": 1.78,
+"yaw": 242.0,
+"scale": 0.9,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -12.14,
+"y": -29.71,
+"z": 1.63,
+"yaw": 50.8,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -21.47,
+"y": -12.02,
+"z": 1.99,
+"yaw": 131.2,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 21.8,
+"y": 9.51,
+"z": 3.36,
+"yaw": 200.8,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -53.02,
+"y": -37.98,
+"z": 2.16,
+"yaw": 243.1,
+"scale": 1.47,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 42.01,
+"y": -0.14,
+"z": 3.09,
+"yaw": 199.0,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -70.81,
+"y": 48.14,
+"z": 1.65,
+"yaw": 26.7,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -21.92,
+"y": -7.18,
+"z": 2.26,
+"yaw": 268.4,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -80.31,
+"y": 53.25,
+"z": 1.65,
+"yaw": 268.0,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -67.59,
+"y": 39.28,
+"z": 1.57,
+"yaw": 202.7,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -15.81,
+"y": -73.55,
+"z": 1.66,
+"yaw": 66.7,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 49.31,
+"y": 25.78,
+"z": 1.84,
+"yaw": 330.8,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 79.89,
+"y": -61.38,
+"z": 1.63,
+"yaw": 185.7,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -51.52,
+"y": -39.05,
+"z": 2.39,
+"yaw": 176.8,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 24.81,
+"y": 64.24,
+"z": 1.68,
+"yaw": 59.8,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -17.55,
+"y": -28.64,
+"z": 1.59,
+"yaw": 243.3,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 50.91,
+"y": 16.0,
+"z": 3.33,
+"yaw": 136.8,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": -26.13,
+"y": -53.12,
+"z": 1.56,
+"yaw": 191.6,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 70.05,
+"y": -54.31,
+"z": 1.69,
+"yaw": 187.7,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 11.44,
+"y": 50.61,
+"z": 2.52,
+"yaw": 56.6,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 42.98,
+"y": 1.36,
+"z": 3.26,
+"yaw": 79.4,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 28.1,
+"y": 12.57,
+"z": 2.87,
+"yaw": 43.7,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 54.15,
+"y": -10.31,
+"z": 3.18,
+"yaw": 261.0,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -43.71,
+"y": 23.18,
+"z": 2.79,
+"yaw": 21.9,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 8.89,
+"y": -18.69,
+"z": 2.17,
+"yaw": 184.5,
+"scale": 1.09,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 12.6,
+"y": 1.95,
+"z": 3.77,
+"yaw": 13.5,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -21.57,
+"y": -2.0,
+"z": 2.66,
+"yaw": 87.9,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 43.56,
+"y": -2.5,
+"z": 3.16,
+"yaw": 60.6,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 39.72,
+"y": 5.58,
+"z": 2.95,
+"yaw": 103.0,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -24.46,
+"y": -16.25,
+"z": 1.73,
+"yaw": 195.9,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -22.29,
+"y": -25.4,
+"z": 1.58,
+"yaw": 288.0,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": 58.17,
+"y": -11.86,
+"z": 3.04,
+"yaw": 147.8,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 24.11,
+"y": 8.84,
+"z": 3.11,
+"yaw": 345.6,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": 75.46,
+"y": -7.82,
+"z": 1.77,
+"yaw": 250.8,
+"scale": 1.31,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Short",
+"x": -22.28,
+"y": -0.22,
+"z": 2.75,
+"yaw": 40.3,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 4.45,
+"y": -15.66,
+"z": 2.22,
+"yaw": 137.9,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -21.95,
+"y": -9.68,
+"z": 2.1,
+"yaw": 30.7,
+"scale": 1.0,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 61.46,
+"y": 21.85,
+"z": 1.96,
+"yaw": 149.9,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -17.42,
+"y": -73.3,
+"z": 1.61,
+"yaw": 98.5,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Grass_Dry",
+"x": 76.2,
+"y": 3.79,
+"z": 1.81,
+"yaw": 238.1,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -46.17,
+"y": 28.82,
+"z": 2.7,
+"yaw": 247.7,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Bush_Dry",
+"x": -73.46,
+"y": 34.04,
+"z": 1.57,
+"yaw": 133.1,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -2.54,
+"y": -51.94,
+"z": 2.35,
+"yaw": 38.2,
+"scale": 1.62,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -2.08,
+"y": -50.23,
+"z": 2.31,
+"yaw": 110.0,
+"scale": 1.63,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 30.61,
+"y": 50.8,
+"z": 2.43,
+"yaw": 33.2,
+"scale": 1.51,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -9.14,
+"y": -6.71,
+"z": 2.87,
+"yaw": 20.5,
+"scale": 1.35,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -14.35,
+"y": -12.93,
+"z": 2.14,
+"yaw": 40.7,
+"scale": 1.62,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -12.4,
+"y": -68.69,
+"z": 2.23,
+"yaw": 140.1,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 40.38,
+"y": 55.86,
+"z": 1.85,
+"yaw": 22.8,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 18.43,
+"y": 43.08,
+"z": 3.27,
+"yaw": 261.4,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 39.46,
+"y": -24.33,
+"z": 2.04,
+"yaw": 339.3,
+"scale": 1.53,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -7.43,
+"y": -70.88,
+"z": 2.16,
+"yaw": 334.1,
+"scale": 1.74,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 63.33,
+"y": -14.23,
+"z": 2.58,
+"yaw": 288.4,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 72.14,
+"y": -62.18,
+"z": 2.09,
+"yaw": 120.3,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 22.95,
+"y": 6.97,
+"z": 3.16,
+"yaw": 53.5,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 22.9,
+"y": 33.0,
+"z": 3.22,
+"yaw": 184.5,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -0.37,
+"y": -63.08,
+"z": 2.27,
+"yaw": 100.2,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -19.16,
+"y": -13.84,
+"z": 1.96,
+"yaw": 184.9,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -19.33,
+"y": -6.82,
+"z": 2.41,
+"yaw": 185.8,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -4.0,
+"y": -10.75,
+"z": 2.53,
+"yaw": 29.6,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -23.1,
+"y": -47.05,
+"z": 1.63,
+"yaw": 7.7,
+"scale": 1.44,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 39.5,
+"y": -6.89,
+"z": 2.63,
+"yaw": 81.5,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -16.14,
+"y": -60.03,
+"z": 2.23,
+"yaw": 229.2,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -24.81,
+"y": -50.29,
+"z": 1.6,
+"yaw": 205.2,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 31.11,
+"y": -13.21,
+"z": 2.4,
+"yaw": 202.7,
+"scale": 1.48,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -73.98,
+"y": 36.97,
+"z": 1.73,
+"yaw": 162.6,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -78.53,
+"y": 35.21,
+"z": 1.76,
+"yaw": 63.0,
+"scale": 1.45,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 71.55,
+"y": -12.25,
+"z": 1.96,
+"yaw": 293.9,
+"scale": 1.8,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 44.19,
+"y": -17.31,
+"z": 2.43,
+"yaw": 101.7,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 14.29,
+"y": -17.24,
+"z": 2.31,
+"yaw": 182.5,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 20.18,
+"y": 42.42,
+"z": 3.22,
+"yaw": 278.4,
+"scale": 1.76,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 3.51,
+"y": -3.86,
+"z": 3.37,
+"yaw": 10.3,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -22.91,
+"y": -51.09,
+"z": 1.74,
+"yaw": 299.2,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 73.77,
+"y": -56.08,
+"z": 2.08,
+"yaw": 69.7,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -10.43,
+"y": -7.92,
+"z": 2.69,
+"yaw": 134.5,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 36.9,
+"y": 59.4,
+"z": 1.93,
+"yaw": 133.5,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 5.66,
+"y": -57.62,
+"z": 1.95,
+"yaw": 256.6,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -2.28,
+"y": -6.41,
+"z": 3.02,
+"yaw": 44.4,
+"scale": 1.66,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -70.42,
+"y": 38.67,
+"z": 1.66,
+"yaw": 326.7,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -48.1,
+"y": -49.76,
+"z": 1.88,
+"yaw": 202.0,
+"scale": 1.72,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 27.45,
+"y": 4.19,
+"z": 2.77,
+"yaw": 355.2,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 49.06,
+"y": -20.92,
+"z": 2.32,
+"yaw": 80.0,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 13.73,
+"y": -7.83,
+"z": 2.88,
+"yaw": 227.1,
+"scale": 1.77,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -3.05,
+"y": -3.29,
+"z": 3.44,
+"yaw": 112.1,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 70.1,
+"y": -13.03,
+"z": 2.06,
+"yaw": 329.7,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 31.64,
+"y": -3.81,
+"z": 2.56,
+"yaw": 270.5,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": 24.89,
+"y": 31.51,
+"z": 3.06,
+"yaw": 188.5,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -48.96,
+"y": 21.5,
+"z": 2.52,
+"yaw": 335.3,
+"scale": 1.7,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -8.62,
+"y": -1.72,
+"z": 3.55,
+"yaw": 67.4,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -17.74,
+"y": -11.62,
+"z": 2.13,
+"yaw": 214.4,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -16.28,
+"y": -42.36,
+"z": 1.8,
+"yaw": 79.4,
+"scale": 1.61,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 31.67,
+"y": 3.83,
+"z": 2.64,
+"yaw": 108.8,
+"scale": 1.68,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -58.32,
+"y": 24.88,
+"z": 1.76,
+"yaw": 71.2,
+"scale": 1.36,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -13.01,
+"y": -55.36,
+"z": 2.31,
+"yaw": 152.1,
+"scale": 1.43,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -22.03,
+"y": -43.35,
+"z": 1.61,
+"yaw": 358.2,
+"scale": 1.57,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": 39.0,
+"y": 37.23,
+"z": 2.03,
+"yaw": 17.8,
+"scale": 1.49,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -82.19,
+"y": 41.82,
+"z": 2.1,
+"yaw": 265.2,
+"scale": 1.64,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 5.03,
+"y": -52.86,
+"z": 1.98,
+"yaw": 18.0,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 20.15,
+"y": 46.1,
+"z": 3.09,
+"yaw": 220.5,
+"scale": 1.56,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -52.97,
+"y": 28.02,
+"z": 2.39,
+"yaw": 101.7,
+"scale": 1.52,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Red",
+"x": -19.8,
+"y": -16.45,
+"z": 1.83,
+"yaw": 224.8,
+"scale": 1.42,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -17.22,
+"y": -18.88,
+"z": 1.82,
+"yaw": 45.2,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Blue",
+"x": -9.99,
+"y": -57.84,
+"z": 2.28,
+"yaw": 300.1,
+"scale": 1.76,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -9.37,
+"y": -64.37,
+"z": 2.31,
+"yaw": 176.5,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": 1.84,
+"y": -2.95,
+"z": 3.51,
+"yaw": 198.0,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Flowers_Mixed",
+"x": -3.48,
+"y": -54.63,
+"z": 2.35,
+"yaw": 138.7,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 76.98,
+"y": -25.04,
+"z": -0.11,
+"yaw": 14.9,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 6.44,
+"y": 58.08,
+"z": -0.11,
+"yaw": 138.8,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 14.07,
+"y": 65.45,
+"z": -0.12,
+"yaw": 245.3,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 9.9,
+"y": -74.64,
+"z": -0.13,
+"yaw": 231.3,
+"scale": 1.28,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 46.25,
+"y": -40.61,
+"z": -0.08,
+"yaw": 36.5,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 27.07,
+"y": 70.25,
+"z": -0.11,
+"yaw": 214.0,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -54.59,
+"y": 5.34,
+"z": -0.13,
+"yaw": 54.3,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 2.93,
+"y": -78.73,
+"z": 0.07,
+"yaw": 98.0,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 63.98,
+"y": 31.99,
+"z": -0.13,
+"yaw": 272.2,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": -32.27,
+"y": -57.26,
+"z": -0.03,
+"yaw": 194.1,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 65.74,
+"y": -35.33,
+"z": -0.09,
+"yaw": 213.0,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": -39.34,
+"y": -31.9,
+"z": 0.2,
+"yaw": 1.0,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -31.66,
+"y": -62.7,
+"z": -0.09,
+"yaw": 289.2,
+"scale": 1.1,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -37.46,
+"y": -50.53,
+"z": -0.05,
+"yaw": 36.9,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": -32.34,
+"y": 44.51,
+"z": -0.12,
+"yaw": 318.3,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -75.16,
+"y": 25.49,
+"z": -0.14,
+"yaw": 55.4,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 81.1,
+"y": -14.11,
+"z": 0.2,
+"yaw": 234.3,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 31.85,
+"y": -45.16,
+"z": -0.14,
+"yaw": 74.9,
+"scale": 1.37,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 45.32,
+"y": 61.37,
+"z": -0.01,
+"yaw": 17.7,
+"scale": 1.03,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 37.74,
+"y": -44.77,
+"z": -0.11,
+"yaw": 27.6,
+"scale": 1.07,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -29.82,
+"y": 42.65,
+"z": -0.03,
+"yaw": 95.8,
+"scale": 1.33,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 83.98,
+"y": 1.61,
+"z": -0.12,
+"yaw": 130.6,
+"scale": 1.17,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": -78.96,
+"y": 26.61,
+"z": 0.05,
+"yaw": 309.3,
+"scale": 1.25,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": -33.69,
+"y": -42.36,
+"z": 0.22,
+"yaw": 103.8,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_A",
+"x": 77.83,
+"y": 17.75,
+"z": -0.1,
+"yaw": 183.2,
+"scale": 1.05,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Reeds_B",
+"x": 53.2,
+"y": 37.11,
+"z": 0.21,
+"yaw": 215.6,
+"scale": 1.34,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 78.56,
+"y": -0.33,
+"z": 1.58,
+"yaw": 226.4,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -11.98,
+"y": -75.17,
+"z": 1.62,
+"yaw": 340.5,
+"scale": 1.27,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -34.18,
+"y": 20.72,
+"z": 3.21,
+"yaw": 157.2,
+"scale": 1.39,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 81.22,
+"y": -60.85,
+"z": 1.5,
+"yaw": 252.4,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -27.17,
+"y": -55.41,
+"z": 1.5,
+"yaw": 66.1,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -65.95,
+"y": 39.19,
+"z": 1.51,
+"yaw": 202.0,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 8.43,
+"y": 48.28,
+"z": 2.64,
+"yaw": 206.9,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -44.26,
+"y": 41.72,
+"z": 1.54,
+"yaw": 8.3,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -27.68,
+"y": -9.16,
+"z": 1.86,
+"yaw": 15.7,
+"scale": 1.24,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -72.95,
+"y": 54.04,
+"z": 1.48,
+"yaw": 348.6,
+"scale": 0.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 69.71,
+"y": -65.81,
+"z": 1.49,
+"yaw": 349.6,
+"scale": 1.38,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 35.43,
+"y": 14.26,
+"z": 2.65,
+"yaw": 154.1,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": -44.83,
+"y": 36.01,
+"z": 2.32,
+"yaw": 298.7,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": 24.22,
+"y": 29.95,
+"z": 3.09,
+"yaw": 128.1,
+"scale": 1.32,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_B",
+"x": 12.67,
+"y": -21.97,
+"z": 2.01,
+"yaw": 248.8,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Agave_A",
+"x": -85.81,
+"y": 33.06,
+"z": 1.5,
+"yaw": 224.0,
+"scale": 1.4,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_A",
+"x": 59.23,
+"y": -23.65,
+"z": 1.9,
+"yaw": 76.3,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Short",
+"x": 69.22,
+"y": -10.31,
+"z": 2.31,
+"yaw": 267.1,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Short",
+"x": -56.59,
+"y": 20.78,
+"z": 1.78,
+"yaw": 205.2,
+"scale": 0.99,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Short",
+"x": -77.4,
+"y": 52.54,
+"z": 1.65,
+"yaw": 352.7,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Short",
+"x": -77.66,
+"y": 42.47,
+"z": 2.09,
+"yaw": 336.3,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Fallen",
+"x": 24.48,
+"y": 36.52,
+"z": 3.03,
+"yaw": 282.1,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_B",
+"x": 19.27,
+"y": -10.61,
+"z": 2.58,
+"yaw": 28.9,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Log_Short",
+"x": 47.97,
+"y": -14.13,
+"z": 2.62,
+"yaw": 79.8,
+"scale": 0.93,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_A",
+"x": 40.68,
+"y": 42.82,
+"z": 1.99,
+"yaw": 1.6,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_A",
+"x": 37.54,
+"y": 51.88,
+"z": 2.18,
+"yaw": 117.8,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_B",
+"x": 28.95,
+"y": 1.46,
+"z": 2.62,
+"yaw": 315.3,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Stump_A",
+"x": -4.22,
+"y": -8.35,
+"z": 2.73,
+"yaw": 276.0,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_A",
+"x": 67.56,
+"y": -34.82,
+"z": -0.6,
+"yaw": 122.2,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_B",
+"x": -42.71,
+"y": -23.97,
+"z": -0.58,
+"yaw": 134.2,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_B",
+"x": -96.68,
+"y": 37.41,
+"z": -0.48,
+"yaw": 306.7,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_A",
+"x": 9.23,
+"y": -77.16,
+"z": -0.58,
+"yaw": 81.0,
+"scale": 1.16,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_A",
+"x": 50.81,
+"y": 55.37,
+"z": -0.47,
+"yaw": 44.7,
+"scale": 0.94,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_B",
+"x": 6.16,
+"y": 57.03,
+"z": -0.64,
+"yaw": 307.0,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Mangrove_A",
+"x": 68.17,
+"y": 29.36,
+"z": -0.54,
+"yaw": 280.2,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Rock_Moss_C",
+"x": 40.13,
+"y": -21.59,
+"z": 1.84,
+"yaw": 250.3,
+"scale": 1.06,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_B",
+"x": 22.48,
+"y": -2.42,
+"z": 2.57,
+"yaw": 98.7,
+"scale": 0.85,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": -6.17,
+"y": -65.88,
+"z": 1.88,
+"yaw": 44.3,
+"scale": 1.29,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_B",
+"x": 9.8,
+"y": -3.89,
+"z": 3.02,
+"yaw": 345.0,
+"scale": 0.79,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_C",
+"x": 40.51,
+"y": 43.5,
+"z": 1.7,
+"yaw": 285.2,
+"scale": 1.02,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": 24.62,
+"y": -6.99,
+"z": 2.19,
+"yaw": 223.6,
+"scale": 1.29,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_B",
+"x": 75.15,
+"y": -2.19,
+"z": 1.48,
+"yaw": 50.6,
+"scale": 1.3,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_B",
+"x": -72.99,
+"y": 44.36,
+"z": 1.52,
+"yaw": 5.1,
+"scale": 1.17,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": 23.28,
+"y": 45.51,
+"z": 2.58,
+"yaw": 149.6,
+"scale": 0.93,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": 14.27,
+"y": -11.41,
+"z": 2.2,
+"yaw": 19.2,
+"scale": 1.22,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_A",
+"x": 8.77,
+"y": -52.73,
+"z": 1.33,
+"yaw": 173.3,
+"scale": 1.02,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": -7.54,
+"y": -12.83,
+"z": 1.86,
+"yaw": 29.9,
+"scale": 1.24,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": -20.28,
+"y": -63.64,
+"z": 1.64,
+"yaw": 85.9,
+"scale": 0.83,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_B",
+"x": -83.84,
+"y": 46.14,
+"z": 1.61,
+"yaw": 274.0,
+"scale": 1.19,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_Moss",
+"x": 42.83,
+"y": -9.22,
+"z": 2.27,
+"yaw": 243.7,
+"scale": 1.19,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Moss_C",
+"x": -0.7,
+"y": -57.98,
+"z": 1.93,
+"yaw": 351.6,
+"scale": 1.07,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_E",
+"x": 77.11,
+"y": -51.01,
+"z": 1.08,
+"yaw": 264.0,
+"scale": 0.65,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 78.91,
+"y": -0.24,
+"z": 1.28,
+"yaw": 218.4,
+"scale": 1.03,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": -9.53,
+"y": -81.86,
+"z": -0.19,
+"yaw": 301.7,
+"scale": 0.94,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": 65.08,
+"y": -56.81,
+"z": 1.16,
+"yaw": 22.3,
+"scale": 0.63,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_C",
+"x": -42.73,
+"y": -31.48,
+"z": 0.13,
+"yaw": 163.1,
+"scale": 0.74,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_C",
+"x": -35.4,
+"y": -39.19,
+"z": 0.06,
+"yaw": 312.0,
+"scale": 1.15,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": 58.99,
+"y": -27.8,
+"z": 1.38,
+"yaw": 93.3,
+"scale": 0.71,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_E",
+"x": -41.32,
+"y": -18.1,
+"z": -0.07,
+"yaw": 129.0,
+"scale": 1.1,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": -32.03,
+"y": 4.05,
+"z": 1.8,
+"yaw": 214.7,
+"scale": 1.15,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": -33.99,
+"y": -28.74,
+"z": 0.27,
+"yaw": 214.2,
+"scale": 0.93,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": -64.84,
+"y": 51.27,
+"z": -0.15,
+"yaw": 299.7,
+"scale": 0.8,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": -46.86,
+"y": 35.63,
+"z": 2.12,
+"yaw": 88.1,
+"scale": 0.65,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_C",
+"x": 55.0,
+"y": -35.48,
+"z": 0.46,
+"yaw": 112.4,
+"scale": 0.88,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -37.53,
+"y": -49.15,
+"z": -0.11,
+"yaw": 355.7,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": 9.57,
+"y": -65.44,
+"z": 1.16,
+"yaw": 201.2,
+"scale": 1.19,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_C",
+"x": -81.86,
+"y": 58.1,
+"z": 0.34,
+"yaw": 231.4,
+"scale": 0.99,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_C",
+"x": -58.99,
+"y": 38.41,
+"z": 1.18,
+"yaw": 0.4,
+"scale": 1.07,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": 15.84,
+"y": -33.21,
+"z": 1.29,
+"yaw": 2.3,
+"scale": 0.96,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": 62.28,
+"y": 31.39,
+"z": -0.24,
+"yaw": 301.9,
+"scale": 1.02,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -53.18,
+"y": -31.64,
+"z": 0.07,
+"yaw": 344.6,
+"scale": 0.61,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": 34.34,
+"y": 67.59,
+"z": 0.2,
+"yaw": 179.1,
+"scale": 0.87,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": -8.32,
+"y": -76.89,
+"z": 1.38,
+"yaw": 348.1,
+"scale": 0.58,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_C",
+"x": 75.32,
+"y": 4.6,
+"z": 1.69,
+"yaw": 269.3,
+"scale": 0.69,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 63.49,
+"y": 21.18,
+"z": 1.66,
+"yaw": 200.2,
+"scale": 0.88,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_C",
+"x": 47.01,
+"y": 51.87,
+"z": 1.19,
+"yaw": 221.0,
+"scale": 1.06,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Flat_A",
+"x": 40.88,
+"y": 62.04,
+"z": 1.23,
+"yaw": 125.8,
+"scale": 0.93,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": -21.88,
+"y": 6.36,
+"z": 3.15,
+"yaw": 323.2,
+"scale": 0.75,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_E",
+"x": -27.36,
+"y": 13.15,
+"z": 2.89,
+"yaw": 104.7,
+"scale": 1.11,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Rock_Flat_A",
+"x": 68.84,
+"y": -22.2,
+"z": 1.39,
+"yaw": 356.0,
+"scale": 0.68,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": -25.56,
+"y": -44.65,
+"z": 1.22,
+"yaw": 35.9,
+"scale": 0.99,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -33.05,
+"y": -55.44,
+"z": -0.02,
+"yaw": 185.5,
+"scale": 1.28,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 35.7,
+"y": 67.5,
+"z": 0.17,
+"yaw": 94.5,
+"scale": 1.15,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -41.43,
+"y": -32.11,
+"z": 0.38,
+"yaw": 140.0,
+"scale": 0.81,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": 75.11,
+"y": -25.06,
+"z": 0.26,
+"yaw": 194.7,
+"scale": 0.83,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -35.36,
+"y": -26.95,
+"z": 0.52,
+"yaw": 230.8,
+"scale": 1.17,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -38.47,
+"y": 3.71,
+"z": 1.72,
+"yaw": 270.5,
+"scale": 0.91,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -30.22,
+"y": -15.38,
+"z": 1.58,
+"yaw": 272.4,
+"scale": 1.08,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -47.56,
+"y": 41.38,
+"z": 1.49,
+"yaw": 223.1,
+"scale": 0.95,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": 27.75,
+"y": 69.55,
+"z": -0.01,
+"yaw": 287.0,
+"scale": 1.33,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": 71.87,
+"y": -69.74,
+"z": -0.04,
+"yaw": 38.3,
+"scale": 1.3,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -66.02,
+"y": 35.07,
+"z": 1.47,
+"yaw": 265.2,
+"scale": 1.23,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -33.56,
+"y": -1.98,
+"z": 1.79,
+"yaw": 71.5,
+"scale": 0.98,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 44.01,
+"y": -37.24,
+"z": 1.21,
+"yaw": 263.6,
+"scale": 0.82,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": 44.04,
+"y": 55.08,
+"z": 1.54,
+"yaw": 35.1,
+"scale": 1.05,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 7.54,
+"y": 57.84,
+"z": -0.01,
+"yaw": 133.5,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -35.01,
+"y": -12.42,
+"z": 1.53,
+"yaw": 7.5,
+"scale": 0.87,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -38.94,
+"y": -37.55,
+"z": 0.91,
+"yaw": 35.2,
+"scale": 1.27,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -28.78,
+"y": -49.44,
+"z": 1.43,
+"yaw": 12.6,
+"scale": 1.0,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 11.47,
+"y": -59.57,
+"z": 1.48,
+"yaw": 112.0,
+"scale": 1.07,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -74.7,
+"y": 26.89,
+"z": 0.23,
+"yaw": 24.8,
+"scale": 1.37,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 3.96,
+"y": 53.21,
+"z": 0.1,
+"yaw": 273.9,
+"scale": 0.96,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -4.09,
+"y": -79.78,
+"z": 0.85,
+"yaw": 49.1,
+"scale": 1.19,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -39.16,
+"y": -29.13,
+"z": 0.14,
+"yaw": 11.8,
+"scale": 1.22,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -9.86,
+"y": -81.25,
+"z": 0.31,
+"yaw": 305.9,
+"scale": 0.82,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -27.34,
+"y": 2.83,
+"z": 2.46,
+"yaw": 214.1,
+"scale": 1.21,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": 15.29,
+"y": 57.06,
+"z": 1.97,
+"yaw": 222.5,
+"scale": 1.03,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -39.55,
+"y": -21.66,
+"z": 0.45,
+"yaw": 358.4,
+"scale": 1.34,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": -26.73,
+"y": -47.07,
+"z": 1.47,
+"yaw": 92.8,
+"scale": 1.35,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_A",
+"x": -45.08,
+"y": -33.51,
+"z": 1.34,
+"yaw": 352.0,
+"scale": 0.91,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Pebbles_B",
+"x": 53.93,
+"y": 31.38,
+"z": 1.31,
+"yaw": 206.2,
+"scale": 1.32,
+"folder": "Rocks"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -82.53,
+"y": 58.24,
+"z": 0.46,
+"yaw": 307.1,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_B",
+"x": -31.04,
+"y": 40.63,
+"z": 1.01,
+"yaw": 35.3,
+"scale": 1.12,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -15.31,
+"y": -78.91,
+"z": 0.8,
+"yaw": 85.0,
+"scale": 0.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -62.23,
+"y": 47.74,
+"z": 0.13,
+"yaw": 62.8,
+"scale": 1.04,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -65.98,
+"y": 28.53,
+"z": 1.11,
+"yaw": 314.6,
+"scale": 1.21,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -75.61,
+"y": 59.14,
+"z": 0.04,
+"yaw": 53.3,
+"scale": 1.22,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": 78.56,
+"y": 8.47,
+"z": 1.23,
+"yaw": 38.2,
+"scale": 1.15,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_B",
+"x": 64.15,
+"y": -57.97,
+"z": 0.76,
+"yaw": 135.3,
+"scale": 1.26,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -39.19,
+"y": -44.71,
+"z": 1.29,
+"yaw": 233.6,
+"scale": 0.84,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": -46.61,
+"y": -33.04,
+"z": 1.41,
+"yaw": 175.5,
+"scale": 1.23,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": -31.66,
+"y": -49.89,
+"z": 0.63,
+"yaw": 190.1,
+"scale": 0.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": 47.18,
+"y": 57.78,
+"z": 0.31,
+"yaw": 231.1,
+"scale": 0.88,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": 32.97,
+"y": 67.12,
+"z": 1.11,
+"yaw": 333.4,
+"scale": 0.96,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -50.61,
+"y": 5.44,
+"z": 0.62,
+"yaw": 182.0,
+"scale": 0.97,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": 79.96,
+"y": -15.4,
+"z": 0.58,
+"yaw": 105.6,
+"scale": 0.89,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -29.86,
+"y": -63.69,
+"z": 0.61,
+"yaw": 130.5,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -40.3,
+"y": -15.72,
+"z": 0.54,
+"yaw": 192.2,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -94.08,
+"y": 43.2,
+"z": 1.0,
+"yaw": 278.1,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -92.72,
+"y": 34.86,
+"z": 0.37,
+"yaw": 280.2,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -65.09,
+"y": 22.43,
+"z": 0.16,
+"yaw": 18.9,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -43.01,
+"y": 2.39,
+"z": 1.43,
+"yaw": 214.1,
+"scale": 1.06,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -81.02,
+"y": 28.24,
+"z": 0.94,
+"yaw": 21.5,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": 0.13,
+"y": -78.44,
+"z": 0.93,
+"yaw": 181.9,
+"scale": 1.01,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -59.55,
+"y": 42.23,
+"z": 0.64,
+"yaw": 120.1,
+"scale": 0.85,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_B",
+"x": 81.53,
+"y": 5.81,
+"z": 0.19,
+"yaw": 148.8,
+"scale": 1.11,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": 76.32,
+"y": -20.31,
+"z": 1.14,
+"yaw": 122.0,
+"scale": 1.29,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -44.15,
+"y": -13.59,
+"z": 0.01,
+"yaw": 198.1,
+"scale": 1.02,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": 57.92,
+"y": 30.09,
+"z": 1.15,
+"yaw": 17.2,
+"scale": 1.18,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_B",
+"x": 21.45,
+"y": 67.94,
+"z": 0.05,
+"yaw": 139.6,
+"scale": 1.3,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": -40.03,
+"y": -33.64,
+"z": 0.56,
+"yaw": 36.9,
+"scale": 0.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -36.2,
+"y": -16.97,
+"z": 1.35,
+"yaw": 0.4,
+"scale": 0.83,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Palm_Frond_Fallen",
+"x": 81.19,
+"y": -6.57,
+"z": 0.99,
+"yaw": 69.3,
+"scale": 1.13,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": 47.87,
+"y": 53.23,
+"z": 1.03,
+"yaw": 308.0,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": 79.75,
+"y": -18.7,
+"z": 0.17,
+"yaw": 150.5,
+"scale": 0.92,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": 12.6,
+"y": -62.55,
+"z": 1.31,
+"yaw": 216.8,
+"scale": 1.2,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -71.64,
+"y": 30.83,
+"z": 1.42,
+"yaw": 115.9,
+"scale": 1.14,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Driftwood_A",
+"x": 16.16,
+"y": -59.98,
+"z": 0.19,
+"yaw": 313.7,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -37.41,
+"y": -31.49,
+"z": 0.28,
+"yaw": 72.7,
+"scale": 0.82,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -56.17,
+"y": 11.38,
+"z": 1.16,
+"yaw": 188.2,
+"scale": 1.08,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Shells_A",
+"x": -38.49,
+"y": -12.61,
+"z": 1.06,
+"yaw": 161.6,
+"scale": 1.19,
+"folder": "Plants"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -81.09,
+"y": 9.93,
+"z": -6.42,
+"yaw": 181.8,
+"scale": 1.6,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 55.72,
+"y": -53.5,
+"z": -2.21,
+"yaw": 145.6,
+"scale": 1.96,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": 72.79,
+"y": -46.16,
+"z": -0.73,
+"yaw": 198.3,
+"scale": 1.35,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 64.75,
+"y": -68.88,
+"z": -1.8,
+"yaw": 313.4,
+"scale": 1.04,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 24.95,
+"y": 80.54,
+"z": -7.64,
+"yaw": 223.2,
+"scale": 1.12,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": -17.96,
+"y": 52.0,
+"z": -1.48,
+"yaw": 204.5,
+"scale": 1.6,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": -40.87,
+"y": 53.51,
+"z": -2.2,
+"yaw": 354.2,
+"scale": 1.04,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 62.68,
+"y": 42.56,
+"z": -2.01,
+"yaw": 109.8,
+"scale": 1.9,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -38.66,
+"y": -72.08,
+"z": -3.91,
+"yaw": 323.7,
+"scale": 1.73,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": 81.37,
+"y": -28.86,
+"z": -1.64,
+"yaw": 177.0,
+"scale": 1.64,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 55.5,
+"y": -41.1,
+"z": -0.67,
+"yaw": 237.6,
+"scale": 1.55,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 12.4,
+"y": 68.31,
+"z": -1.63,
+"yaw": 130.7,
+"scale": 1.66,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -99.19,
+"y": 40.73,
+"z": -1.49,
+"yaw": 137.9,
+"scale": 1.48,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 101.98,
+"y": -5.73,
+"z": -7.91,
+"yaw": 315.2,
+"scale": 1.8,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": -28.42,
+"y": 59.18,
+"z": -4.21,
+"yaw": 319.8,
+"scale": 1.37,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -95.79,
+"y": 22.99,
+"z": -4.22,
+"yaw": 325.5,
+"scale": 1.3,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 90.53,
+"y": -62.46,
+"z": -7.14,
+"yaw": 253.5,
+"scale": 1.46,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 48.13,
+"y": 68.7,
+"z": -3.61,
+"yaw": 141.6,
+"scale": 1.92,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": -64.94,
+"y": -17.49,
+"z": -5.9,
+"yaw": 175.8,
+"scale": 1.13,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 92.35,
+"y": 8.04,
+"z": -2.91,
+"yaw": 18.0,
+"scale": 1.16,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 0.14,
+"y": 58.51,
+"z": -1.53,
+"yaw": 172.6,
+"scale": 1.2,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 85.46,
+"y": -25.6,
+"z": -2.03,
+"yaw": 93.8,
+"scale": 1.32,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 70.02,
+"y": -36.74,
+"z": -1.18,
+"yaw": 102.1,
+"scale": 1.41,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 95.14,
+"y": -12.32,
+"z": -4.03,
+"yaw": 236.6,
+"scale": 1.07,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": 90.36,
+"y": -0.38,
+"z": -1.98,
+"yaw": 114.4,
+"scale": 1.15,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": -62.58,
+"y": 59.54,
+"z": -2.36,
+"yaw": 146.7,
+"scale": 1.4,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 88.33,
+"y": -8.62,
+"z": -1.51,
+"yaw": 66.2,
+"scale": 1.59,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 87.17,
+"y": 18.79,
+"z": -2.57,
+"yaw": 123.1,
+"scale": 1.12,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": -34.61,
+"y": 64.75,
+"z": -7.95,
+"yaw": 185.6,
+"scale": 1.26,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": -65.94,
+"y": -47.37,
+"z": -2.54,
+"yaw": 109.6,
+"scale": 1.48,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": -54.45,
+"y": -2.42,
+"z": -1.09,
+"yaw": 330.7,
+"scale": 1.04,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 81.48,
+"y": -42.61,
+"z": -2.71,
+"yaw": 120.1,
+"scale": 1.32,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 32.2,
+"y": 78.05,
+"z": -5.75,
+"yaw": 192.4,
+"scale": 1.4,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": -76.05,
+"y": 69.42,
+"z": -6.7,
+"yaw": 295.0,
+"scale": 1.3,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -90.04,
+"y": 19.63,
+"z": -3.63,
+"yaw": 0.4,
+"scale": 1.43,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 43.07,
+"y": -52.18,
+"z": -2.09,
+"yaw": 137.6,
+"scale": 2.12,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 73.61,
+"y": 49.12,
+"z": -7.76,
+"yaw": 17.4,
+"scale": 1.26,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": -3.35,
+"y": 62.36,
+"z": -2.2,
+"yaw": 275.6,
+"scale": 1.82,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -97.89,
+"y": 56.58,
+"z": -2.2,
+"yaw": 16.0,
+"scale": 1.81,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 68.28,
+"y": 52.0,
+"z": -6.99,
+"yaw": 159.7,
+"scale": 1.93,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 75.3,
+"y": 43.92,
+"z": -6.28,
+"yaw": 189.8,
+"scale": 1.82,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": 10.17,
+"y": -91.44,
+"z": -7.18,
+"yaw": 279.7,
+"scale": 1.27,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -42.07,
+"y": -63.94,
+"z": -3.03,
+"yaw": 45.1,
+"scale": 1.62,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 85.72,
+"y": -10.13,
+"z": -0.57,
+"yaw": 194.2,
+"scale": 1.44,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 60.73,
+"y": 45.78,
+"z": -2.06,
+"yaw": 63.6,
+"scale": 1.72,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -7.74,
+"y": 63.47,
+"z": -2.99,
+"yaw": 329.5,
+"scale": 1.69,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 82.38,
+"y": -25.08,
+"z": -1.4,
+"yaw": 190.3,
+"scale": 1.6,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": -67.07,
+"y": -50.46,
+"z": -6.34,
+"yaw": 254.1,
+"scale": 2.14,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": 46.45,
+"y": -65.66,
+"z": -6.42,
+"yaw": 152.4,
+"scale": 2.0,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 22.72,
+"y": -67.55,
+"z": -2.08,
+"yaw": 9.6,
+"scale": 1.09,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 73.01,
+"y": -33.36,
+"z": -1.01,
+"yaw": 80.1,
+"scale": 1.94,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 63.41,
+"y": -65.21,
+"z": -0.63,
+"yaw": 249.7,
+"scale": 1.18,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": -65.27,
+"y": 12.97,
+"z": -1.64,
+"yaw": 96.7,
+"scale": 2.14,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -50.0,
+"y": 65.64,
+"z": -7.97,
+"yaw": 180.4,
+"scale": 1.4,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Fan",
+"x": 72.2,
+"y": 46.15,
+"z": -5.91,
+"yaw": 160.5,
+"scale": 1.42,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": -2.11,
+"y": -86.32,
+"z": -1.99,
+"yaw": 254.7,
+"scale": 1.53,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": -48.49,
+"y": -25.1,
+"z": -0.95,
+"yaw": 245.6,
+"scale": 1.77,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": -72.86,
+"y": 69.61,
+"z": -7.67,
+"yaw": 138.1,
+"scale": 2.0,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": -61.03,
+"y": -5.68,
+"z": -2.06,
+"yaw": 2.6,
+"scale": 1.1,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": -31.39,
+"y": -80.18,
+"z": -3.79,
+"yaw": 66.8,
+"scale": 1.21,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": -71.1,
+"y": 14.92,
+"z": -2.18,
+"yaw": 203.9,
+"scale": 2.14,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Seaweed_A",
+"x": 89.09,
+"y": -3.58,
+"z": -1.71,
+"yaw": 289.1,
+"scale": 1.45,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 73.67,
+"y": -71.42,
+"z": -0.95,
+"yaw": 219.0,
+"scale": 1.21,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": -102.98,
+"y": 50.56,
+"z": -5.99,
+"yaw": 204.5,
+"scale": 1.97,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Kelp_A",
+"x": -36.28,
+"y": -66.55,
+"z": -1.99,
+"yaw": 26.3,
+"scale": 1.63,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch",
+"x": 97.59,
+"y": -3.5,
+"z": -5.24,
+"yaw": 112.1,
+"scale": 1.11,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": 57.86,
+"y": -51.8,
+"z": -2.04,
+"yaw": 150.9,
+"scale": 1.94,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Tubes",
+"x": -22.76,
+"y": 55.97,
+"z": -2.15,
+"yaw": 166.8,
+"scale": 1.39,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Brain",
+"x": 33.21,
+"y": -50.99,
+"z": -1.13,
+"yaw": 238.7,
+"scale": 1.66,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Coral_Branch_Blue",
+"x": 82.39,
+"y": 18.28,
+"z": -1.68,
+"yaw": 302.1,
+"scale": 1.37,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 91.91,
+"y": 0.27,
+"z": -2.64,
+"yaw": 292.6,
+"scale": 1.2,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -7.93,
+"y": 52.03,
+"z": -1.54,
+"yaw": 140.7,
+"scale": 1.09,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 71.35,
+"y": 26.92,
+"z": -1.01,
+"yaw": 194.9,
+"scale": 1.36,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 16.87,
+"y": -77.47,
+"z": -3.05,
+"yaw": 288.9,
+"scale": 0.77,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 22.83,
+"y": -70.23,
+"z": -3.13,
+"yaw": 75.4,
+"scale": 0.95,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -69.82,
+"y": 15.93,
+"z": -2.45,
+"yaw": 134.5,
+"scale": 0.94,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 50.26,
+"y": -53.87,
+"z": -2.97,
+"yaw": 359.0,
+"scale": 1.35,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_A",
+"x": 2.67,
+"y": 70.86,
+"z": -4.87,
+"yaw": 177.4,
+"scale": 1.21,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 11.89,
+"y": 68.08,
+"z": -2.3,
+"yaw": 263.2,
+"scale": 1.45,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": 86.48,
+"y": -25.75,
+"z": -2.59,
+"yaw": 309.5,
+"scale": 1.18,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": 37.85,
+"y": 72.87,
+"z": -2.98,
+"yaw": 80.4,
+"scale": 1.35,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Step_Stones",
+"x": -64.53,
+"y": -45.08,
+"z": -2.03,
+"yaw": 279.1,
+"scale": 1.2,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Step_Stones",
+"x": -29.68,
+"y": 52.28,
+"z": -2.46,
+"yaw": 165.2,
+"scale": 1.14,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -48.76,
+"y": 56.96,
+"z": -5.02,
+"yaw": 116.0,
+"scale": 1.35,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": -18.25,
+"y": 49.72,
+"z": -1.23,
+"yaw": 142.3,
+"scale": 0.74,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": 46.08,
+"y": 70.34,
+"z": -4.01,
+"yaw": 207.0,
+"scale": 1.33,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": -92.31,
+"y": 24.28,
+"z": -2.47,
+"yaw": 162.6,
+"scale": 0.91,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": -98.02,
+"y": 30.89,
+"z": -2.71,
+"yaw": 29.1,
+"scale": 1.37,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_A",
+"x": -40.45,
+"y": -70.04,
+"z": -4.84,
+"yaw": 92.9,
+"scale": 1.3,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_C",
+"x": -28.22,
+"y": -77.98,
+"z": -2.42,
+"yaw": 247.2,
+"scale": 1.26,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -50.16,
+"y": -22.75,
+"z": -1.91,
+"yaw": 189.8,
+"scale": 0.91,
+"folder": "Reef"
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -16.99,
+"y": 57.47,
+"z": -2.75,
+"yaw": 176.3,
+"scale": 1.19,
+"folder": "Reef"
+}
+],
+"sea": [
+{
+"mesh": "SM_BW_SeaStack",
+"x": 129.9,
+"y": 75.0,
+"z": -3.0,
+"yaw": 297.6,
+"scale": 1.3
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 111.57,
+"y": 58.05,
+"z": -1.26,
+"yaw": 177.5,
+"scale": 1.4
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 105.65,
+"y": 77.53,
+"z": -0.71,
+"yaw": 239.6,
+"scale": 1.97
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 113.36,
+"y": 55.67,
+"z": -0.77,
+"yaw": 297.4,
+"scale": 1.3
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": 115.72,
+"y": 78.56,
+"z": -1.18,
+"yaw": 35.6,
+"scale": 1.61
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 128.4,
+"y": 51.29,
+"z": -1.49,
+"yaw": 4.2,
+"scale": 1.43
+},
+{
+"mesh": "SM_BW_SeaStack_B",
+"x": 113.9,
+"y": 145.78,
+"z": -2.0,
+"yaw": 269.4,
+"scale": 1.6
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 89.14,
+"y": 127.32,
+"z": -1.4,
+"yaw": 16.5,
+"scale": 1.92
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": 123.37,
+"y": 156.66,
+"z": -1.46,
+"yaw": 118.5,
+"scale": 1.35
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 126.75,
+"y": 129.7,
+"z": -1.26,
+"yaw": 288.7,
+"scale": 2.19
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 128.89,
+"y": 128.73,
+"z": -1.03,
+"yaw": 100.6,
+"scale": 1.99
+},
+{
+"mesh": "SM_BW_Rock_Arch",
+"x": 43.66,
+"y": 205.41,
+"z": -2.5,
+"yaw": 17.9,
+"scale": 2.4
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 31.49,
+"y": 155.42,
+"z": -1.1,
+"yaw": 303.9,
+"scale": 2.17
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 31.09,
+"y": 223.03,
+"z": -1.45,
+"yaw": 162.5,
+"scale": 1.89
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 83.32,
+"y": 182.19,
+"z": -1.49,
+"yaw": 83.8,
+"scale": 1.63
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 31.92,
+"y": 230.86,
+"z": -1.55,
+"yaw": 242.8,
+"scale": 1.26
+},
+{
+"mesh": "SM_BW_Spire_A",
+"x": -42.71,
+"y": 159.38,
+"z": -2.0,
+"yaw": 125.6,
+"scale": 1.5
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -14.52,
+"y": 143.69,
+"z": -1.33,
+"yaw": 308.9,
+"scale": 1.36
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -58.7,
+"y": 147.81,
+"z": -1.4,
+"yaw": 53.8,
+"scale": 2.26
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -26.21,
+"y": 139.77,
+"z": -1.52,
+"yaw": 324.0,
+"scale": 1.71
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -49.66,
+"y": 190.27,
+"z": -1.5,
+"yaw": 70.7,
+"scale": 1.46
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -46.68,
+"y": 177.33,
+"z": -1.41,
+"yaw": 158.6,
+"scale": 1.82
+},
+{
+"mesh": "SM_BW_SeaStack",
+"x": -153.21,
+"y": 128.56,
+"z": -3.5,
+"yaw": 136.3,
+"scale": 1.6
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -184.72,
+"y": 134.15,
+"z": -0.95,
+"yaw": 275.5,
+"scale": 1.78
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -135.27,
+"y": 153.69,
+"z": -0.63,
+"yaw": 32.7,
+"scale": 1.99
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -167.97,
+"y": 133.84,
+"z": -1.07,
+"yaw": 320.8,
+"scale": 1.31
+},
+{
+"mesh": "SM_BW_Spire_B",
+"x": -144.89,
+"y": 38.82,
+"z": -1.5,
+"yaw": 35.1,
+"scale": 1.8
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -119.37,
+"y": 16.57,
+"z": -1.41,
+"yaw": 238.8,
+"scale": 1.82
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -162.27,
+"y": 52.18,
+"z": -0.84,
+"yaw": 343.4,
+"scale": 2.01
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -124.08,
+"y": 54.03,
+"z": -1.3,
+"yaw": 227.1,
+"scale": 1.51
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -171.98,
+"y": 47.65,
+"z": -0.94,
+"yaw": 120.2,
+"scale": 1.92
+},
+{
+"mesh": "SM_BW_SeaStack_B",
+"x": -169.04,
+"y": -45.29,
+"z": -2.0,
+"yaw": 7.9,
+"scale": 1.5
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": -154.31,
+"y": -39.99,
+"z": -0.99,
+"yaw": 322.1,
+"scale": 1.91
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": -171.03,
+"y": -75.33,
+"z": -1.22,
+"yaw": 96.7,
+"scale": 2.16
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -143.16,
+"y": -30.53,
+"z": -1.34,
+"yaw": 52.1,
+"scale": 2.09
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -159.12,
+"y": -24.88,
+"z": -1.06,
+"yaw": 155.5,
+"scale": 2.26
+},
+{
+"mesh": "SM_BW_Spire_A",
+"x": -144.96,
+"y": -144.96,
+"z": -2.5,
+"yaw": 167.7,
+"scale": 1.9
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -124.91,
+"y": -141.42,
+"z": -1.26,
+"yaw": 129.7,
+"scale": 1.91
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -140.46,
+"y": -113.98,
+"z": -0.64,
+"yaw": 95.4,
+"scale": 1.9
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -177.62,
+"y": -140.95,
+"z": -1.14,
+"yaw": 35.7,
+"scale": 1.51
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -142.57,
+"y": -105.97,
+"z": -0.83,
+"yaw": 176.1,
+"scale": 2.0
+},
+{
+"mesh": "SM_BW_SeaStack",
+"x": -35.34,
+"y": -166.29,
+"z": -3.0,
+"yaw": 328.8,
+"scale": 1.2
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -12.39,
+"y": -162.48,
+"z": -1.5,
+"yaw": 159.2,
+"scale": 2.14
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -38.93,
+"y": -154.32,
+"z": -1.5,
+"yaw": 99.3,
+"scale": 2.17
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": -35.63,
+"y": -154.62,
+"z": -1.4,
+"yaw": 328.5,
+"scale": 2.24
+},
+{
+"mesh": "SM_BW_Rock_Arch",
+"x": 62.12,
+"y": -231.82,
+"z": -3.0,
+"yaw": 174.0,
+"scale": 2.8
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 42.59,
+"y": -187.01,
+"z": -1.3,
+"yaw": 65.0,
+"scale": 1.84
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 96.32,
+"y": -267.8,
+"z": -1.4,
+"yaw": 249.5,
+"scale": 1.5
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 70.14,
+"y": -194.29,
+"z": -0.7,
+"yaw": 7.3,
+"scale": 1.92
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 46.58,
+"y": -260.16,
+"z": -1.51,
+"yaw": 348.5,
+"scale": 1.92
+},
+{
+"mesh": "SM_BW_Spire_B",
+"x": 183.53,
+"y": -49.18,
+"z": -1.5,
+"yaw": 248.3,
+"scale": 2.0
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": 185.29,
+"y": -90.39,
+"z": -0.8,
+"yaw": 303.4,
+"scale": 2.0
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 144.0,
+"y": -39.37,
+"z": -0.75,
+"yaw": 339.1,
+"scale": 1.27
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 212.33,
+"y": -34.44,
+"z": -0.69,
+"yaw": 357.0,
+"scale": 2.36
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 141.08,
+"y": -44.11,
+"z": -0.72,
+"yaw": 299.7,
+"scale": 2.07
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 151.65,
+"y": -34.03,
+"z": -0.91,
+"yaw": 228.4,
+"scale": 2.01
+},
+{
+"mesh": "SM_BW_SeaStack_B",
+"x": 227.76,
+"y": 32.01,
+"z": -2.5,
+"yaw": 87.3,
+"scale": 2.0
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 196.35,
+"y": 47.12,
+"z": -1.55,
+"yaw": 243.9,
+"scale": 1.26
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 243.63,
+"y": 70.46,
+"z": -1.44,
+"yaw": 104.1,
+"scale": 2.35
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 246.94,
+"y": 56.28,
+"z": -1.42,
+"yaw": 318.7,
+"scale": 1.9
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": 222.73,
+"y": 65.6,
+"z": -0.78,
+"yaw": 136.2,
+"scale": 1.42
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 207.55,
+"y": 66.0,
+"z": -1.03,
+"yaw": 273.7,
+"scale": 1.59
+},
+{
+"mesh": "SM_BW_Cliff_B",
+"x": -130.0,
+"y": 225.17,
+"z": -2.0,
+"yaw": 220.3,
+"scale": 1.6
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -145.54,
+"y": 222.27,
+"z": -1.02,
+"yaw": 337.2,
+"scale": 2.05
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -132.93,
+"y": 241.71,
+"z": -0.64,
+"yaw": 88.2,
+"scale": 1.69
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": -115.36,
+"y": 204.48,
+"z": -1.09,
+"yaw": 332.2,
+"scale": 1.96
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -149.76,
+"y": 239.23,
+"z": -1.59,
+"yaw": 353.1,
+"scale": 1.9
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": -129.04,
+"y": 196.48,
+"z": -1.5,
+"yaw": 11.4,
+"scale": 2.2
+},
+{
+"mesh": "SM_BW_Cliff_A",
+"x": -145.0,
+"y": -251.15,
+"z": -3.0,
+"yaw": 192.8,
+"scale": 1.5
+},
+{
+"mesh": "SM_BW_Rock_Grey_B",
+"x": -128.87,
+"y": -278.89,
+"z": -0.68,
+"yaw": 272.9,
+"scale": 1.4
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -119.85,
+"y": -265.21,
+"z": -1.21,
+"yaw": 275.0,
+"scale": 1.56
+},
+{
+"mesh": "SM_BW_Rock_B",
+"x": -121.39,
+"y": -254.96,
+"z": -0.84,
+"yaw": 323.4,
+"scale": 1.56
+},
+{
+"mesh": "SM_BW_SeaStack_Ember",
+"x": 233.35,
+"y": -233.35,
+"z": -3.0,
+"yaw": 188.1,
+"scale": 1.5
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 208.61,
+"y": -238.31,
+"z": -0.64,
+"yaw": 50.7,
+"scale": 1.53
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 236.45,
+"y": -204.53,
+"z": -0.6,
+"yaw": 193.4,
+"scale": 1.42
+},
+{
+"mesh": "SM_BW_Boulder_B",
+"x": 222.69,
+"y": -220.65,
+"z": -1.12,
+"yaw": 114.1,
+"scale": 1.54
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 255.95,
+"y": -227.65,
+"z": -1.13,
+"yaw": 197.3,
+"scale": 1.94
+},
+{
+"mesh": "SM_BW_Spire_Ash",
+"x": 150.0,
+"y": 259.81,
+"z": -2.0,
+"yaw": 57.4,
+"scale": 1.8
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 129.68,
+"y": 285.83,
+"z": -0.9,
+"yaw": 160.8,
+"scale": 1.33
+},
+{
+"mesh": "SM_BW_Rock_Pile_A",
+"x": 128.97,
+"y": 238.94,
+"z": -1.39,
+"yaw": 125.8,
+"scale": 1.35
+},
+{
+"mesh": "SM_BW_Rock_Flat_B",
+"x": 130.7,
+"y": 226.92,
+"z": -0.65,
+"yaw": 39.9,
+"scale": 1.78
+},
+{
+"mesh": "SM_BW_Rock_Grey_A",
+"x": 74.81,
+"y": 28.35,
+"z": -0.5,
+"yaw": 220.7,
+"scale": 1.34
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 55.88,
+"y": 51.51,
+"z": -0.79,
+"yaw": 111.2,
+"scale": 1.69
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": 39.22,
+"y": 70.3,
+"z": -0.9,
+"yaw": 229.5,
+"scale": 1.64
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": -0.59,
+"y": 58.5,
+"z": -0.96,
+"yaw": 114.5,
+"scale": 1.65
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": -20.45,
+"y": 52.67,
+"z": -0.97,
+"yaw": 335.5,
+"scale": 1.92
+},
+{
+"mesh": "SM_BW_Rock_Grey_A",
+"x": -47.97,
+"y": 48.9,
+"z": -0.58,
+"yaw": 180.0,
+"scale": 1.23
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": -99.95,
+"y": 42.21,
+"z": -0.94,
+"yaw": 52.9,
+"scale": 1.51
+},
+{
+"mesh": "SM_BW_Boulder_A",
+"x": -62.28,
+"y": 5.26,
+"z": -1.09,
+"yaw": 76.2,
+"scale": 1.11
+},
+{
+"mesh": "SM_BW_Rock_A",
+"x": -63.62,
+"y": -36.8,
+"z": -0.95,
+"yaw": 43.8,
+"scale": 1.59
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": -44.24,
+"y": -57.44,
+"z": -1.09,
+"yaw": 150.1,
+"scale": 1.69
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": -28.48,
+"y": -77.43,
+"z": -0.59,
+"yaw": 266.4,
+"scale": 1.87
+},
+{
+"mesh": "SM_BW_Rock_D",
+"x": 85.69,
+"y": -54.41,
+"z": -0.79,
+"yaw": 22.6,
+"scale": 1.01
+},
+{
+"mesh": "SM_BW_Rock_F",
+"x": 84.42,
+"y": -23.02,
+"z": -0.82,
+"yaw": 297.8,
+"scale": 1.87
+}
+],
+"npcs": [
+{
+"mesh": "SK_BW_NPC_Alekeeper",
+"x": -3.0,
+"y": -27.4,
+"z": 1.75,
+"anim": "Idle_Hold",
+"face": [
+2.0,
+-30.0
+]
+},
+{
+"mesh": "SK_BW_Pirate_Cook",
+"x": 4.0,
+"y": -32.9,
+"z": 1.69,
+"anim": "Idle_Hold",
+"face": [
+5.5,
+-33.5
+]
+},
+{
+"mesh": "SK_BW_Pirate_Deckhand",
+"x": 7.7,
+"y": -31.9,
+"z": 1.69,
+"anim": "Dance",
+"face": [
+5.5,
+-33.5
+]
+},
+{
+"mesh": "SK_BW_Pirate_OldSalt",
+"x": 7.2,
+"y": -35.4,
+"z": 1.65,
+"anim": "Talk",
+"face": [
+5.5,
+-33.5
+]
+},
+{
+"mesh": "SK_BW_Pirate_Brute",
+"x": 13.4,
+"y": -36.0,
+"z": 1.55,
+"anim": "Carry_Idle",
+"face": [
+2.0,
+-38.0
+]
+},
+{
+"mesh": "SK_BW_NPC_Warden",
+"x": -20.0,
+"y": -34.0,
+"z": 1.54,
+"anim": "Idle",
+"face": [
+2.0,
+-30.0
+]
+},
+{
+"mesh": "SK_BW_NPC_Deepfinder",
+"x": 16.5,
+"y": -43.0,
+"z": 1.39,
+"anim": "Talk",
+"face": [
+12.0,
+-40.0
+]
+},
+{
+"mesh": "SK_BW_Pirate_Gunner",
+"x": 29.2,
+"y": -35.2,
+"z": 1.5,
+"anim": "Idle",
+"face": [
+42.0,
+-50.0
+]
+},
+{
+"mesh": "SK_BW_Pirate_Captain",
+"x": 6.0,
+"y": -42.0,
+"z": 1.7,
+"anim": "Idle",
+"face": [
+6.0,
+-60.0
+]
+},
+{
+"mesh": "SK_BW_Pirate_Quartermaster",
+"x": 20.0,
+"y": -54.01,
+"z": 0.0,
+"anim": "Wave",
+"face": [
+11.85,
+-42.61
+]
+},
+{
+"mesh": "SK_BW_NPC_Saltmarket",
+"x": 39.11,
+"y": -75.88,
+"z": 1.3,
+"anim": "Talk",
+"face": [
+35.96,
+-78.34
+]
+},
+{
+"mesh": "SK_BW_Pirate_Lookout",
+"x": 47.16,
+"y": -88.12,
+"z": 1.3,
+"anim": "Spyglass",
+"face": [
+76.13,
+-157.36
+]
+},
+{
+"mesh": "SK_BW_NPC_Keelwright",
+"x": 34.38,
+"y": -59.27,
+"z": 0.0,
+"anim": "Hammer",
+"face": [
+36.23,
+-61.63
+]
+}
+],
+"fx": [
+{
+"kind": "lamp",
+"x": 4.86,
+"y": -40.0,
+"z": 4.27
+},
+{
+"kind": "lamp",
+"x": -12.86,
+"y": -38.0,
+"z": 4.77
+},
+{
+"kind": "lamp",
+"x": -11.14,
+"y": -38.0,
+"z": 4.65
+},
+{
+"kind": "lamp",
+"x": 16.0,
+"y": -29.14,
+"z": 5.52
+},
+{
+"kind": "lamp",
+"x": 26.0,
+"y": -30.86,
+"z": 5.52
+},
+{
+"kind": "fire",
+"x": 5.5,
+"y": -33.5,
+"z": 2.18,
+"size": 1.0
+},
+{
+"kind": "lamp",
+"x": -1.75,
+"y": -27.93,
+"z": 3.5
+},
+{
+"kind": "lamp",
+"x": 2.5,
+"y": -36.0,
+"z": 4.0
+},
+{
+"kind": "fire",
+"x": -19.0,
+"y": -36.5,
+"z": 3.16,
+"size": 0.9
+},
+{
+"kind": "fire",
+"x": -25.5,
+"y": -29.5,
+"z": 3.11,
+"size": 0.9
+},
+{
+"kind": "lamp",
+"x": -12.62,
+"y": -42.1,
+"z": 7.49
+},
+{
+"kind": "fire",
+"x": 3.1,
+"y": -47.5,
+"z": 4.41,
+"size": 0.5
+},
+{
+"kind": "fire",
+"x": 7.6,
+"y": -49.0,
+"z": 4.15,
+"size": 0.5
+},
+{
+"kind": "fire",
+"x": -3.9,
+"y": -44.5,
+"z": 4.48,
+"size": 0.5
+},
+{
+"kind": "fire",
+"x": 14.1,
+"y": -41.5,
+"z": 3.91,
+"size": 0.5
+},
+{
+"kind": "lamp",
+"x": 36.38,
+"y": -76.11,
+"z": 1.6
+},
+{
+"kind": "lamp",
+"x": 22.65,
+"y": -54.48,
+"z": 1.6
+},
+{
+"kind": "fire",
+"x": -18.5,
+"y": 32.04,
+"z": 4.68,
+"size": 1.0
+},
+{
+"kind": "fire",
+"x": 32.66,
+"y": 25.07,
+"z": 4.04,
+"size": 0.9
+},
+{
+"kind": "fire",
+"x": 37.06,
+"y": 25.07,
+"z": 3.84,
+"size": 0.9
+},
+{
+"kind": "lamp",
+"x": -43.65,
+"y": 8.48,
+"z": 2.08
+},
+{
+"kind": "fire",
+"x": -60.63,
+"y": 30.16,
+"z": 2.08,
+"size": 1.0
+}
+],
+"start": {
+"x": 6.0,
+"y": -40.0,
+"yaw": 110.0,
+"z": 1.68
+},
+"falls": [
+{
+"x": 18.86,
+"y": 18.94,
+"z": 4.18
+},
+{
+"x": 12.82,
+"y": 9.0,
+"z": 4.65
+}
+],
+"peak": [
+-4.0,
+24.0
+],
+"dock": {
+"x": 18.01,
+"y": -50.49,
+"yaw": -52.0
+},
+"galleon": [
+55.25,
+-153.38
+],
+"ruins": [
+34.86,
+26.67
+],
+"graves": [
+-43.95,
+12.08
+]
+}

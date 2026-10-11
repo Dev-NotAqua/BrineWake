@@ -1,0 +1,101 @@
+{
+ "ref": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionCustom_0",
+ "p": {
+  "description": "BW Shore Foam",
+  "code": "// shore foam: a solid line at the waterline, lace left by the swash, bands rolling in over the shallows\nfloat wob = sin(P.x*0.0031 + P.y*0.0017)*0.35 + sin(P.x*0.0013 - P.y*0.0027)*0.30;\nfloat ph = T*0.9 + wob;\nfloat rise = 0.5 + 0.5*sin(ph);\nfloat shallow = 1.0 - smoothstep(0.0, 520.0, D);\nfloat band = frac(D/210.0 + T*0.30 + wob*0.45);\nfloat crest = smoothstep(0.55, 0.88, band) * (1.0 - smoothstep(0.88, 1.0, band));\nfloat bands = crest * shallow * smoothstep(6.0, 70.0, D);\nfloat edge = 1.0 - smoothstep(0.0, 22.0 + 30.0*rise, SD);\nfloat lace = (1.0 - smoothstep(0.0, 170.0, SD)) * (0.35 + 0.65*rise);\nfloat f = edge*1.4 + bands*1.25 + lace*0.55;\nreturn saturate(smoothstep(0.38, 0.78, f * (0.40 + N*1.25)));",
+  "inputs": [
+   {
+    "inputName": "D",
+    "input": {
+     "expression": {
+      "refPath": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionMaterialFunctionCall_21"
+     },
+     "outputIndex": 2,
+     "inputName": "None",
+     "mask": 0,
+     "maskR": 0,
+     "maskG": 0,
+     "maskB": 0,
+     "maskA": 0
+    }
+   },
+   {
+    "inputName": "SD",
+    "input": {
+     "expression": {
+      "refPath": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionMaterialFunctionCall_21"
+     },
+     "outputIndex": 2,
+     "inputName": "None",
+     "mask": 0,
+     "maskR": 0,
+     "maskG": 0,
+     "maskB": 0,
+     "maskA": 0
+    }
+   },
+   {
+    "inputName": "T",
+    "input": {
+     "expression": {
+      "refPath": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionMaterialFunctionCall_12"
+     },
+     "outputIndex": 0,
+     "inputName": "None",
+     "mask": 0,
+     "maskR": 0,
+     "maskG": 0,
+     "maskB": 0,
+     "maskA": 0
+    }
+   },
+   {
+    "inputName": "P",
+    "input": {
+     "expression": {
+      "refPath": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionWorldPosition_1"
+     },
+     "outputIndex": 0,
+     "inputName": "None",
+     "mask": 1,
+     "maskR": 1,
+     "maskG": 1,
+     "maskB": 1,
+     "maskA": 0
+    }
+   },
+   {
+    "inputName": "N",
+    "input": {
+     "expression": {
+      "refPath": "/Game/Brinewake/Ocean/M_BW_Water.M_BW_Water:MaterialExpressionTextureSample_2"
+     },
+     "outputIndex": 1,
+     "inputName": "None",
+     "mask": 1,
+     "maskR": 1,
+     "maskG": 0,
+     "maskB": 0,
+     "maskA": 0
+    }
+   }
+  ],
+  "outputType": "CMOT_Float1"
+ },
+ "in_names": [
+  "D",
+  "SD",
+  "T",
+  "P",
+  "N"
+ ],
+ "classes": [
+  "fPath': '/Script/Engine.MaterialExpressionDistanceCullFade'}",
+  "ath': '/Script/Engine.MaterialExpressionFontSignedDistance'}",
+  "{'refPath': '/Script/Engine.MaterialExpressionDistance'}",
+  "': '/Script/Engine.MaterialExpressionDistanceFieldApproxAO'}",
+  "': '/Script/Engine.MaterialExpressionDistanceFieldGradient'}",
+  "ipt/Engine.MaterialExpressionDistanceFieldsRenderingSwitch'}",
+  "'/Script/Engine.MaterialExpressionDistanceToNearestSurface'}"
+ ]
+}

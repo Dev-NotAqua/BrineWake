@@ -1,0 +1,14 @@
+BRINEWAKE AUDIO IMPORT GUIDE (SFX + MUSIC)
+
+Placed actors (level Lvl_FirstPerson, folder Ocean):
+- BW_Audio_Ocean @ (23000,28500,500): ocean loop (attach OceanWaveLoop.wav, loop, attenuation ~5000 radius)
+- BW_Audio_Music @ (22500,28500,800): pirate music (attach PirateShanty.wav, loop, non-spatial or large radius)
+- BW_Audio_Splash @ (26000,31000,200): splash SFX near offshore rocks (attach Splash.wav)
+
+Steps:
+1. Import free wavs into Content/Brinewake/Audio/ (ocean loop, shanty, splash, cannon).
+2. Open each BW_Audio_* AmbientSound actor, set Sound + attenuation.
+3. Splash SFX can also bind Niagara audio modules (InitializeAudioPlayer/PlayAudio) on NS_BW_Splash.
+4. Music: set BW_Audio_Music to loop + higher priority SoundMix.
+
+Note: project had zero SoundWaves, so these actors are silent placeholders until wavs are imported.

@@ -1,0 +1,5742 @@
+[
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0817",
+  "folder": "Island/Plants",
+  "x": 21611.0,
+  "y": 35761.0,
+  "z": 219.0,
+  "yaw": -166.1,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0718",
+  "folder": "Island/Plants",
+  "x": 21877.0,
+  "y": 37847.0,
+  "z": 227.0,
+  "yaw": -21.400000000000038,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0863",
+  "folder": "Island/Plants",
+  "x": 25716.0,
+  "y": 25447.0,
+  "z": 252.99999999999997,
+  "yaw": -132.69999999999996,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0957",
+  "folder": "Island/Plants",
+  "x": 17471.0,
+  "y": 28883.0,
+  "z": 200.0,
+  "yaw": 111.30000000000005,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0955",
+  "folder": "Island/Plants",
+  "x": 23225.0,
+  "y": 36613.0,
+  "z": 219.0,
+  "yaw": -107.80000000000001,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0139",
+  "folder": "Island/Plants",
+  "x": 25163.0,
+  "y": 32181.0,
+  "z": 223.0,
+  "yaw": 104.00000000000006,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0791",
+  "folder": "Island/Plants",
+  "x": 29585.0,
+  "y": 31832.0,
+  "z": 290.0,
+  "yaw": -45.5,
+  "scale": 1.73
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0638",
+  "folder": "Island/Plants",
+  "x": 14650.0,
+  "y": 27000.0,
+  "z": 198.0,
+  "yaw": -17.69999999999999,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1068",
+  "folder": "Island/Plants",
+  "x": 21957.0,
+  "y": 31792.0,
+  "z": 269.0,
+  "yaw": -134.5,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0723",
+  "folder": "Island/Plants",
+  "x": 22909.0,
+  "y": 36150.0,
+  "z": 229.99999999999997,
+  "yaw": -86.60000000000002,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0939",
+  "folder": "Island/Plants",
+  "x": 28114.0,
+  "y": 33654.0,
+  "z": 180.0,
+  "yaw": 55.500000000000036,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0261",
+  "folder": "Island/Plants",
+  "x": 18145.0,
+  "y": 35576.0,
+  "z": 219.0,
+  "yaw": -8.80000000000001,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0910",
+  "folder": "Island/Plants",
+  "x": 25623.0,
+  "y": 30883.0,
+  "z": 277.0,
+  "yaw": 141.1,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0883",
+  "folder": "Island/Plants",
+  "x": 22146.0,
+  "y": 31438.0,
+  "z": 318.0,
+  "yaw": 145.49999999999997,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0694",
+  "folder": "Island/Plants",
+  "x": 29988.0,
+  "y": 32578.0,
+  "z": 189.0,
+  "yaw": -100.80000000000003,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0764",
+  "folder": "Island/Plants",
+  "x": 27032.0,
+  "y": 27118.0,
+  "z": 196.0,
+  "yaw": -33.00000000000001,
+  "scale": 1.67
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1221",
+  "folder": "Island/Rocks",
+  "x": 23754.0,
+  "y": 25216.0,
+  "z": -1.0,
+  "yaw": -133.5,
+  "scale": 1.0
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0808",
+  "folder": "Island/Plants",
+  "x": 30341.0,
+  "y": 31665.0,
+  "z": 202.99999999999997,
+  "yaw": -160.1,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0711",
+  "folder": "Island/Plants",
+  "x": 21657.0,
+  "y": 38095.0,
+  "z": 202.0,
+  "yaw": -136.1,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0602",
+  "folder": "Island/Plants",
+  "x": 26061.0,
+  "y": 33715.0,
+  "z": 172.0,
+  "yaw": 124.19999999999999,
+  "scale": 0.99
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0985",
+  "folder": "Island/Plants",
+  "x": 23914.0,
+  "y": 32534.0,
+  "z": 234.0,
+  "yaw": -159.1,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0155",
+  "folder": "Island/Plants",
+  "x": 28283.0,
+  "y": 28750.0,
+  "z": 188.0,
+  "yaw": 3.800000000000031,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0485",
+  "folder": "Island/Plants",
+  "x": 24669.0,
+  "y": 30985.0,
+  "z": 311.0,
+  "yaw": 125.9,
+  "scale": 0.99
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0840",
+  "folder": "Island/Plants",
+  "x": 17330.0,
+  "y": 35684.0,
+  "z": 196.0,
+  "yaw": 90.90000000000003,
+  "scale": 1.83
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0914",
+  "folder": "Island/Plants",
+  "x": 26545.0,
+  "y": 26649.0,
+  "z": 241.0,
+  "yaw": -176.8,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1073",
+  "folder": "Island/Plants",
+  "x": 18190.0,
+  "y": 35976.0,
+  "z": 188.0,
+  "yaw": 158.0,
+  "scale": 1.72
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0968",
+  "folder": "Island/Plants",
+  "x": 26815.0,
+  "y": 25135.0,
+  "z": 188.0,
+  "yaw": -172.9,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0800",
+  "folder": "Island/Plants",
+  "x": 28136.0,
+  "y": 32720.0,
+  "z": 260.0,
+  "yaw": 135.29999999999998,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0880",
+  "folder": "Island/Plants",
+  "x": 25596.0,
+  "y": 32385.0,
+  "z": 242.0,
+  "yaw": 99.30000000000005,
+  "scale": 1.18
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0596",
+  "folder": "Island/Plants",
+  "x": 28197.0,
+  "y": 33230.0,
+  "z": 204.99999999999997,
+  "yaw": -158.4,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0740",
+  "folder": "Island/Plants",
+  "x": 29387.0,
+  "y": 32790.0,
+  "z": 222.00000000000003,
+  "yaw": -0.30000000000001137,
+  "scale": 1.72
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1059",
+  "folder": "Island/Plants",
+  "x": 15602.0,
+  "y": 27303.0,
+  "z": 173.0,
+  "yaw": -162.6,
+  "scale": 1.08
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1009",
+  "folder": "Island/Plants",
+  "x": 21245.0,
+  "y": 33864.0,
+  "z": 159.0,
+  "yaw": 116.70000000000002,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1094",
+  "folder": "Island/Plants",
+  "x": 21020.0,
+  "y": 32645.0,
+  "z": 183.0,
+  "yaw": 135.2,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0782",
+  "folder": "Island/Plants",
+  "x": 30341.0,
+  "y": 31436.0,
+  "z": 212.0,
+  "yaw": -165.3,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0755",
+  "folder": "Island/Plants",
+  "x": 23457.0,
+  "y": 32290.0,
+  "z": 241.0,
+  "yaw": -140.6,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1222",
+  "folder": "Island/Rocks",
+  "x": 19499.0,
+  "y": 32242.0,
+  "z": 153.0,
+  "yaw": -7.499999999999999,
+  "scale": 0.87
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0763",
+  "folder": "Island/Plants",
+  "x": 29834.0,
+  "y": 32375.0,
+  "z": 218.00000000000003,
+  "yaw": -63.800000000000004,
+  "scale": 1.83
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0514",
+  "folder": "Island/Plants",
+  "x": 23013.0,
+  "y": 37194.0,
+  "z": 227.0,
+  "yaw": 148.30000000000004,
+  "scale": 0.86
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0765",
+  "folder": "Island/Plants",
+  "x": 22323.0,
+  "y": 36607.0,
+  "z": 231.0,
+  "yaw": -33.199999999999996,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0160",
+  "folder": "Island/Plants",
+  "x": 27494.0,
+  "y": 28744.0,
+  "z": 194.0,
+  "yaw": -115.90000000000005,
+  "scale": 1.69
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0962",
+  "folder": "Island/Plants",
+  "x": 24901.0,
+  "y": 27236.0,
+  "z": 342.0,
+  "yaw": -162.5,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0896",
+  "folder": "Island/Plants",
+  "x": 26576.0,
+  "y": 26487.0,
+  "z": 238.0,
+  "yaw": 13.600000000000037,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1089",
+  "folder": "Island/Plants",
+  "x": 26900.0,
+  "y": 27277.0,
+  "z": 202.99999999999997,
+  "yaw": -17.80000000000001,
+  "scale": 1.49
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0801",
+  "folder": "Island/Plants",
+  "x": 26590.0,
+  "y": 25986.0,
+  "z": 229.99999999999997,
+  "yaw": 114.40000000000005,
+  "scale": 1.28
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1043",
+  "folder": "Island/Plants",
+  "x": 24843.0,
+  "y": 26692.0,
+  "z": 327.0,
+  "yaw": 98.60000000000007,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0874",
+  "folder": "Island/Plants",
+  "x": 25360.0,
+  "y": 25332.0,
+  "z": 259.0,
+  "yaw": 165.69999999999996,
+  "scale": 1.51
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1040",
+  "folder": "Island/Plants",
+  "x": 21565.0,
+  "y": 32293.0,
+  "z": 214.0,
+  "yaw": -40.69999999999999,
+  "scale": 1.62
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0249",
+  "folder": "Island/Plants",
+  "x": 30268.0,
+  "y": 36596.0,
+  "z": 188.0,
+  "yaw": -105.90000000000005,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0230",
+  "folder": "Island/Plants",
+  "x": 24395.0,
+  "y": 26873.0,
+  "z": 326.0,
+  "yaw": -53.900000000000034,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0156",
+  "folder": "Island/Plants",
+  "x": 27865.0,
+  "y": 28194.0,
+  "z": 146.0,
+  "yaw": 28.500000000000036,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0586",
+  "folder": "Island/Plants",
+  "x": 24305.0,
+  "y": 31137.0,
+  "z": 333.0,
+  "yaw": 93.40000000000005,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0487",
+  "folder": "Island/Plants",
+  "x": 30502.0,
+  "y": 37058.0,
+  "z": 196.0,
+  "yaw": 127.99999999999997,
+  "scale": 0.9
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1209",
+  "folder": "Island/Rocks",
+  "x": 18857.0,
+  "y": 34211.0,
+  "z": 38.0,
+  "yaw": -139.99999999999997,
+  "scale": 0.81
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0803",
+  "folder": "Island/Plants",
+  "x": 26776.0,
+  "y": 24858.0,
+  "z": 166.0,
+  "yaw": -94.40000000000005,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1228",
+  "folder": "Island/Rocks",
+  "x": 22591.0,
+  "y": 38978.0,
+  "z": 85.0,
+  "yaw": -49.10000000000002,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1227",
+  "folder": "Island/Rocks",
+  "x": 23396.0,
+  "y": 25679.0,
+  "z": 10.0,
+  "yaw": 86.10000000000005,
+  "scale": 0.96
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1062",
+  "folder": "Island/Plants",
+  "x": 27419.0,
+  "y": 32731.0,
+  "z": 243.00000000000003,
+  "yaw": -101.70000000000006,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0123",
+  "folder": "Island/Plants",
+  "x": 19787.0,
+  "y": 32138.0,
+  "z": 146.0,
+  "yaw": -75.10000000000001,
+  "scale": 1.0
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0793",
+  "folder": "Island/Plants",
+  "x": 25650.0,
+  "y": 26159.0,
+  "z": 262.0,
+  "yaw": 51.10000000000005,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0901",
+  "folder": "Island/Plants",
+  "x": 26235.0,
+  "y": 26191.0,
+  "z": 241.0,
+  "yaw": -139.8,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0732",
+  "folder": "Island/Plants",
+  "x": 26442.0,
+  "y": 32114.0,
+  "z": 242.0,
+  "yaw": 5.800000000000008,
+  "scale": 1.47
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0676",
+  "folder": "Island/Plants",
+  "x": 21164.0,
+  "y": 30939.0,
+  "z": 318.0,
+  "yaw": -54.20000000000004,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1081",
+  "folder": "Island/Plants",
+  "x": 18104.0,
+  "y": 28850.0,
+  "z": 252.0,
+  "yaw": 24.700000000000017,
+  "scale": 1.7
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1060",
+  "folder": "Island/Plants",
+  "x": 15147.0,
+  "y": 27479.0,
+  "z": 176.0,
+  "yaw": -62.999999999999986,
+  "scale": 1.45
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0595",
+  "folder": "Island/Plants",
+  "x": 29487.0,
+  "y": 33249.0,
+  "z": 166.0,
+  "yaw": -2.399999999999978,
+  "scale": 1.06
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0273",
+  "folder": "Island/Plants",
+  "x": 25937.0,
+  "y": 26241.0,
+  "z": 234.0,
+  "yaw": -105.00000000000001,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0756",
+  "folder": "Island/Plants",
+  "x": 26057.0,
+  "y": 26794.0,
+  "z": 263.0,
+  "yaw": 119.90000000000005,
+  "scale": 1.32
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0911",
+  "folder": "Island/Plants",
+  "x": 15098.0,
+  "y": 26543.0,
+  "z": 217.0,
+  "yaw": -94.20000000000007,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0738",
+  "folder": "Island/Plants",
+  "x": 15206.0,
+  "y": 25815.0,
+  "z": 177.0,
+  "yaw": -67.69999999999997,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0897",
+  "folder": "Island/Plants",
+  "x": 27430.0,
+  "y": 33806.0,
+  "z": 174.0,
+  "yaw": -69.0,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0316",
+  "folder": "Island/Plants",
+  "x": 21649.0,
+  "y": 36698.0,
+  "z": 206.0,
+  "yaw": -56.19999999999998,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1236",
+  "folder": "Island/Rocks",
+  "x": 28393.0,
+  "y": 27862.0,
+  "z": 131.0,
+  "yaw": 153.80000000000004,
+  "scale": 1.32
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0889",
+  "folder": "Island/Plants",
+  "x": 22107.0,
+  "y": 37609.0,
+  "z": 233.0,
+  "yaw": 26.60000000000005,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0751",
+  "folder": "Island/Plants",
+  "x": 27462.0,
+  "y": 26318.0,
+  "z": 167.0,
+  "yaw": 102.50000000000004,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0853",
+  "folder": "Island/Plants",
+  "x": 24286.0,
+  "y": 31023.0,
+  "z": 355.0,
+  "yaw": 128.60000000000002,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1218",
+  "folder": "Island/Rocks",
+  "x": 19644.0,
+  "y": 31198.0,
+  "z": 179.0,
+  "yaw": -71.5,
+  "scale": 0.98
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0777",
+  "folder": "Island/Plants",
+  "x": 27696.0,
+  "y": 33445.0,
+  "z": 200.99999999999997,
+  "yaw": -9.199999999999989,
+  "scale": 1.84
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0891",
+  "folder": "Island/Plants",
+  "x": 20538.0,
+  "y": 36774.0,
+  "z": 165.0,
+  "yaw": 87.2,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0807",
+  "folder": "Island/Plants",
+  "x": 27091.0,
+  "y": 26279.0,
+  "z": 202.99999999999997,
+  "yaw": 25.7,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0158",
+  "folder": "Island/Plants",
+  "x": 27023.0,
+  "y": 28944.0,
+  "z": 220.00000000000003,
+  "yaw": 137.6,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1223",
+  "folder": "Island/Rocks",
+  "x": 19106.0,
+  "y": 34755.0,
+  "z": 91.0,
+  "yaw": -35.20000000000005,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0588",
+  "folder": "Island/Plants",
+  "x": 21787.0,
+  "y": 31107.0,
+  "z": 336.0,
+  "yaw": -13.0,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0523",
+  "folder": "Island/Plants",
+  "x": 26973.0,
+  "y": 31667.0,
+  "z": 265.0,
+  "yaw": -179.6,
+  "scale": 0.96
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0792",
+  "folder": "Island/Plants",
+  "x": 26900.0,
+  "y": 26206.0,
+  "z": 219.0,
+  "yaw": -61.999999999999986,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1047",
+  "folder": "Island/Plants",
+  "x": 30214.0,
+  "y": 37218.0,
+  "z": 209.0,
+  "yaw": -120.30000000000003,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0677",
+  "folder": "Island/Plants",
+  "x": 25469.0,
+  "y": 31002.0,
+  "z": 282.0,
+  "yaw": -29.500000000000018,
+  "scale": 1.7
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1052",
+  "folder": "Island/Plants",
+  "x": 21067.0,
+  "y": 31682.0,
+  "z": 241.0,
+  "yaw": 174.20000000000002,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0683",
+  "folder": "Island/Plants",
+  "x": 30520.0,
+  "y": 31447.0,
+  "z": 189.0,
+  "yaw": -108.0,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0954",
+  "folder": "Island/Plants",
+  "x": 25198.0,
+  "y": 26243.0,
+  "z": 292.0,
+  "yaw": 67.3,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0234",
+  "folder": "Island/Plants",
+  "x": 24400.0,
+  "y": 25943.0,
+  "z": 246.0,
+  "yaw": 83.80000000000005,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0802",
+  "folder": "Island/Plants",
+  "x": 17645.0,
+  "y": 28245.0,
+  "z": 235.0,
+  "yaw": -41.80000000000002,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0339",
+  "folder": "Island/Plants",
+  "x": 26831.0,
+  "y": 25847.0,
+  "z": 200.99999999999997,
+  "yaw": -128.4,
+  "scale": 1.21
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0650",
+  "folder": "Island/Plants",
+  "x": 25974.0,
+  "y": 26214.0,
+  "z": 248.0,
+  "yaw": -89.10000000000004,
+  "scale": 0.92
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0770",
+  "folder": "Island/Plants",
+  "x": 21285.0,
+  "y": 31781.0,
+  "z": 244.0,
+  "yaw": -133.30000000000004,
+  "scale": 1.87
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0886",
+  "folder": "Island/Plants",
+  "x": 26390.0,
+  "y": 25173.0,
+  "z": 225.0,
+  "yaw": 2.300000000000024,
+  "scale": 1.75
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0746",
+  "folder": "Island/Plants",
+  "x": 24210.0,
+  "y": 26502.0,
+  "z": 315.0,
+  "yaw": -111.30000000000003,
+  "scale": 1.66
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0956",
+  "folder": "Island/Plants",
+  "x": 23433.0,
+  "y": 32113.0,
+  "z": 256.0,
+  "yaw": -160.6,
+  "scale": 1.12
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0778",
+  "folder": "Island/Plants",
+  "x": 26159.0,
+  "y": 32612.0,
+  "z": 233.0,
+  "yaw": 166.2,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0259",
+  "folder": "Island/Plants",
+  "x": 19047.0,
+  "y": 35403.0,
+  "z": 123.0,
+  "yaw": -86.19999999999999,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0721",
+  "folder": "Island/Plants",
+  "x": 23631.0,
+  "y": 37594.0,
+  "z": 169.0,
+  "yaw": -29.300000000000015,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0500",
+  "folder": "Island/Plants",
+  "x": 25429.0,
+  "y": 24975.0,
+  "z": 225.99999999999997,
+  "yaw": 30.80000000000003,
+  "scale": 0.93
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1080",
+  "folder": "Island/Plants",
+  "x": 25489.0,
+  "y": 27849.0,
+  "z": 306.0,
+  "yaw": 171.50000000000003,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0334",
+  "folder": "Island/Plants",
+  "x": 25707.0,
+  "y": 26633.0,
+  "z": 246.0,
+  "yaw": -69.10000000000001,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1220",
+  "folder": "Island/Rocks",
+  "x": 27404.0,
+  "y": 25492.0,
+  "z": 154.0,
+  "yaw": -35.10000000000003,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0854",
+  "folder": "Island/Plants",
+  "x": 22920.0,
+  "y": 31727.0,
+  "z": 293.0,
+  "yaw": -8.899999999999977,
+  "scale": 1.9
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0727",
+  "folder": "Island/Plants",
+  "x": 30396.0,
+  "y": 37203.0,
+  "z": 214.0,
+  "yaw": 148.70000000000002,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0296",
+  "folder": "Island/Plants",
+  "x": 14457.0,
+  "y": 25986.0,
+  "z": 145.0,
+  "yaw": -72.79999999999995,
+  "scale": 1.51
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0821",
+  "folder": "Island/Plants",
+  "x": 25351.0,
+  "y": 26368.0,
+  "z": 286.0,
+  "yaw": 140.7,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0712",
+  "folder": "Island/Plants",
+  "x": 26967.0,
+  "y": 30941.0,
+  "z": 288.0,
+  "yaw": -179.9,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0884",
+  "folder": "Island/Plants",
+  "x": 25349.0,
+  "y": 31208.0,
+  "z": 283.0,
+  "yaw": -109.30000000000003,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0991",
+  "folder": "Island/Plants",
+  "x": 18086.0,
+  "y": 27994.0,
+  "z": 257.0,
+  "yaw": -130.1,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0159",
+  "folder": "Island/Plants",
+  "x": 27539.0,
+  "y": 29070.0,
+  "z": 229.99999999999997,
+  "yaw": -8.199999999999989,
+  "scale": 1.78
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0758",
+  "folder": "Island/Plants",
+  "x": 23595.0,
+  "y": 36997.0,
+  "z": 191.0,
+  "yaw": 80.60000000000002,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0724",
+  "folder": "Island/Plants",
+  "x": 15684.0,
+  "y": 27240.0,
+  "z": 173.0,
+  "yaw": -33.7,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0506",
+  "folder": "Island/Plants",
+  "x": 21583.0,
+  "y": 37852.0,
+  "z": 217.0,
+  "yaw": -147.20000000000002,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0742",
+  "folder": "Island/Plants",
+  "x": 27211.0,
+  "y": 27506.0,
+  "z": 178.0,
+  "yaw": -107.60000000000005,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0520",
+  "folder": "Island/Plants",
+  "x": 22019.0,
+  "y": 36958.0,
+  "z": 227.99999999999997,
+  "yaw": -107.50000000000001,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0857",
+  "folder": "Island/Plants",
+  "x": 21836.0,
+  "y": 31567.0,
+  "z": 291.0,
+  "yaw": 111.90000000000003,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0930",
+  "folder": "Island/Plants",
+  "x": 26911.0,
+  "y": 30785.0,
+  "z": 286.0,
+  "yaw": -93.80000000000003,
+  "scale": 1.5
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0643",
+  "folder": "Island/Plants",
+  "x": 29906.0,
+  "y": 31556.0,
+  "z": 268.0,
+  "yaw": 163.0,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0310",
+  "folder": "Island/Plants",
+  "x": 30324.0,
+  "y": 31733.0,
+  "z": 184.0,
+  "yaw": -116.10000000000004,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0685",
+  "folder": "Island/Plants",
+  "x": 26966.0,
+  "y": 33859.0,
+  "z": 175.0,
+  "yaw": -149.9,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0660",
+  "folder": "Island/Plants",
+  "x": 26158.0,
+  "y": 26407.0,
+  "z": 245.00000000000003,
+  "yaw": -18.5,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0882",
+  "folder": "Island/Plants",
+  "x": 15497.0,
+  "y": 27109.0,
+  "z": 189.0,
+  "yaw": 158.10000000000002,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0702",
+  "folder": "Island/Plants",
+  "x": 27716.0,
+  "y": 33804.0,
+  "z": 173.0,
+  "yaw": -105.10000000000004,
+  "scale": 1.57
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0841",
+  "folder": "Island/Plants",
+  "x": 21599.0,
+  "y": 34932.0,
+  "z": 172.0,
+  "yaw": 107.10000000000005,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0829",
+  "folder": "Island/Plants",
+  "x": 22743.0,
+  "y": 32210.0,
+  "z": 242.0,
+  "yaw": 92.60000000000005,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0887",
+  "folder": "Island/Plants",
+  "x": 21093.0,
+  "y": 37206.0,
+  "z": 204.99999999999997,
+  "yaw": 140.6,
+  "scale": 1.69
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0905",
+  "folder": "Island/Plants",
+  "x": 22688.0,
+  "y": 32064.0,
+  "z": 254.99999999999997,
+  "yaw": -147.9,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0980",
+  "folder": "Island/Plants",
+  "x": 22299.0,
+  "y": 35356.0,
+  "z": 202.99999999999997,
+  "yaw": 46.99999999999999,
+  "scale": 0.92
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0618",
+  "folder": "Island/Plants",
+  "x": 18500.0,
+  "y": 28842.0,
+  "z": 254.99999999999997,
+  "yaw": -49.200000000000045,
+  "scale": 1.45
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0804",
+  "folder": "Island/Plants",
+  "x": 15257.0,
+  "y": 25973.0,
+  "z": 190.0,
+  "yaw": -26.89999999999998,
+  "scale": 1.66
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1070",
+  "folder": "Island/Plants",
+  "x": 23566.0,
+  "y": 36762.0,
+  "z": 195.0,
+  "yaw": 103.40000000000005,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0303",
+  "folder": "Island/Plants",
+  "x": 20678.0,
+  "y": 35837.0,
+  "z": 138.0,
+  "yaw": -43.600000000000016,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0815",
+  "folder": "Island/Plants",
+  "x": 25543.0,
+  "y": 30229.0,
+  "z": 298.0,
+  "yaw": 15.300000000000034,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0916",
+  "folder": "Island/Plants",
+  "x": 27965.0,
+  "y": 33568.0,
+  "z": 188.0,
+  "yaw": 30.500000000000018,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0917",
+  "folder": "Island/Plants",
+  "x": 21033.0,
+  "y": 32766.0,
+  "z": 180.0,
+  "yaw": 115.50000000000004,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0749",
+  "folder": "Island/Plants",
+  "x": 21163.0,
+  "y": 33047.0,
+  "z": 175.0,
+  "yaw": 70.39999999999995,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1083",
+  "folder": "Island/Plants",
+  "x": 21226.0,
+  "y": 32162.0,
+  "z": 213.0,
+  "yaw": 145.60000000000002,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0708",
+  "folder": "Island/Plants",
+  "x": 30868.0,
+  "y": 37226.0,
+  "z": 174.0,
+  "yaw": -0.8000000000000114,
+  "scale": 1.65
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0868",
+  "folder": "Island/Plants",
+  "x": 14262.0,
+  "y": 26912.0,
+  "z": 181.0,
+  "yaw": -86.10000000000004,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0684",
+  "folder": "Island/Plants",
+  "x": 17948.0,
+  "y": 28412.0,
+  "z": 250.99999999999997,
+  "yaw": -159.4,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0171",
+  "folder": "Island/Plants",
+  "x": 17514.0,
+  "y": 28380.0,
+  "z": 191.0,
+  "yaw": 162.30000000000004,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0639",
+  "folder": "Island/Plants",
+  "x": 25704.0,
+  "y": 26120.0,
+  "z": 254.99999999999997,
+  "yaw": -165.20000000000002,
+  "scale": 1.66
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0340",
+  "folder": "Island/Plants",
+  "x": 30022.0,
+  "y": 31829.0,
+  "z": 216.0,
+  "yaw": -84.60000000000004,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1036",
+  "folder": "Island/Plants",
+  "x": 22746.0,
+  "y": 36194.0,
+  "z": 235.0,
+  "yaw": -38.20000000000005,
+  "scale": 1.62
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0725",
+  "folder": "Island/Plants",
+  "x": 30246.0,
+  "y": 30413.0,
+  "z": 227.0,
+  "yaw": -86.30000000000001,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0648",
+  "folder": "Island/Plants",
+  "x": 26540.0,
+  "y": 26483.0,
+  "z": 236.0,
+  "yaw": -138.1,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1233",
+  "folder": "Island/Rocks",
+  "x": 19045.0,
+  "y": 33166.0,
+  "z": 45.0,
+  "yaw": 1.6000000000000165,
+  "scale": 1.34
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0963",
+  "folder": "Island/Plants",
+  "x": 21482.0,
+  "y": 32686.0,
+  "z": 193.0,
+  "yaw": -14.199999999999987,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0932",
+  "folder": "Island/Plants",
+  "x": 25070.0,
+  "y": 26645.0,
+  "z": 316.0,
+  "yaw": -94.10000000000004,
+  "scale": 1.46
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1207",
+  "folder": "Island/Rocks",
+  "x": 19695.0,
+  "y": 36544.0,
+  "z": -2.0,
+  "yaw": 174.5,
+  "scale": 1.28
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0626",
+  "folder": "Island/Plants",
+  "x": 28984.0,
+  "y": 29118.0,
+  "z": 245.00000000000003,
+  "yaw": 109.50000000000007,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0299",
+  "folder": "Island/Plants",
+  "x": 23100.0,
+  "y": 37819.0,
+  "z": 172.0,
+  "yaw": 59.399999999999984,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0307",
+  "folder": "Island/Plants",
+  "x": 20674.0,
+  "y": 36548.0,
+  "z": 147.0,
+  "yaw": 164.2,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0699",
+  "folder": "Island/Plants",
+  "x": 26603.0,
+  "y": 25406.0,
+  "z": 223.0,
+  "yaw": -77.79999999999995,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0488",
+  "folder": "Island/Plants",
+  "x": 29310.0,
+  "y": 33174.0,
+  "z": 166.0,
+  "yaw": -114.90000000000003,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0958",
+  "folder": "Island/Plants",
+  "x": 22715.0,
+  "y": 35979.0,
+  "z": 231.99999999999997,
+  "yaw": 7.399999999999963,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0867",
+  "folder": "Island/Plants",
+  "x": 27994.0,
+  "y": 32253.0,
+  "z": 283.0,
+  "yaw": 79.49999999999999,
+  "scale": 1.3
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1082",
+  "folder": "Island/Plants",
+  "x": 22138.0,
+  "y": 31172.0,
+  "z": 355.0,
+  "yaw": -67.39999999999995,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0944",
+  "folder": "Island/Plants",
+  "x": 18076.0,
+  "y": 35931.0,
+  "z": 204.0,
+  "yaw": 1.100000000000048,
+  "scale": 1.81
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0757",
+  "folder": "Island/Plants",
+  "x": 24720.0,
+  "y": 27135.0,
+  "z": 350.0,
+  "yaw": -47.90000000000003,
+  "scale": 1.45
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0814",
+  "folder": "Island/Plants",
+  "x": 22931.0,
+  "y": 32298.0,
+  "z": 236.0,
+  "yaw": -37.00000000000001,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1213",
+  "folder": "Island/Rocks",
+  "x": 19978.0,
+  "y": 32538.0,
+  "z": 158.0,
+  "yaw": 87.60000000000002,
+  "scale": 1.08
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1049",
+  "folder": "Island/Plants",
+  "x": 25290.0,
+  "y": 27700.0,
+  "z": 322.0,
+  "yaw": 175.50000000000003,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0720",
+  "folder": "Island/Plants",
+  "x": 21826.0,
+  "y": 32429.0,
+  "z": 212.0,
+  "yaw": 18.299999999999994,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0483",
+  "folder": "Island/Plants",
+  "x": 22101.0,
+  "y": 36791.0,
+  "z": 206.99999999999997,
+  "yaw": 159.90000000000003,
+  "scale": 0.86
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0774",
+  "folder": "Island/Plants",
+  "x": 27205.0,
+  "y": 25659.0,
+  "z": 178.0,
+  "yaw": 175.80000000000004,
+  "scale": 1.67
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0878",
+  "folder": "Island/Plants",
+  "x": 26580.0,
+  "y": 30704.0,
+  "z": 267.0,
+  "yaw": -10.80000000000001,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0665",
+  "folder": "Island/Plants",
+  "x": 24760.0,
+  "y": 26178.0,
+  "z": 297.0,
+  "yaw": 71.19999999999999,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0918",
+  "folder": "Island/Plants",
+  "x": 22449.0,
+  "y": 37754.0,
+  "z": 231.0,
+  "yaw": -1.0000000000000002,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0856",
+  "folder": "Island/Plants",
+  "x": 14344.0,
+  "y": 26264.0,
+  "z": 179.0,
+  "yaw": -145.2,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0797",
+  "folder": "Island/Plants",
+  "x": 25355.0,
+  "y": 30352.0,
+  "z": 309.0,
+  "yaw": 87.39999999999999,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0938",
+  "folder": "Island/Plants",
+  "x": 23169.0,
+  "y": 37510.0,
+  "z": 211.0,
+  "yaw": -114.90000000000003,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0614",
+  "folder": "Island/Plants",
+  "x": 28912.0,
+  "y": 33547.0,
+  "z": 163.0,
+  "yaw": 19.000000000000014,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0997",
+  "folder": "Island/Plants",
+  "x": 25180.0,
+  "y": 30049.0,
+  "z": 336.0,
+  "yaw": 159.2,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1050",
+  "folder": "Island/Plants",
+  "x": 22963.0,
+  "y": 37308.0,
+  "z": 227.0,
+  "yaw": -100.20000000000007,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0747",
+  "folder": "Island/Plants",
+  "x": 26678.0,
+  "y": 25530.0,
+  "z": 222.00000000000003,
+  "yaw": 135.2,
+  "scale": 1.49
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0245",
+  "folder": "Island/Plants",
+  "x": 30211.0,
+  "y": 36837.0,
+  "z": 198.0,
+  "yaw": 116.10000000000004,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0623",
+  "folder": "Island/Plants",
+  "x": 14227.0,
+  "y": 26087.0,
+  "z": 154.0,
+  "yaw": 177.40000000000003,
+  "scale": 0.94
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1054",
+  "folder": "Island/Plants",
+  "x": 20690.0,
+  "y": 35705.0,
+  "z": 163.0,
+  "yaw": -7.69999999999999,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0871",
+  "folder": "Island/Plants",
+  "x": 20866.0,
+  "y": 35921.0,
+  "z": 180.0,
+  "yaw": -34.399999999999984,
+  "scale": 1.72
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0607",
+  "folder": "Island/Plants",
+  "x": 23959.0,
+  "y": 36912.0,
+  "z": 149.0,
+  "yaw": 177.20000000000002,
+  "scale": 1.21
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0475",
+  "folder": "Island/Plants",
+  "x": 21982.0,
+  "y": 32162.0,
+  "z": 204.99999999999997,
+  "yaw": -67.59999999999997,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0616",
+  "folder": "Island/Plants",
+  "x": 29294.0,
+  "y": 31835.0,
+  "z": 308.0,
+  "yaw": 133.30000000000004,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0704",
+  "folder": "Island/Plants",
+  "x": 18259.0,
+  "y": 35185.0,
+  "z": 241.0,
+  "yaw": -135.9,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0893",
+  "folder": "Island/Plants",
+  "x": 25906.0,
+  "y": 25431.0,
+  "z": 247.00000000000003,
+  "yaw": -52.5,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0870",
+  "folder": "Island/Plants",
+  "x": 30162.0,
+  "y": 32552.0,
+  "z": 177.0,
+  "yaw": -10.100000000000023,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0895",
+  "folder": "Island/Plants",
+  "x": 23642.0,
+  "y": 31635.0,
+  "z": 305.0,
+  "yaw": 154.5,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0691",
+  "folder": "Island/Plants",
+  "x": 26596.0,
+  "y": 26163.0,
+  "z": 231.99999999999997,
+  "yaw": 20.899999999999984,
+  "scale": 1.6
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0574",
+  "folder": "Island/Plants",
+  "x": 26370.0,
+  "y": 26180.0,
+  "z": 234.0,
+  "yaw": -167.0,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0476",
+  "folder": "Island/Plants",
+  "x": 25318.0,
+  "y": 25074.0,
+  "z": 212.0,
+  "yaw": -106.30000000000004,
+  "scale": 0.91
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0713",
+  "folder": "Island/Plants",
+  "x": 23020.0,
+  "y": 32120.0,
+  "z": 252.0,
+  "yaw": -118.30000000000003,
+  "scale": 1.71
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1229",
+  "folder": "Island/Rocks",
+  "x": 19084.0,
+  "y": 33913.0,
+  "z": 14.000000000000002,
+  "yaw": -11.800000000000008,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0881",
+  "folder": "Island/Plants",
+  "x": 21348.0,
+  "y": 32436.0,
+  "z": 200.99999999999997,
+  "yaw": -12.899999999999975,
+  "scale": 1.76
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0672",
+  "folder": "Island/Plants",
+  "x": 21028.0,
+  "y": 36787.0,
+  "z": 200.99999999999997,
+  "yaw": 88.70000000000002,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1087",
+  "folder": "Island/Plants",
+  "x": 21699.0,
+  "y": 36536.0,
+  "z": 231.0,
+  "yaw": -152.10000000000002,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0645",
+  "folder": "Island/Plants",
+  "x": 17604.0,
+  "y": 29508.0,
+  "z": 165.0,
+  "yaw": -102.80000000000004,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0186",
+  "folder": "Island/Plants",
+  "x": 14911.0,
+  "y": 26232.0,
+  "z": 177.0,
+  "yaw": 92.50000000000004,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1214",
+  "folder": "Island/Rocks",
+  "x": 18244.0,
+  "y": 26862.0,
+  "z": 149.0,
+  "yaw": 136.89999999999998,
+  "scale": 0.95
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0928",
+  "folder": "Island/Plants",
+  "x": 26586.0,
+  "y": 25688.0,
+  "z": 229.0,
+  "yaw": 67.3,
+  "scale": 1.57
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1016",
+  "folder": "Island/Plants",
+  "x": 28415.0,
+  "y": 32031.0,
+  "z": 318.0,
+  "yaw": 99.00000000000009,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0700",
+  "folder": "Island/Plants",
+  "x": 25446.0,
+  "y": 27048.0,
+  "z": 303.0,
+  "yaw": -84.60000000000004,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0949",
+  "folder": "Island/Plants",
+  "x": 30619.0,
+  "y": 36761.0,
+  "z": 209.0,
+  "yaw": -52.99999999999999,
+  "scale": 1.69
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0610",
+  "folder": "Island/Plants",
+  "x": 23246.0,
+  "y": 36456.0,
+  "z": 206.99999999999997,
+  "yaw": 1.1999999999999909,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0654",
+  "folder": "Island/Plants",
+  "x": 26089.0,
+  "y": 27070.0,
+  "z": 265.0,
+  "yaw": -23.399999999999984,
+  "scale": 0.94
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0604",
+  "folder": "Island/Plants",
+  "x": 25115.0,
+  "y": 31789.0,
+  "z": 257.0,
+  "yaw": 78.30000000000003,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0698",
+  "folder": "Island/Plants",
+  "x": 25276.0,
+  "y": 24964.0,
+  "z": 217.0,
+  "yaw": -41.40000000000004,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0633",
+  "folder": "Island/Plants",
+  "x": 24949.0,
+  "y": 25555.0,
+  "z": 259.0,
+  "yaw": -54.800000000000004,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0716",
+  "folder": "Island/Plants",
+  "x": 30600.0,
+  "y": 37148.0,
+  "z": 208.0,
+  "yaw": -105.10000000000004,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1231",
+  "folder": "Island/Rocks",
+  "x": 20266.0,
+  "y": 30717.0,
+  "z": 246.0,
+  "yaw": 145.90000000000003,
+  "scale": 1.21
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0873",
+  "folder": "Island/Plants",
+  "x": 20759.0,
+  "y": 36066.0,
+  "z": 176.0,
+  "yaw": 122.10000000000001,
+  "scale": 1.02
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1024",
+  "folder": "Island/Plants",
+  "x": 20771.0,
+  "y": 33540.0,
+  "z": 158.0,
+  "yaw": 71.99999999999999,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1084",
+  "folder": "Island/Plants",
+  "x": 21372.0,
+  "y": 35236.0,
+  "z": 180.0,
+  "yaw": -79.39999999999998,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0628",
+  "folder": "Island/Plants",
+  "x": 15235.0,
+  "y": 26803.0,
+  "z": 200.99999999999997,
+  "yaw": -111.30000000000003,
+  "scale": 1.06
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0731",
+  "folder": "Island/Plants",
+  "x": 27332.0,
+  "y": 31852.0,
+  "z": 276.0,
+  "yaw": 117.70000000000006,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0686",
+  "folder": "Island/Plants",
+  "x": 26387.0,
+  "y": 30390.0,
+  "z": 266.0,
+  "yaw": 46.20000000000002,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0923",
+  "folder": "Island/Plants",
+  "x": 22649.0,
+  "y": 31135.0,
+  "z": 373.0,
+  "yaw": -8.699999999999987,
+  "scale": 1.31
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0818",
+  "folder": "Island/Plants",
+  "x": 21442.0,
+  "y": 37418.0,
+  "z": 223.0,
+  "yaw": -61.89999999999998,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0844",
+  "folder": "Island/Plants",
+  "x": 18405.0,
+  "y": 34929.0,
+  "z": 199.0,
+  "yaw": 92.89999999999999,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1067",
+  "folder": "Island/Plants",
+  "x": 30377.0,
+  "y": 36608.0,
+  "z": 208.0,
+  "yaw": -69.69999999999997,
+  "scale": 1.08
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0976",
+  "folder": "Island/Plants",
+  "x": 27456.0,
+  "y": 25923.0,
+  "z": 162.0,
+  "yaw": 92.19999999999999,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0835",
+  "folder": "Island/Plants",
+  "x": 21815.0,
+  "y": 36736.0,
+  "z": 229.0,
+  "yaw": -163.9,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0831",
+  "folder": "Island/Plants",
+  "x": 14829.0,
+  "y": 26261.0,
+  "z": 206.99999999999997,
+  "yaw": 113.60000000000002,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0810",
+  "folder": "Island/Plants",
+  "x": 21097.0,
+  "y": 35501.0,
+  "z": 179.0,
+  "yaw": 84.30000000000003,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0966",
+  "folder": "Island/Plants",
+  "x": 21297.0,
+  "y": 36939.0,
+  "z": 220.00000000000003,
+  "yaw": -136.89999999999998,
+  "scale": 1.88
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0919",
+  "folder": "Island/Plants",
+  "x": 15144.0,
+  "y": 26135.0,
+  "z": 204.0,
+  "yaw": -153.80000000000004,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0885",
+  "folder": "Island/Plants",
+  "x": 22480.0,
+  "y": 31165.0,
+  "z": 365.0,
+  "yaw": 56.9,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1061",
+  "folder": "Island/Plants",
+  "x": 30155.0,
+  "y": 32225.0,
+  "z": 196.0,
+  "yaw": 66.10000000000004,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0775",
+  "folder": "Island/Plants",
+  "x": 17461.0,
+  "y": 29167.0,
+  "z": 180.0,
+  "yaw": -117.8,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0125",
+  "folder": "Island/Plants",
+  "x": 18952.0,
+  "y": 32028.0,
+  "z": 55.00000000000001,
+  "yaw": -173.7,
+  "scale": 1.3
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1065",
+  "folder": "Island/Plants",
+  "x": 23351.0,
+  "y": 31386.0,
+  "z": 337.0,
+  "yaw": -10.300000000000011,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0879",
+  "folder": "Island/Plants",
+  "x": 21630.0,
+  "y": 36225.0,
+  "z": 231.0,
+  "yaw": -106.9,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0305",
+  "folder": "Island/Plants",
+  "x": 23196.0,
+  "y": 31992.0,
+  "z": 249.00000000000003,
+  "yaw": 52.60000000000006,
+  "scale": 0.96
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0822",
+  "folder": "Island/Plants",
+  "x": 17859.0,
+  "y": 28901.0,
+  "z": 241.0,
+  "yaw": 18.100000000000005,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0811",
+  "folder": "Island/Plants",
+  "x": 14608.0,
+  "y": 26364.0,
+  "z": 200.99999999999997,
+  "yaw": -137.4,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0715",
+  "folder": "Island/Plants",
+  "x": 22393.0,
+  "y": 37594.0,
+  "z": 233.0,
+  "yaw": 9.200000000000003,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0806",
+  "folder": "Island/Plants",
+  "x": 23489.0,
+  "y": 36800.0,
+  "z": 200.99999999999997,
+  "yaw": 135.29999999999998,
+  "scale": 1.63
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0752",
+  "folder": "Island/Plants",
+  "x": 22210.0,
+  "y": 31642.0,
+  "z": 294.0,
+  "yaw": -165.39999999999998,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0612",
+  "folder": "Island/Plants",
+  "x": 26599.0,
+  "y": 33114.0,
+  "z": 204.0,
+  "yaw": -71.99999999999999,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0705",
+  "folder": "Island/Plants",
+  "x": 28686.0,
+  "y": 33050.0,
+  "z": 233.0,
+  "yaw": 174.6,
+  "scale": 1.18
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1098",
+  "folder": "Island/Plants",
+  "x": 23184.0,
+  "y": 31295.0,
+  "z": 351.0,
+  "yaw": 162.00000000000003,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1099",
+  "folder": "Island/Plants",
+  "x": 22652.0,
+  "y": 36463.0,
+  "z": 235.0,
+  "yaw": -138.69999999999996,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0924",
+  "folder": "Island/Plants",
+  "x": 15944.0,
+  "y": 26812.0,
+  "z": 174.0,
+  "yaw": -174.4,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0351",
+  "folder": "Island/Plants",
+  "x": 23660.0,
+  "y": 31244.0,
+  "z": 333.0,
+  "yaw": 111.30000000000005,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1064",
+  "folder": "Island/Plants",
+  "x": 25018.0,
+  "y": 26758.0,
+  "z": 322.0,
+  "yaw": 81.60000000000002,
+  "scale": 1.76
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0652",
+  "folder": "Island/Plants",
+  "x": 27429.0,
+  "y": 26047.0,
+  "z": 164.0,
+  "yaw": -19.300000000000008,
+  "scale": 1.32
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0696",
+  "folder": "Island/Plants",
+  "x": 25918.0,
+  "y": 27006.0,
+  "z": 275.0,
+  "yaw": -166.29999999999998,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0754",
+  "folder": "Island/Plants",
+  "x": 27924.0,
+  "y": 33405.0,
+  "z": 204.0,
+  "yaw": 178.10000000000002,
+  "scale": 1.88
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0741",
+  "folder": "Island/Plants",
+  "x": 27328.0,
+  "y": 33047.0,
+  "z": 229.99999999999997,
+  "yaw": 2.6999999999999993,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0842",
+  "folder": "Island/Plants",
+  "x": 15003.0,
+  "y": 26663.0,
+  "z": 216.0,
+  "yaw": -46.600000000000016,
+  "scale": 1.06
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0942",
+  "folder": "Island/Plants",
+  "x": 25714.0,
+  "y": 30170.0,
+  "z": 287.0,
+  "yaw": 134.4,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1097",
+  "folder": "Island/Plants",
+  "x": 22063.0,
+  "y": 37437.0,
+  "z": 231.0,
+  "yaw": -176.5,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0892",
+  "folder": "Island/Plants",
+  "x": 21347.0,
+  "y": 31967.0,
+  "z": 231.0,
+  "yaw": 15.199999999999992,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1091",
+  "folder": "Island/Plants",
+  "x": 23503.0,
+  "y": 36286.0,
+  "z": 198.0,
+  "yaw": -18.0,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0776",
+  "folder": "Island/Plants",
+  "x": 25181.0,
+  "y": 30566.0,
+  "z": 317.0,
+  "yaw": 102.70000000000005,
+  "scale": 1.34
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0861",
+  "folder": "Island/Plants",
+  "x": 26116.0,
+  "y": 25955.0,
+  "z": 242.0,
+  "yaw": -37.50000000000001,
+  "scale": 1.0
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0799",
+  "folder": "Island/Plants",
+  "x": 21244.0,
+  "y": 31079.0,
+  "z": 310.0,
+  "yaw": -149.5,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0264",
+  "folder": "Island/Plants",
+  "x": 18257.0,
+  "y": 36044.0,
+  "z": 146.0,
+  "yaw": -150.4,
+  "scale": 1.7
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0787",
+  "folder": "Island/Plants",
+  "x": 21406.0,
+  "y": 33189.0,
+  "z": 176.0,
+  "yaw": -133.8,
+  "scale": 1.63
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1056",
+  "folder": "Island/Plants",
+  "x": 21386.0,
+  "y": 37003.0,
+  "z": 223.0,
+  "yaw": 130.8,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0246",
+  "folder": "Island/Plants",
+  "x": 29940.0,
+  "y": 37017.0,
+  "z": 170.0,
+  "yaw": -14.699999999999985,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0635",
+  "folder": "Island/Plants",
+  "x": 22348.0,
+  "y": 31311.0,
+  "z": 339.0,
+  "yaw": -34.10000000000004,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1079",
+  "folder": "Island/Plants",
+  "x": 26164.0,
+  "y": 31381.0,
+  "z": 256.0,
+  "yaw": 89.5,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0185",
+  "folder": "Island/Plants",
+  "x": 15663.0,
+  "y": 25937.0,
+  "z": 135.0,
+  "yaw": -10.699999999999987,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0847",
+  "folder": "Island/Plants",
+  "x": 14635.0,
+  "y": 27399.0,
+  "z": 179.0,
+  "yaw": 47.10000000000005,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0599",
+  "folder": "Island/Plants",
+  "x": 21205.0,
+  "y": 36239.0,
+  "z": 200.99999999999997,
+  "yaw": 80.60000000000002,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0673",
+  "folder": "Island/Plants",
+  "x": 27543.0,
+  "y": 32131.0,
+  "z": 267.0,
+  "yaw": 75.60000000000004,
+  "scale": 1.66
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0946",
+  "folder": "Island/Plants",
+  "x": 27855.0,
+  "y": 32379.0,
+  "z": 269.0,
+  "yaw": 20.500000000000014,
+  "scale": 1.32
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0888",
+  "folder": "Island/Plants",
+  "x": 17627.0,
+  "y": 28990.0,
+  "z": 213.0,
+  "yaw": 40.30000000000001,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0783",
+  "folder": "Island/Plants",
+  "x": 26156.0,
+  "y": 32425.0,
+  "z": 238.0,
+  "yaw": 25.80000000000005,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0780",
+  "folder": "Island/Plants",
+  "x": 25560.0,
+  "y": 27343.0,
+  "z": 299.0,
+  "yaw": 10.000000000000005,
+  "scale": 1.08
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0975",
+  "folder": "Island/Plants",
+  "x": 24746.0,
+  "y": 25732.0,
+  "z": 264.0,
+  "yaw": 125.49999999999999,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0177",
+  "folder": "Island/Plants",
+  "x": 17402.0,
+  "y": 27055.0,
+  "z": 114.99999999999999,
+  "yaw": 73.69999999999999,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0936",
+  "folder": "Island/Plants",
+  "x": 14476.0,
+  "y": 26349.0,
+  "z": 192.0,
+  "yaw": 152.60000000000002,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0965",
+  "folder": "Island/Plants",
+  "x": 21935.0,
+  "y": 37356.0,
+  "z": 229.99999999999997,
+  "yaw": 84.20000000000002,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0992",
+  "folder": "Island/Plants",
+  "x": 24228.0,
+  "y": 32922.0,
+  "z": 219.0,
+  "yaw": -98.80000000000004,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0481",
+  "folder": "Island/Plants",
+  "x": 22974.0,
+  "y": 37301.0,
+  "z": 198.0,
+  "yaw": 77.50000000000003,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0773",
+  "folder": "Island/Plants",
+  "x": 28699.0,
+  "y": 29174.0,
+  "z": 282.0,
+  "yaw": -68.0,
+  "scale": 1.67
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1092",
+  "folder": "Island/Plants",
+  "x": 25015.0,
+  "y": 26390.0,
+  "z": 309.0,
+  "yaw": 139.5,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1215",
+  "folder": "Island/Rocks",
+  "x": 25775.0,
+  "y": 24045.0,
+  "z": -1.0,
+  "yaw": 72.99999999999996,
+  "scale": 1.33
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0173",
+  "folder": "Island/Plants",
+  "x": 16688.0,
+  "y": 27875.0,
+  "z": 121.0,
+  "yaw": -32.69999999999999,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0788",
+  "folder": "Island/Plants",
+  "x": 25193.0,
+  "y": 25582.0,
+  "z": 271.0,
+  "yaw": -119.0,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1078",
+  "folder": "Island/Plants",
+  "x": 30010.0,
+  "y": 32303.0,
+  "z": 206.0,
+  "yaw": 30.30000000000001,
+  "scale": 1.37
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0338",
+  "folder": "Island/Plants",
+  "x": 23820.0,
+  "y": 37189.0,
+  "z": 143.0,
+  "yaw": 62.800000000000026,
+  "scale": 1.57
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0153",
+  "folder": "Island/Plants",
+  "x": 26881.0,
+  "y": 28792.0,
+  "z": 200.0,
+  "yaw": 157.80000000000004,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0668",
+  "folder": "Island/Plants",
+  "x": 22791.0,
+  "y": 36569.0,
+  "z": 231.0,
+  "yaw": -149.40000000000003,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0941",
+  "folder": "Island/Plants",
+  "x": 21459.0,
+  "y": 32363.0,
+  "z": 206.99999999999997,
+  "yaw": -31.30000000000002,
+  "scale": 1.18
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0320",
+  "folder": "Island/Plants",
+  "x": 24627.0,
+  "y": 32307.0,
+  "z": 235.0,
+  "yaw": -119.90000000000005,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0858",
+  "folder": "Island/Plants",
+  "x": 23365.0,
+  "y": 36207.0,
+  "z": 206.99999999999997,
+  "yaw": 19.19999999999999,
+  "scale": 1.65
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0274",
+  "folder": "Island/Plants",
+  "x": 26516.0,
+  "y": 25259.0,
+  "z": 191.0,
+  "yaw": 117.30000000000003,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0603",
+  "folder": "Island/Plants",
+  "x": 22126.0,
+  "y": 36766.0,
+  "z": 217.0,
+  "yaw": 117.00000000000006,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0662",
+  "folder": "Island/Plants",
+  "x": 20802.0,
+  "y": 36633.0,
+  "z": 184.0,
+  "yaw": 151.89999999999998,
+  "scale": 1.55
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0937",
+  "folder": "Island/Plants",
+  "x": 24926.0,
+  "y": 31881.0,
+  "z": 271.0,
+  "yaw": -98.70000000000006,
+  "scale": 1.62
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0824",
+  "folder": "Island/Plants",
+  "x": 23882.0,
+  "y": 32197.0,
+  "z": 254.0,
+  "yaw": 27.5,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0974",
+  "folder": "Island/Plants",
+  "x": 25840.0,
+  "y": 25703.0,
+  "z": 249.00000000000003,
+  "yaw": -179.8,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0236",
+  "folder": "Island/Plants",
+  "x": 24857.0,
+  "y": 26803.0,
+  "z": 313.0,
+  "yaw": 57.30000000000001,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0948",
+  "folder": "Island/Plants",
+  "x": 26930.0,
+  "y": 32187.0,
+  "z": 246.0,
+  "yaw": 110.70000000000002,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0836",
+  "folder": "Island/Plants",
+  "x": 14032.0,
+  "y": 26798.0,
+  "z": 164.0,
+  "yaw": 3.00000000000003,
+  "scale": 1.5
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0224",
+  "folder": "Island/Plants",
+  "x": 22325.0,
+  "y": 37128.0,
+  "z": 202.0,
+  "yaw": -7.100000000000023,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0590",
+  "folder": "Island/Plants",
+  "x": 27878.0,
+  "y": 33754.0,
+  "z": 163.0,
+  "yaw": 58.60000000000003,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0263",
+  "folder": "Island/Plants",
+  "x": 18200.0,
+  "y": 35200.0,
+  "z": 229.0,
+  "yaw": -23.89999999999998,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1075",
+  "folder": "Island/Plants",
+  "x": 27906.0,
+  "y": 33092.0,
+  "z": 231.99999999999997,
+  "yaw": -80.0,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0690",
+  "folder": "Island/Plants",
+  "x": 22066.0,
+  "y": 31833.0,
+  "z": 268.0,
+  "yaw": -12.399999999999975,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0750",
+  "folder": "Island/Plants",
+  "x": 21720.0,
+  "y": 37141.0,
+  "z": 229.0,
+  "yaw": 123.19999999999999,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0869",
+  "folder": "Island/Plants",
+  "x": 23845.0,
+  "y": 31366.0,
+  "z": 334.0,
+  "yaw": -69.39999999999998,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0994",
+  "folder": "Island/Plants",
+  "x": 30596.0,
+  "y": 31572.0,
+  "z": 178.0,
+  "yaw": 118.00000000000001,
+  "scale": 0.9
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0902",
+  "folder": "Island/Plants",
+  "x": 23202.0,
+  "y": 36266.0,
+  "z": 218.00000000000003,
+  "yaw": -62.8,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1044",
+  "folder": "Island/Plants",
+  "x": 26946.0,
+  "y": 33433.0,
+  "z": 204.0,
+  "yaw": 20.700000000000003,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0480",
+  "folder": "Island/Plants",
+  "x": 24874.0,
+  "y": 32175.0,
+  "z": 231.0,
+  "yaw": -55.100000000000016,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0222",
+  "folder": "Island/Plants",
+  "x": 22813.0,
+  "y": 36511.0,
+  "z": 216.0,
+  "yaw": -15.399999999999974,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0600",
+  "folder": "Island/Plants",
+  "x": 17987.0,
+  "y": 28489.0,
+  "z": 244.0,
+  "yaw": -169.1,
+  "scale": 0.86
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0294",
+  "folder": "Island/Plants",
+  "x": 26693.0,
+  "y": 27068.0,
+  "z": 200.99999999999997,
+  "yaw": 42.19999999999998,
+  "scale": 1.45
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0692",
+  "folder": "Island/Plants",
+  "x": 15719.0,
+  "y": 26438.0,
+  "z": 190.0,
+  "yaw": -106.20000000000007,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0935",
+  "folder": "Island/Plants",
+  "x": 30043.0,
+  "y": 32005.0,
+  "z": 222.00000000000003,
+  "yaw": 160.2,
+  "scale": 1.47
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0915",
+  "folder": "Island/Plants",
+  "x": 25638.0,
+  "y": 31240.0,
+  "z": 269.0,
+  "yaw": -93.00000000000001,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0620",
+  "folder": "Island/Plants",
+  "x": 28108.0,
+  "y": 32937.0,
+  "z": 233.0,
+  "yaw": -177.5,
+  "scale": 1.3
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0722",
+  "folder": "Island/Plants",
+  "x": 26550.0,
+  "y": 32883.0,
+  "z": 227.0,
+  "yaw": 0.6000000000000278,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0744",
+  "folder": "Island/Plants",
+  "x": 25374.0,
+  "y": 30793.0,
+  "z": 294.0,
+  "yaw": 148.30000000000004,
+  "scale": 1.37
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0982",
+  "folder": "Island/Plants",
+  "x": 30100.0,
+  "y": 29606.0,
+  "z": 199.0,
+  "yaw": -19.600000000000026,
+  "scale": 1.28
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0838",
+  "folder": "Island/Plants",
+  "x": 26812.0,
+  "y": 26286.0,
+  "z": 225.0,
+  "yaw": 148.30000000000004,
+  "scale": 1.87
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1055",
+  "folder": "Island/Plants",
+  "x": 26950.0,
+  "y": 31689.0,
+  "z": 263.0,
+  "yaw": -81.5,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0482",
+  "folder": "Island/Plants",
+  "x": 26272.0,
+  "y": 26678.0,
+  "z": 229.0,
+  "yaw": 162.10000000000002,
+  "scale": 0.9
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0855",
+  "folder": "Island/Plants",
+  "x": 23409.0,
+  "y": 31091.0,
+  "z": 378.0,
+  "yaw": -134.4,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0311",
+  "folder": "Island/Plants",
+  "x": 26762.0,
+  "y": 31553.0,
+  "z": 233.0,
+  "yaw": -165.9,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0679",
+  "folder": "Island/Plants",
+  "x": 29047.0,
+  "y": 32456.0,
+  "z": 273.0,
+  "yaw": 52.19999999999998,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0848",
+  "folder": "Island/Plants",
+  "x": 21849.0,
+  "y": 31867.0,
+  "z": 258.0,
+  "yaw": 151.1,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0304",
+  "folder": "Island/Plants",
+  "x": 17149.0,
+  "y": 28493.0,
+  "z": 153.0,
+  "yaw": -20.400000000000034,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0925",
+  "folder": "Island/Plants",
+  "x": 24813.0,
+  "y": 25408.0,
+  "z": 236.0,
+  "yaw": -126.49999999999997,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0630",
+  "folder": "Island/Plants",
+  "x": 15297.0,
+  "y": 25998.0,
+  "z": 189.0,
+  "yaw": -37.69999999999999,
+  "scale": 1.06
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0729",
+  "folder": "Island/Plants",
+  "x": 23003.0,
+  "y": 37067.0,
+  "z": 227.99999999999997,
+  "yaw": 127.19999999999997,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0953",
+  "folder": "Island/Plants",
+  "x": 26128.0,
+  "y": 30372.0,
+  "z": 267.0,
+  "yaw": 67.8,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0852",
+  "folder": "Island/Plants",
+  "x": 24035.0,
+  "y": 31380.0,
+  "z": 329.0,
+  "yaw": 168.10000000000002,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0739",
+  "folder": "Island/Plants",
+  "x": 27909.0,
+  "y": 32565.0,
+  "z": 262.0,
+  "yaw": -16.399999999999974,
+  "scale": 1.73
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0921",
+  "folder": "Island/Plants",
+  "x": 24528.0,
+  "y": 32121.0,
+  "z": 263.0,
+  "yaw": 105.00000000000004,
+  "scale": 1.82
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1063",
+  "folder": "Island/Plants",
+  "x": 24429.0,
+  "y": 32724.0,
+  "z": 231.0,
+  "yaw": 177.50000000000003,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1026",
+  "folder": "Island/Plants",
+  "x": 25411.0,
+  "y": 30116.0,
+  "z": 311.0,
+  "yaw": 14.399999999999986,
+  "scale": 1.12
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0717",
+  "folder": "Island/Plants",
+  "x": 25371.0,
+  "y": 31430.0,
+  "z": 275.0,
+  "yaw": -156.20000000000002,
+  "scale": 1.76
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0819",
+  "folder": "Island/Plants",
+  "x": 26825.0,
+  "y": 32901.0,
+  "z": 229.0,
+  "yaw": -112.6,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0813",
+  "folder": "Island/Plants",
+  "x": 25285.0,
+  "y": 27681.0,
+  "z": 323.0,
+  "yaw": -120.30000000000003,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0701",
+  "folder": "Island/Plants",
+  "x": 17714.0,
+  "y": 35907.0,
+  "z": 208.0,
+  "yaw": -102.20000000000007,
+  "scale": 1.54
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0606",
+  "folder": "Island/Plants",
+  "x": 25205.0,
+  "y": 25230.0,
+  "z": 236.0,
+  "yaw": -88.20000000000006,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0970",
+  "folder": "Island/Plants",
+  "x": 21576.0,
+  "y": 31688.0,
+  "z": 266.0,
+  "yaw": -35.0,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0987",
+  "folder": "Island/Plants",
+  "x": 20874.0,
+  "y": 33309.0,
+  "z": 163.0,
+  "yaw": -64.69999999999997,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0894",
+  "folder": "Island/Plants",
+  "x": 17546.0,
+  "y": 35573.0,
+  "z": 237.0,
+  "yaw": 134.29999999999998,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0951",
+  "folder": "Island/Plants",
+  "x": 25587.0,
+  "y": 31022.0,
+  "z": 276.0,
+  "yaw": 59.30000000000004,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0832",
+  "folder": "Island/Plants",
+  "x": 25858.0,
+  "y": 25095.0,
+  "z": 242.0,
+  "yaw": -43.30000000000002,
+  "scale": 1.88
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0312",
+  "folder": "Island/Plants",
+  "x": 25297.0,
+  "y": 30599.0,
+  "z": 281.0,
+  "yaw": 86.39999999999998,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0798",
+  "folder": "Island/Plants",
+  "x": 24953.0,
+  "y": 30481.0,
+  "z": 342.0,
+  "yaw": 2.899999999999986,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1225",
+  "folder": "Island/Rocks",
+  "x": 24147.0,
+  "y": 36957.0,
+  "z": 148.0,
+  "yaw": -112.0,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0736",
+  "folder": "Island/Plants",
+  "x": 30424.0,
+  "y": 30602.0,
+  "z": 204.99999999999997,
+  "yaw": -130.1,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1048",
+  "folder": "Island/Plants",
+  "x": 25295.0,
+  "y": 30303.0,
+  "z": 316.0,
+  "yaw": -53.499999999999986,
+  "scale": 1.02
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0735",
+  "folder": "Island/Plants",
+  "x": 22902.0,
+  "y": 37818.0,
+  "z": 212.0,
+  "yaw": 136.0,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0834",
+  "folder": "Island/Plants",
+  "x": 30107.0,
+  "y": 36631.0,
+  "z": 199.0,
+  "yaw": 12.500000000000002,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0666",
+  "folder": "Island/Plants",
+  "x": 29536.0,
+  "y": 32426.0,
+  "z": 239.0,
+  "yaw": 65.6,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0972",
+  "folder": "Island/Plants",
+  "x": 14733.0,
+  "y": 26848.0,
+  "z": 208.0,
+  "yaw": 99.50000000000001,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0909",
+  "folder": "Island/Plants",
+  "x": 30009.0,
+  "y": 30919.0,
+  "z": 281.0,
+  "yaw": -119.6,
+  "scale": 1.06
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0973",
+  "folder": "Island/Plants",
+  "x": 25793.0,
+  "y": 26478.0,
+  "z": 264.0,
+  "yaw": 159.80000000000004,
+  "scale": 1.28
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0940",
+  "folder": "Island/Plants",
+  "x": 26705.0,
+  "y": 30616.0,
+  "z": 274.0,
+  "yaw": 112.90000000000003,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1039",
+  "folder": "Island/Plants",
+  "x": 22086.0,
+  "y": 31671.0,
+  "z": 287.0,
+  "yaw": -20.500000000000004,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0862",
+  "folder": "Island/Plants",
+  "x": 29687.0,
+  "y": 33005.0,
+  "z": 181.0,
+  "yaw": -65.39999999999996,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0689",
+  "folder": "Island/Plants",
+  "x": 14522.0,
+  "y": 27361.0,
+  "z": 177.0,
+  "yaw": 51.50000000000003,
+  "scale": 1.76
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0820",
+  "folder": "Island/Plants",
+  "x": 30415.0,
+  "y": 31292.0,
+  "z": 206.0,
+  "yaw": -5.300000000000012,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0681",
+  "folder": "Island/Plants",
+  "x": 22209.0,
+  "y": 37494.0,
+  "z": 231.99999999999997,
+  "yaw": -120.30000000000003,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1015",
+  "folder": "Island/Plants",
+  "x": 25810.0,
+  "y": 29743.0,
+  "z": 287.0,
+  "yaw": -43.69999999999999,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0890",
+  "folder": "Island/Plants",
+  "x": 14055.0,
+  "y": 26521.0,
+  "z": 164.0,
+  "yaw": -79.80000000000001,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1224",
+  "folder": "Island/Rocks",
+  "x": 20122.0,
+  "y": 35944.0,
+  "z": 143.0,
+  "yaw": -12.600000000000021,
+  "scale": 1.0
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0903",
+  "folder": "Island/Plants",
+  "x": 22990.0,
+  "y": 38102.0,
+  "z": 186.0,
+  "yaw": -21.300000000000015,
+  "scale": 1.72
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0592",
+  "folder": "Island/Plants",
+  "x": 26141.0,
+  "y": 32128.0,
+  "z": 233.0,
+  "yaw": -87.60000000000002,
+  "scale": 0.99
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0120",
+  "folder": "Island/Plants",
+  "x": 19104.0,
+  "y": 31527.0,
+  "z": 112.99999999999999,
+  "yaw": 117.00000000000006,
+  "scale": 1.12
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1095",
+  "folder": "Island/Plants",
+  "x": 21278.0,
+  "y": 32888.0,
+  "z": 182.0,
+  "yaw": -45.200000000000045,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0680",
+  "folder": "Island/Plants",
+  "x": 14466.0,
+  "y": 27005.0,
+  "z": 192.0,
+  "yaw": -124.69999999999997,
+  "scale": 1.37
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0301",
+  "folder": "Island/Plants",
+  "x": 30339.0,
+  "y": 30573.0,
+  "z": 189.0,
+  "yaw": -17.100000000000023,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1027",
+  "folder": "Island/Plants",
+  "x": 30546.0,
+  "y": 31782.0,
+  "z": 177.0,
+  "yaw": 109.20000000000002,
+  "scale": 1.31
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0969",
+  "folder": "Island/Plants",
+  "x": 25370.0,
+  "y": 27378.0,
+  "z": 312.0,
+  "yaw": 44.69999999999998,
+  "scale": 1.34
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0967",
+  "folder": "Island/Plants",
+  "x": 21042.0,
+  "y": 35878.0,
+  "z": 190.0,
+  "yaw": -106.40000000000006,
+  "scale": 1.52
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1226",
+  "folder": "Island/Rocks",
+  "x": 15530.0,
+  "y": 28311.0,
+  "z": 23.0,
+  "yaw": -24.800000000000015,
+  "scale": 1.37
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0314",
+  "folder": "Island/Plants",
+  "x": 30141.0,
+  "y": 29890.0,
+  "z": 189.0,
+  "yaw": -145.3,
+  "scale": 1.43
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0325",
+  "folder": "Island/Plants",
+  "x": 27198.0,
+  "y": 26877.0,
+  "z": 165.0,
+  "yaw": -162.6,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1042",
+  "folder": "Island/Plants",
+  "x": 27038.0,
+  "y": 25414.0,
+  "z": 185.0,
+  "yaw": -22.800000000000015,
+  "scale": 1.02
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0926",
+  "folder": "Island/Plants",
+  "x": 23003.0,
+  "y": 36285.0,
+  "z": 227.99999999999997,
+  "yaw": -108.20000000000006,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0682",
+  "folder": "Island/Plants",
+  "x": 23337.0,
+  "y": 31698.0,
+  "z": 298.0,
+  "yaw": 158.0,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0619",
+  "folder": "Island/Plants",
+  "x": 23420.0,
+  "y": 37822.0,
+  "z": 164.0,
+  "yaw": -112.1,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0922",
+  "folder": "Island/Plants",
+  "x": 26465.0,
+  "y": 25375.0,
+  "z": 229.99999999999997,
+  "yaw": 129.69999999999996,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0899",
+  "folder": "Island/Plants",
+  "x": 22148.0,
+  "y": 32170.0,
+  "z": 237.0,
+  "yaw": -78.19999999999999,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0912",
+  "folder": "Island/Plants",
+  "x": 23198.0,
+  "y": 37227.0,
+  "z": 218.00000000000003,
+  "yaw": 67.89999999999993,
+  "scale": 1.01
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0866",
+  "folder": "Island/Plants",
+  "x": 29151.0,
+  "y": 33328.0,
+  "z": 189.0,
+  "yaw": -42.70000000000005,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0709",
+  "folder": "Island/Plants",
+  "x": 21839.0,
+  "y": 37009.0,
+  "z": 227.99999999999997,
+  "yaw": 71.89999999999995,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0760",
+  "folder": "Island/Plants",
+  "x": 25447.0,
+  "y": 31123.0,
+  "z": 280.0,
+  "yaw": 11.399999999999968,
+  "scale": 1.9
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0332",
+  "folder": "Island/Plants",
+  "x": 15620.0,
+  "y": 27202.0,
+  "z": 161.0,
+  "yaw": 104.20000000000003,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0826",
+  "folder": "Island/Plants",
+  "x": 23369.0,
+  "y": 36647.0,
+  "z": 210.0,
+  "yaw": -179.3,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0719",
+  "folder": "Island/Plants",
+  "x": 22342.0,
+  "y": 36320.0,
+  "z": 235.0,
+  "yaw": 82.8,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0839",
+  "folder": "Island/Plants",
+  "x": 23029.0,
+  "y": 36900.0,
+  "z": 227.99999999999997,
+  "yaw": -76.90000000000002,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0964",
+  "folder": "Island/Plants",
+  "x": 25898.0,
+  "y": 30472.0,
+  "z": 272.0,
+  "yaw": -75.69999999999997,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0959",
+  "folder": "Island/Plants",
+  "x": 24788.0,
+  "y": 25200.0,
+  "z": 209.0,
+  "yaw": 5.999999999999998,
+  "scale": 1.78
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0950",
+  "folder": "Island/Plants",
+  "x": 21925.0,
+  "y": 31162.0,
+  "z": 347.0,
+  "yaw": 3.00000000000003,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1045",
+  "folder": "Island/Plants",
+  "x": 22257.0,
+  "y": 38088.0,
+  "z": 216.0,
+  "yaw": 25.89999999999999,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0860",
+  "folder": "Island/Plants",
+  "x": 17495.0,
+  "y": 35330.0,
+  "z": 242.0,
+  "yaw": -36.399999999999984,
+  "scale": 1.5
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0714",
+  "folder": "Island/Plants",
+  "x": 21075.0,
+  "y": 36234.0,
+  "z": 204.0,
+  "yaw": -89.60000000000002,
+  "scale": 1.34
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1038",
+  "folder": "Island/Plants",
+  "x": 26061.0,
+  "y": 25920.0,
+  "z": 243.00000000000003,
+  "yaw": -33.199999999999996,
+  "scale": 1.51
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0486",
+  "folder": "Island/Plants",
+  "x": 20693.0,
+  "y": 36581.0,
+  "z": 152.0,
+  "yaw": 18.600000000000037,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0145",
+  "folder": "Island/Plants",
+  "x": 26488.0,
+  "y": 32883.0,
+  "z": 208.0,
+  "yaw": -147.80000000000004,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0734",
+  "folder": "Island/Plants",
+  "x": 26950.0,
+  "y": 25270.0,
+  "z": 186.0,
+  "yaw": -79.49999999999999,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0947",
+  "folder": "Island/Plants",
+  "x": 29892.0,
+  "y": 30133.0,
+  "z": 276.0,
+  "yaw": 96.10000000000005,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0697",
+  "folder": "Island/Plants",
+  "x": 24676.0,
+  "y": 25360.0,
+  "z": 218.00000000000003,
+  "yaw": -102.80000000000004,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0562",
+  "folder": "Island/Plants",
+  "x": 24657.0,
+  "y": 32440.0,
+  "z": 243.00000000000003,
+  "yaw": -150.3,
+  "scale": 1.02
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0309",
+  "folder": "Island/Plants",
+  "x": 23570.0,
+  "y": 32391.0,
+  "z": 217.0,
+  "yaw": 31.200000000000006,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0348",
+  "folder": "Island/Plants",
+  "x": 21293.0,
+  "y": 36830.0,
+  "z": 206.0,
+  "yaw": -95.00000000000001,
+  "scale": 0.92
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0828",
+  "folder": "Island/Plants",
+  "x": 15923.0,
+  "y": 26456.0,
+  "z": 174.0,
+  "yaw": -5.000000000000002,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1069",
+  "folder": "Island/Plants",
+  "x": 26690.0,
+  "y": 25060.0,
+  "z": 193.0,
+  "yaw": -133.5,
+  "scale": 1.02
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0192",
+  "folder": "Island/Plants",
+  "x": 15774.0,
+  "y": 25740.0,
+  "z": 126.0,
+  "yaw": -109.40000000000006,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0726",
+  "folder": "Island/Plants",
+  "x": 27670.0,
+  "y": 32879.0,
+  "z": 243.00000000000003,
+  "yaw": -135.6,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0215",
+  "folder": "Island/Plants",
+  "x": 21906.0,
+  "y": 36130.0,
+  "z": 214.0,
+  "yaw": -5.399999999999977,
+  "scale": 1.18
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0789",
+  "folder": "Island/Plants",
+  "x": 24678.0,
+  "y": 25945.0,
+  "z": 279.0,
+  "yaw": 148.60000000000005,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1211",
+  "folder": "Island/Rocks",
+  "x": 19464.0,
+  "y": 33695.0,
+  "z": 52.0,
+  "yaw": 129.20000000000002,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0759",
+  "folder": "Island/Plants",
+  "x": 28918.0,
+  "y": 29263.0,
+  "z": 289.0,
+  "yaw": -150.1,
+  "scale": 1.04
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1006",
+  "folder": "Island/Plants",
+  "x": 30989.0,
+  "y": 37138.0,
+  "z": 163.0,
+  "yaw": 174.3,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0202",
+  "folder": "Island/Plants",
+  "x": 28523.0,
+  "y": 33416.0,
+  "z": 171.0,
+  "yaw": -140.79999999999998,
+  "scale": 1.51
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0933",
+  "folder": "Island/Plants",
+  "x": 29702.0,
+  "y": 32654.0,
+  "z": 206.99999999999997,
+  "yaw": -123.79999999999998,
+  "scale": 1.21
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0703",
+  "folder": "Island/Plants",
+  "x": 26807.0,
+  "y": 32368.0,
+  "z": 240.0,
+  "yaw": -60.90000000000003,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0846",
+  "folder": "Island/Plants",
+  "x": 14754.0,
+  "y": 26152.0,
+  "z": 198.0,
+  "yaw": -7.3999999999999755,
+  "scale": 1.42
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0217",
+  "folder": "Island/Plants",
+  "x": 23309.0,
+  "y": 37051.0,
+  "z": 187.0,
+  "yaw": -128.99999999999997,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0511",
+  "folder": "Island/Plants",
+  "x": 25039.0,
+  "y": 32181.0,
+  "z": 254.99999999999997,
+  "yaw": 161.1,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0816",
+  "folder": "Island/Plants",
+  "x": 28770.0,
+  "y": 33157.0,
+  "z": 220.00000000000003,
+  "yaw": 52.70000000000001,
+  "scale": 1.74
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0753",
+  "folder": "Island/Plants",
+  "x": 14177.0,
+  "y": 26608.0,
+  "z": 175.0,
+  "yaw": 120.90000000000003,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0875",
+  "folder": "Island/Plants",
+  "x": 23376.0,
+  "y": 37371.0,
+  "z": 200.0,
+  "yaw": 54.699999999999974,
+  "scale": 1.31
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0927",
+  "folder": "Island/Plants",
+  "x": 18490.0,
+  "y": 35761.0,
+  "z": 186.0,
+  "yaw": 158.79999999999998,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0707",
+  "folder": "Island/Plants",
+  "x": 27314.0,
+  "y": 32328.0,
+  "z": 252.0,
+  "yaw": -97.20000000000006,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0321",
+  "folder": "Island/Plants",
+  "x": 22728.0,
+  "y": 38365.0,
+  "z": 153.0,
+  "yaw": -3.0000000000000004,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0710",
+  "folder": "Island/Plants",
+  "x": 27204.0,
+  "y": 32200.0,
+  "z": 252.99999999999997,
+  "yaw": -4.1999999999999895,
+  "scale": 1.0
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1212",
+  "folder": "Island/Rocks",
+  "x": 19153.0,
+  "y": 30629.0,
+  "z": 172.0,
+  "yaw": 89.5,
+  "scale": 0.91
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0743",
+  "folder": "Island/Plants",
+  "x": 26926.0,
+  "y": 31612.0,
+  "z": 265.0,
+  "yaw": -80.29999999999995,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0904",
+  "folder": "Island/Plants",
+  "x": 22395.0,
+  "y": 31275.0,
+  "z": 347.0,
+  "yaw": 62.300000000000004,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0877",
+  "folder": "Island/Plants",
+  "x": 24647.0,
+  "y": 26603.0,
+  "z": 325.0,
+  "yaw": 27.100000000000023,
+  "scale": 1.29
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1235",
+  "folder": "Island/Rocks",
+  "x": 18492.0,
+  "y": 34351.0,
+  "z": 134.0,
+  "yaw": 8.000000000000028,
+  "scale": 0.91
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0484",
+  "folder": "Island/Plants",
+  "x": 26889.0,
+  "y": 31936.0,
+  "z": 231.0,
+  "yaw": 90.80000000000004,
+  "scale": 0.86
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0578",
+  "folder": "Island/Plants",
+  "x": 21827.0,
+  "y": 31009.0,
+  "z": 360.0,
+  "yaw": -167.8,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0745",
+  "folder": "Island/Plants",
+  "x": 26428.0,
+  "y": 33172.0,
+  "z": 213.0,
+  "yaw": -45.90000000000003,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1074",
+  "folder": "Island/Plants",
+  "x": 25745.0,
+  "y": 30581.0,
+  "z": 277.0,
+  "yaw": 4.800000000000023,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0769",
+  "folder": "Island/Plants",
+  "x": 26040.0,
+  "y": 29932.0,
+  "z": 276.0,
+  "yaw": 118.9,
+  "scale": 1.32
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0825",
+  "folder": "Island/Plants",
+  "x": 29623.0,
+  "y": 32564.0,
+  "z": 222.00000000000003,
+  "yaw": -100.00000000000001,
+  "scale": 1.52
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0850",
+  "folder": "Island/Plants",
+  "x": 23508.0,
+  "y": 31631.0,
+  "z": 305.0,
+  "yaw": -122.60000000000001,
+  "scale": 1.29
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0771",
+  "folder": "Island/Plants",
+  "x": 21341.0,
+  "y": 37514.0,
+  "z": 217.0,
+  "yaw": 82.89999999999998,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0206",
+  "folder": "Island/Plants",
+  "x": 27721.0,
+  "y": 32838.0,
+  "z": 221.0,
+  "yaw": 82.8,
+  "scale": 1.71
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0971",
+  "folder": "Island/Plants",
+  "x": 25614.0,
+  "y": 30079.0,
+  "z": 296.0,
+  "yaw": 45.90000000000003,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1046",
+  "folder": "Island/Plants",
+  "x": 29333.0,
+  "y": 32423.0,
+  "z": 258.0,
+  "yaw": 71.60000000000004,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0609",
+  "folder": "Island/Plants",
+  "x": 21371.0,
+  "y": 32421.0,
+  "z": 193.0,
+  "yaw": 70.69999999999996,
+  "scale": 0.94
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0126",
+  "folder": "Island/Plants",
+  "x": 20721.0,
+  "y": 31522.0,
+  "z": 215.0,
+  "yaw": 106.40000000000003,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0349",
+  "folder": "Island/Plants",
+  "x": 21401.0,
+  "y": 32557.0,
+  "z": 180.0,
+  "yaw": 38.9,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0823",
+  "folder": "Island/Plants",
+  "x": 21088.0,
+  "y": 32317.0,
+  "z": 200.0,
+  "yaw": -164.6,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0490",
+  "folder": "Island/Plants",
+  "x": 24409.0,
+  "y": 26504.0,
+  "z": 315.0,
+  "yaw": 170.2,
+  "scale": 1.08
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0695",
+  "folder": "Island/Plants",
+  "x": 20755.0,
+  "y": 35312.0,
+  "z": 159.0,
+  "yaw": -163.6,
+  "scale": 1.22
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1071",
+  "folder": "Island/Plants",
+  "x": 22772.0,
+  "y": 31641.0,
+  "z": 302.0,
+  "yaw": -44.400000000000034,
+  "scale": 1.66
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0302",
+  "folder": "Island/Plants",
+  "x": 29202.0,
+  "y": 29490.0,
+  "z": 291.0,
+  "yaw": 172.70000000000002,
+  "scale": 0.99
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0632",
+  "folder": "Island/Plants",
+  "x": 26428.0,
+  "y": 31591.0,
+  "z": 250.0,
+  "yaw": -164.8,
+  "scale": 1.31
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0851",
+  "folder": "Island/Plants",
+  "x": 21725.0,
+  "y": 37832.0,
+  "z": 224.00000000000003,
+  "yaw": -5.100000000000024,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0737",
+  "folder": "Island/Plants",
+  "x": 29923.0,
+  "y": 31928.0,
+  "z": 242.0,
+  "yaw": 25.100000000000044,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0989",
+  "folder": "Island/Plants",
+  "x": 30579.0,
+  "y": 37562.0,
+  "z": 164.0,
+  "yaw": -102.70000000000006,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0678",
+  "folder": "Island/Plants",
+  "x": 21075.0,
+  "y": 31521.0,
+  "z": 254.99999999999997,
+  "yaw": 86.8,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1088",
+  "folder": "Island/Plants",
+  "x": 20797.0,
+  "y": 35335.0,
+  "z": 161.0,
+  "yaw": 1.8000000000000038,
+  "scale": 1.57
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1076",
+  "folder": "Island/Plants",
+  "x": 24373.0,
+  "y": 31783.0,
+  "z": 288.0,
+  "yaw": 132.9,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0931",
+  "folder": "Island/Plants",
+  "x": 27441.0,
+  "y": 32811.0,
+  "z": 242.0,
+  "yaw": -93.60000000000004,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0781",
+  "folder": "Island/Plants",
+  "x": 28668.0,
+  "y": 33396.0,
+  "z": 197.0,
+  "yaw": 28.600000000000023,
+  "scale": 1.69
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0229",
+  "folder": "Island/Plants",
+  "x": 24045.0,
+  "y": 26077.0,
+  "z": 235.0,
+  "yaw": -171.7,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0864",
+  "folder": "Island/Plants",
+  "x": 29377.0,
+  "y": 33157.0,
+  "z": 191.0,
+  "yaw": -75.10000000000001,
+  "scale": 1.59
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1090",
+  "folder": "Island/Plants",
+  "x": 14781.0,
+  "y": 26818.0,
+  "z": 210.0,
+  "yaw": 94.80000000000005,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1086",
+  "folder": "Island/Plants",
+  "x": 17168.0,
+  "y": 28512.0,
+  "z": 176.0,
+  "yaw": -71.19999999999997,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0766",
+  "folder": "Island/Plants",
+  "x": 22665.0,
+  "y": 31748.0,
+  "z": 288.0,
+  "yaw": -127.99999999999997,
+  "scale": 1.53
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0843",
+  "folder": "Island/Plants",
+  "x": 28377.0,
+  "y": 33067.0,
+  "z": 235.0,
+  "yaw": 92.30000000000003,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0837",
+  "folder": "Island/Plants",
+  "x": 30244.0,
+  "y": 36854.0,
+  "z": 220.00000000000003,
+  "yaw": -151.9,
+  "scale": 1.82
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1217",
+  "folder": "Island/Rocks",
+  "x": 16398.0,
+  "y": 27493.0,
+  "z": 147.0,
+  "yaw": 94.80000000000005,
+  "scale": 1.23
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0809",
+  "folder": "Island/Plants",
+  "x": 26394.0,
+  "y": 26095.0,
+  "z": 236.0,
+  "yaw": 40.2,
+  "scale": 1.88
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0786",
+  "folder": "Island/Plants",
+  "x": 25247.0,
+  "y": 31553.0,
+  "z": 276.0,
+  "yaw": -95.40000000000006,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1234",
+  "folder": "Island/Rocks",
+  "x": 20327.0,
+  "y": 35707.0,
+  "z": 147.0,
+  "yaw": -92.80000000000004,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0235",
+  "folder": "Island/Plants",
+  "x": 24068.0,
+  "y": 26692.0,
+  "z": 315.0,
+  "yaw": 96.70000000000005,
+  "scale": 1.85
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0172",
+  "folder": "Island/Plants",
+  "x": 16333.0,
+  "y": 28251.0,
+  "z": 57.99999999999999,
+  "yaw": -160.4,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0988",
+  "folder": "Island/Plants",
+  "x": 27476.0,
+  "y": 27008.0,
+  "z": 165.0,
+  "yaw": 17.60000000000004,
+  "scale": 1.12
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0306",
+  "folder": "Island/Plants",
+  "x": 27788.0,
+  "y": 33803.0,
+  "z": 148.0,
+  "yaw": -62.1,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0827",
+  "folder": "Island/Plants",
+  "x": 24559.0,
+  "y": 31770.0,
+  "z": 286.0,
+  "yaw": 2.100000000000036,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0589",
+  "folder": "Island/Plants",
+  "x": 23839.0,
+  "y": 31486.0,
+  "z": 308.0,
+  "yaw": -13.100000000000021,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0920",
+  "folder": "Island/Plants",
+  "x": 14881.0,
+  "y": 27004.0,
+  "z": 206.0,
+  "yaw": -73.79999999999998,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0608",
+  "folder": "Island/Plants",
+  "x": 30066.0,
+  "y": 31690.0,
+  "z": 227.0,
+  "yaw": 74.39999999999993,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0136",
+  "folder": "Island/Plants",
+  "x": 26087.0,
+  "y": 31507.0,
+  "z": 229.99999999999997,
+  "yaw": 138.80000000000004,
+  "scale": 1.4
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1058",
+  "folder": "Island/Plants",
+  "x": 26111.0,
+  "y": 32321.0,
+  "z": 240.0,
+  "yaw": 157.30000000000004,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0232",
+  "folder": "Island/Plants",
+  "x": 23733.0,
+  "y": 26043.0,
+  "z": 200.99999999999997,
+  "yaw": -12.699999999999987,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0876",
+  "folder": "Island/Plants",
+  "x": 26069.0,
+  "y": 26498.0,
+  "z": 252.99999999999997,
+  "yaw": 173.70000000000002,
+  "scale": 1.28
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0929",
+  "folder": "Island/Plants",
+  "x": 26360.0,
+  "y": 33276.0,
+  "z": 208.0,
+  "yaw": 81.2,
+  "scale": 1.41
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0872",
+  "folder": "Island/Plants",
+  "x": 24629.0,
+  "y": 31413.0,
+  "z": 308.0,
+  "yaw": 26.10000000000002,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0795",
+  "folder": "Island/Plants",
+  "x": 14154.0,
+  "y": 27029.0,
+  "z": 170.0,
+  "yaw": 164.00000000000003,
+  "scale": 1.84
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0297",
+  "folder": "Island/Plants",
+  "x": 30411.0,
+  "y": 31172.0,
+  "z": 184.0,
+  "yaw": 16.300000000000022,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0730",
+  "folder": "Island/Plants",
+  "x": 24469.0,
+  "y": 30914.0,
+  "z": 354.0,
+  "yaw": -114.20000000000002,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0796",
+  "folder": "Island/Plants",
+  "x": 17810.0,
+  "y": 28543.0,
+  "z": 245.00000000000003,
+  "yaw": 141.90000000000003,
+  "scale": 1.71
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0613",
+  "folder": "Island/Plants",
+  "x": 30332.0,
+  "y": 31877.0,
+  "z": 183.0,
+  "yaw": 49.400000000000006,
+  "scale": 1.13
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0587",
+  "folder": "Island/Plants",
+  "x": 25489.0,
+  "y": 25101.0,
+  "z": 231.99999999999997,
+  "yaw": 89.5,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0688",
+  "folder": "Island/Plants",
+  "x": 22189.0,
+  "y": 37751.0,
+  "z": 233.0,
+  "yaw": -140.4,
+  "scale": 1.72
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0945",
+  "folder": "Island/Plants",
+  "x": 26401.0,
+  "y": 25708.0,
+  "z": 233.0,
+  "yaw": -16.399999999999974,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1219",
+  "folder": "Island/Rocks",
+  "x": 27401.0,
+  "y": 34724.0,
+  "z": 121.0,
+  "yaw": 96.40000000000002,
+  "scale": 0.82
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0761",
+  "folder": "Island/Plants",
+  "x": 30204.0,
+  "y": 30275.0,
+  "z": 227.99999999999997,
+  "yaw": 116.70000000000002,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0693",
+  "folder": "Island/Plants",
+  "x": 17243.0,
+  "y": 29003.0,
+  "z": 167.0,
+  "yaw": -122.70000000000005,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0187",
+  "folder": "Island/Plants",
+  "x": 15206.0,
+  "y": 26727.0,
+  "z": 186.0,
+  "yaw": -71.69999999999997,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1096",
+  "folder": "Island/Plants",
+  "x": 22001.0,
+  "y": 36784.0,
+  "z": 227.99999999999997,
+  "yaw": 59.9,
+  "scale": 1.76
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0790",
+  "folder": "Island/Plants",
+  "x": 21255.0,
+  "y": 32223.0,
+  "z": 210.0,
+  "yaw": -46.100000000000016,
+  "scale": 1.47
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0295",
+  "folder": "Island/Plants",
+  "x": 20857.0,
+  "y": 36165.0,
+  "z": 164.0,
+  "yaw": 86.50000000000006,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1210",
+  "folder": "Island/Rocks",
+  "x": 30511.0,
+  "y": 33506.0,
+  "z": 26.0,
+  "yaw": 165.3,
+  "scale": 0.83
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0772",
+  "folder": "Island/Plants",
+  "x": 29130.0,
+  "y": 29009.0,
+  "z": 225.99999999999997,
+  "yaw": 47.50000000000002,
+  "scale": 1.73
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0913",
+  "folder": "Island/Plants",
+  "x": 25115.0,
+  "y": 31084.0,
+  "z": 301.0,
+  "yaw": 150.60000000000002,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0687",
+  "folder": "Island/Plants",
+  "x": 18137.0,
+  "y": 35517.0,
+  "z": 245.00000000000003,
+  "yaw": 15.800000000000002,
+  "scale": 1.46
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0617",
+  "folder": "Island/Plants",
+  "x": 22065.0,
+  "y": 37608.0,
+  "z": 218.00000000000003,
+  "yaw": -159.1,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0785",
+  "folder": "Island/Plants",
+  "x": 20977.0,
+  "y": 32106.0,
+  "z": 208.0,
+  "yaw": -81.00000000000001,
+  "scale": 1.73
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0784",
+  "folder": "Island/Plants",
+  "x": 21601.0,
+  "y": 36409.0,
+  "z": 231.0,
+  "yaw": -95.60000000000004,
+  "scale": 1.34
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1023",
+  "folder": "Island/Plants",
+  "x": 20554.0,
+  "y": 32625.0,
+  "z": 173.0,
+  "yaw": 164.10000000000002,
+  "scale": 1.35
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0906",
+  "folder": "Island/Plants",
+  "x": 15968.0,
+  "y": 26580.0,
+  "z": 173.0,
+  "yaw": 41.60000000000003,
+  "scale": 1.86
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0934",
+  "folder": "Island/Plants",
+  "x": 23586.0,
+  "y": 36117.0,
+  "z": 189.0,
+  "yaw": -161.2,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0530",
+  "folder": "Island/Plants",
+  "x": 20595.0,
+  "y": 36734.0,
+  "z": 170.0,
+  "yaw": 15.300000000000034,
+  "scale": 1.16
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0733",
+  "folder": "Island/Plants",
+  "x": 21401.0,
+  "y": 35170.0,
+  "z": 178.0,
+  "yaw": -170.3,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0779",
+  "folder": "Island/Plants",
+  "x": 14742.0,
+  "y": 25796.0,
+  "z": 170.0,
+  "yaw": 115.30000000000003,
+  "scale": 1.18
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0943",
+  "folder": "Island/Plants",
+  "x": 20896.0,
+  "y": 37073.0,
+  "z": 191.0,
+  "yaw": -155.3,
+  "scale": 1.78
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1057",
+  "folder": "Island/Plants",
+  "x": 20519.0,
+  "y": 36029.0,
+  "z": 160.0,
+  "yaw": 154.80000000000004,
+  "scale": 1.07
+ },
+ {
+  "mesh": "SM_BW_Pebbles_B",
+  "label": "BW_Pebbles_B_1216",
+  "folder": "Island/Rocks",
+  "x": 30187.0,
+  "y": 37974.0,
+  "z": -4.0,
+  "yaw": -38.30000000000002,
+  "scale": 1.3
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0830",
+  "folder": "Island/Plants",
+  "x": 18443.0,
+  "y": 28717.0,
+  "z": 269.0,
+  "yaw": -85.09999999999998,
+  "scale": 1.82
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0907",
+  "folder": "Island/Plants",
+  "x": 21284.0,
+  "y": 34858.0,
+  "z": 163.0,
+  "yaw": -178.9,
+  "scale": 1.2
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_1028",
+  "folder": "Island/Plants",
+  "x": 20772.0,
+  "y": 31022.0,
+  "z": 275.0,
+  "yaw": -40.30000000000001,
+  "scale": 1.36
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0728",
+  "folder": "Island/Plants",
+  "x": 26872.0,
+  "y": 27243.0,
+  "z": 206.0,
+  "yaw": -80.79999999999995,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0706",
+  "folder": "Island/Plants",
+  "x": 25667.0,
+  "y": 26617.0,
+  "z": 275.0,
+  "yaw": 122.99999999999999,
+  "scale": 1.38
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0762",
+  "folder": "Island/Plants",
+  "x": 26085.0,
+  "y": 26156.0,
+  "z": 245.00000000000003,
+  "yaw": 161.19999999999996,
+  "scale": 1.11
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0960",
+  "folder": "Island/Plants",
+  "x": 21307.0,
+  "y": 38073.0,
+  "z": 184.0,
+  "yaw": -1.100000000000023,
+  "scale": 1.9
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0598",
+  "folder": "Island/Plants",
+  "x": 21258.0,
+  "y": 31007.0,
+  "z": 310.0,
+  "yaw": 169.89999999999998,
+  "scale": 0.9
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1208",
+  "folder": "Island/Rocks",
+  "x": 26570.0,
+  "y": 24250.0,
+  "z": 17.0,
+  "yaw": -94.50000000000001,
+  "scale": 1.15
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0175",
+  "folder": "Island/Plants",
+  "x": 16666.0,
+  "y": 26893.0,
+  "z": 125.0,
+  "yaw": 9.499999999999986,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0865",
+  "folder": "Island/Plants",
+  "x": 27215.0,
+  "y": 33449.0,
+  "z": 202.99999999999997,
+  "yaw": -75.5,
+  "scale": 1.48
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1230",
+  "folder": "Island/Rocks",
+  "x": 22014.0,
+  "y": 39125.0,
+  "z": 31.0,
+  "yaw": 54.100000000000016,
+  "scale": 0.82
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0833",
+  "folder": "Island/Plants",
+  "x": 21279.0,
+  "y": 32907.0,
+  "z": 181.0,
+  "yaw": -110.40000000000003,
+  "scale": 1.26
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0900",
+  "folder": "Island/Plants",
+  "x": 23080.0,
+  "y": 31228.0,
+  "z": 361.0,
+  "yaw": 90.00000000000003,
+  "scale": 1.8
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0260",
+  "folder": "Island/Plants",
+  "x": 17588.0,
+  "y": 35852.0,
+  "z": 187.0,
+  "yaw": 91.70000000000005,
+  "scale": 1.19
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0794",
+  "folder": "Island/Plants",
+  "x": 27918.0,
+  "y": 33105.0,
+  "z": 231.0,
+  "yaw": -64.49999999999999,
+  "scale": 1.88
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0293",
+  "folder": "Island/Plants",
+  "x": 27523.0,
+  "y": 33066.0,
+  "z": 212.0,
+  "yaw": 14.399999999999986,
+  "scale": 1.05
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0137",
+  "folder": "Island/Plants",
+  "x": 26438.0,
+  "y": 31407.0,
+  "z": 227.99999999999997,
+  "yaw": -159.1,
+  "scale": 1.56
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_C",
+  "label": "BW_Tree_Jungle_C_0474",
+  "folder": "Island/Plants",
+  "x": 23351.0,
+  "y": 36298.0,
+  "z": 181.0,
+  "yaw": -20.300000000000015,
+  "scale": 1.1
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1093",
+  "folder": "Island/Plants",
+  "x": 17703.0,
+  "y": 28198.0,
+  "z": 239.0,
+  "yaw": -101.70000000000006,
+  "scale": 1.52
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0641",
+  "folder": "Island/Plants",
+  "x": 28532.0,
+  "y": 33461.0,
+  "z": 190.0,
+  "yaw": -167.7,
+  "scale": 1.39
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0336",
+  "folder": "Island/Plants",
+  "x": 23155.0,
+  "y": 32375.0,
+  "z": 208.0,
+  "yaw": -137.5,
+  "scale": 1.58
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0627",
+  "folder": "Island/Plants",
+  "x": 23612.0,
+  "y": 31862.0,
+  "z": 267.0,
+  "yaw": 178.8,
+  "scale": 1.37
+ },
+ {
+  "mesh": "SM_BW_Tree_Jungle_A",
+  "label": "BW_Tree_Jungle_A_0473",
+  "folder": "Island/Plants",
+  "x": 24522.0,
+  "y": 26484.0,
+  "z": 293.0,
+  "yaw": -42.60000000000004,
+  "scale": 0.9
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1041",
+  "folder": "Island/Plants",
+  "x": 21760.0,
+  "y": 37869.0,
+  "z": 223.0,
+  "yaw": -140.1,
+  "scale": 1.25
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0767",
+  "folder": "Island/Plants",
+  "x": 26809.0,
+  "y": 32100.0,
+  "z": 246.0,
+  "yaw": -19.899999999999974,
+  "scale": 1.57
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1066",
+  "folder": "Island/Plants",
+  "x": 20709.0,
+  "y": 36109.0,
+  "z": 174.0,
+  "yaw": 60.79999999999997,
+  "scale": 1.17
+ },
+ {
+  "mesh": "SM_BW_BigLeaf_A",
+  "label": "BW_BigLeaf_A_0560",
+  "folder": "Island/Plants",
+  "x": 26573.0,
+  "y": 26897.0,
+  "z": 237.0,
+  "yaw": 29.100000000000048,
+  "scale": 1.24
+ },
+ {
+  "mesh": "SM_BW_Pebbles_A",
+  "label": "BW_Pebbles_A_1232",
+  "folder": "Island/Rocks",
+  "x": 24529.0,
+  "y": 25294.0,
+  "z": 197.0,
+  "yaw": 137.5,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Bush_C",
+  "label": "BW_Bush_C_0611",
+  "folder": "Island/Plants",
+  "x": 30117.0,
+  "y": 30660.0,
+  "z": 248.0,
+  "yaw": -30.100000000000037,
+  "scale": 1.09
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0350",
+  "folder": "Island/Plants",
+  "x": 14926.0,
+  "y": 27759.0,
+  "z": 134.0,
+  "yaw": 21.00000000000004,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0845",
+  "folder": "Island/Plants",
+  "x": 25889.0,
+  "y": 26292.0,
+  "z": 254.99999999999997,
+  "yaw": -104.5,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Hedge_Long",
+  "label": "BW_Hedge_Long_0593",
+  "folder": "Island/Plants",
+  "x": 22971.0,
+  "y": 31939.0,
+  "z": 254.99999999999997,
+  "yaw": 60.300000000000026,
+  "scale": 1.5
+ },
+ {
+  "mesh": "SM_BW_Bush_B",
+  "label": "BW_Bush_B_0625",
+  "folder": "Island/Plants",
+  "x": 26157.0,
+  "y": 31799.0,
+  "z": 239.0,
+  "yaw": -169.9,
+  "scale": 0.99
+ },
+ {
+  "mesh": "SM_BW_Flowers_Mixed",
+  "label": "BW_Flowers_Mixed_1037",
+  "folder": "Island/Plants",
+  "x": 22792.0,
+  "y": 36023.0,
+  "z": 231.0,
+  "yaw": -110.00000000000003,
+  "scale": 1.63
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0961",
+  "folder": "Island/Plants",
+  "x": 29747.0,
+  "y": 32186.0,
+  "z": 243.00000000000003,
+  "yaw": -125.49999999999999,
+  "scale": 1.61
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0768",
+  "folder": "Island/Plants",
+  "x": 28604.0,
+  "y": 33188.0,
+  "z": 221.0,
+  "yaw": -63.39999999999995,
+  "scale": 1.03
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0908",
+  "folder": "Island/Plants",
+  "x": 25603.0,
+  "y": 30395.0,
+  "z": 289.0,
+  "yaw": -26.89999999999998,
+  "scale": 1.44
+ },
+ {
+  "mesh": "SM_BW_Fern_B",
+  "label": "BW_Fern_B_0671",
+  "folder": "Island/Plants",
+  "x": 20413.0,
+  "y": 36193.0,
+  "z": 154.0,
+  "yaw": -71.19999999999997,
+  "scale": 1.47
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0805",
+  "folder": "Island/Plants",
+  "x": 21058.0,
+  "y": 36955.0,
+  "z": 204.99999999999997,
+  "yaw": -91.5,
+  "scale": 1.79
+ },
+ {
+  "mesh": "SM_BW_Bush_A",
+  "label": "BW_Bush_A_0121",
+  "folder": "Island/Plants",
+  "x": 19438.0,
+  "y": 31534.0,
+  "z": 148.0,
+  "yaw": -147.6,
+  "scale": 0.95
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0165",
+  "folder": "Island/Plants",
+  "x": 20116.0,
+  "y": 27009.0,
+  "z": 74.0,
+  "yaw": -151.00000000000003,
+  "scale": 1.96
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1077",
+  "folder": "Island/Plants",
+  "x": 22695.0,
+  "y": 31329.0,
+  "z": 344.0,
+  "yaw": -112.1,
+  "scale": 1.14
+ },
+ {
+  "mesh": "SM_BW_Grass_Short",
+  "label": "BW_Grass_Short_0998",
+  "folder": "Island/Plants",
+  "x": 17698.0,
+  "y": 34798.0,
+  "z": 216.0,
+  "yaw": 116.90000000000003,
+  "scale": 1.47
+ },
+ {
+  "mesh": "SM_BW_Grass_Tall",
+  "label": "BW_Grass_Tall_0849",
+  "folder": "Island/Plants",
+  "x": 17575.0,
+  "y": 35887.0,
+  "z": 200.0,
+  "yaw": -114.50000000000003,
+  "scale": 1.89
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1053",
+  "folder": "Island/Plants",
+  "x": 22600.0,
+  "y": 32075.0,
+  "z": 252.99999999999997,
+  "yaw": -29.60000000000003,
+  "scale": 1.77
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0898",
+  "folder": "Island/Plants",
+  "x": 24504.0,
+  "y": 25628.0,
+  "z": 235.0,
+  "yaw": 151.40000000000003,
+  "scale": 1.64
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0748",
+  "folder": "Island/Plants",
+  "x": 28956.0,
+  "y": 33425.0,
+  "z": 187.0,
+  "yaw": 3.600000000000045,
+  "scale": 1.71
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0812",
+  "folder": "Island/Plants",
+  "x": 20660.0,
+  "y": 36875.0,
+  "z": 174.0,
+  "yaw": 138.1,
+  "scale": 1.31
+ },
+ {
+  "mesh": "SM_BW_Grass_B",
+  "label": "BW_Grass_B_0859",
+  "folder": "Island/Plants",
+  "x": 24393.0,
+  "y": 26757.0,
+  "z": 339.0,
+  "yaw": -18.80000000000001,
+  "scale": 1.45
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1085",
+  "folder": "Island/Plants",
+  "x": 26167.0,
+  "y": 30617.0,
+  "z": 264.0,
+  "yaw": -108.80000000000004,
+  "scale": 1.68
+ },
+ {
+  "mesh": "SM_BW_Flowers_Red",
+  "label": "BW_Flowers_Red_1072",
+  "folder": "Island/Plants",
+  "x": 15958.0,
+  "y": 27133.0,
+  "z": 166.0,
+  "yaw": 33.30000000000004,
+  "scale": 1.12
+ },
+ {
+  "mesh": "SM_BW_Grass_A",
+  "label": "BW_Grass_A_0952",
+  "folder": "Island/Plants",
+  "x": 26653.0,
+  "y": 33714.0,
+  "z": 186.0,
+  "yaw": 18.100000000000005,
+  "scale": 1.27
+ },
+ {
+  "mesh": "SM_BW_Flowers_Blue",
+  "label": "BW_Flowers_Blue_1051",
+  "folder": "Island/Plants",
+  "x": 21084.0,
+  "y": 32384.0,
+  "z": 196.0,
+  "yaw": 175.10000000000002,
+  "scale": 1.23
+ }
+]

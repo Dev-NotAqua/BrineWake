@@ -1,0 +1,10 @@
+# The pieces that still come straight from bw_kit.py (run through bl_run.py), rebuilt so their tube faces point outward.
+dock("SM_BW_Dock", 46.0, 6)
+dressing("SM_BW_DockEnd", "dock_end")
+dressing("SM_BW_DockCorner", "dock_corner")
+rowboat("SM_BW_Rowboat")
+ship_part("SM_BW_Mast", "mast")
+ship_part("SM_BW_Sail", "sail")
+ship_part("SM_BW_ShipWheel", "wheel")
+barrel("SM_BW_Barrel")
+crate("SM_BW_Crate")

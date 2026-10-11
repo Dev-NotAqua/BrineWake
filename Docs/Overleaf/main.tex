@@ -1,0 +1,333 @@
+% Brinewake2 — Physics and Game Content Specification
+% Engine: Unreal Engine 5.8.3 | Project: Brinewake2.uproject
+% Verified on machine 2026-10-11. Paste this file into Overleaf as main.tex and press Recompile.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black}
+
+\definecolor{codebg}{RGB}{245,245,245}
+\lstset{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2,
+  showstringspaces=false,
+  keywordstyle=\color{blue!60!black},
+  commentstyle=\color{green!40!black},
+  stringstyle=\color{orange!70!black}
+}
+
+\title{Brinewake2 --- Physics and Game Content Specification\\ \large Unreal Engine 5.8.3 (verified on local machine)}
+\author{Generated from repository + on-disk project scan\\ Overleaf project: \url{https://www.overleaf.com/project/6abd1570a170b73d0ef1e16a}}
+\date{2026-10-11}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document is a verified snapshot of the \textbf{Brinewake2} Unreal project and the physics + game-content reference for the team.
+Section~\ref{sec:verify} records exactly what was checked on the author's machine (UE install path, build version, \texttt{.uproject}, maps, source tree).
+Sections~\ref{sec:charphys}--\ref{sec:collision} give the authoritative physics numbers taken from C++ (\texttt{Brinewake2Character}, \texttt{HorrorCharacter}, \texttt{ShooterProjectile}, \texttt{ShooterWeapon}, \texttt{ShooterNPC}) and \texttt{Config/DefaultEngine.ini}.
+Sections~\ref{sec:ships}--\ref{sec:content} describe game content (levels, asset inventory, design pillars, world, gameplay, UI/audio milestones) taken from \texttt{Docs/*.md}.
+All file paths are Windows paths as found during the scan.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Machine verification (what was checked)}
+\label{sec:verify}
+
+\subsection{Engine installation}
+\begin{itemize}[leftmargin=1.4em]
+  \item Path: \texttt{C:\textbackslash Program Files\textbackslash Epic Games\textbackslash UE\_5.8}
+  \item \texttt{Engine\textbackslash Build\textbackslash Build.version}:
+\begin{lstlisting}
+{
+  "MajorVersion": 5, "MinorVersion": 8, "PatchVersion": 3,
+  "Changelist": 58210709, "CompatibleChangelist": 55116800,
+  "IsLicenseeVersion": 0, "IsPromotedBuild": 1,
+  "BranchName": "++UE5+Release-5.8"
+}
+\end{lstlisting}
+  \item Result: \textbf{UE 5.8.3, promoted release build}. Launcher also present under \texttt{C:\textbackslash Program Files\textbackslash Epic Games\textbackslash Launcher}.
+\end{itemize}
+
+\subsection{Project file}
+\begin{itemize}[leftmargin=1.4em]
+  \item \texttt{C:\textbackslash Users\textbackslash User\textbackslash Documents\textbackslash Unreal Projects\textbackslash Brinewake2\textbackslash Brinewake2.uproject}, \texttt{FileVersion: 3}.
+  \item Module: \texttt{Brinewake2} (Runtime, deps: \texttt{Engine, AIModule, UMG}).
+  \item Enabled plugins: \texttt{ModelingToolsEditorMode} (Editor-only), \texttt{StateTree}, \texttt{GameplayStateTree}, \texttt{ModelContextProtocol}, \texttt{AllToolsets}, \texttt{EditorDiscordRichPresence}.
+  \item Unreal MCP autostart config present: \texttt{Config/DefaultEditorPerProjectUserSettings.ini} with \texttt{[/Script/ModelContextProtocolEngine.ModelContextProtocolSettings]}. Live editor query via MCP was \textbf{not} reachable during this scan (connection reset --- editor was not running), so all numbers below are from disk, not from a live level.
+  \item Source: 40+ \texttt{.h/.cpp} under \texttt{Source/Brinewake2/} (base + \texttt{Variant\_Horror/} + \texttt{Variant\_Shooter/}).
+  \item Design docs on disk: \texttt{Docs/00}--\texttt{06} + \texttt{README.md} (pirate sandbox ``Brinewake'', Sea-of-Thieves-like, co-op first).
+\end{itemize}
+
+\subsection{Levels found on disk}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Map file & Folder & Role (from config/docs) \\
+\midrule
+\texttt{Lvl\_FirstPerson.umap} & \texttt{Content/FirstPerson/} & Startup + default map (\texttt{DefaultEngine.ini}) \\
+\texttt{Lvl\_Horror.umap} & \texttt{Content/Variant\_Horror/} & Horror variant test level \\
+\texttt{Lvl\_Shooter.umap} & \texttt{Content/Variant\_Shooter/} & Shooter variant test level \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Asset inventory (counted \texttt{*.uasset})}
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Content folder & \texttt{.uasset} count \\
+\midrule
+\texttt{Brinewake} & 78 \\
+\texttt{Characters} & 128 \\
+\texttt{FirstPerson} & 6 \\
+\texttt{Variant\_Horror} & 14 \\
+\texttt{Variant\_Shooter} & 36 \\
+\texttt{Weapons} & 27 \\
+\texttt{LevelPrototyping} & 29 \\
+\texttt{\_\_ExternalActors\_\_} (World Partition) & 328 \\
+\texttt{\_\_ExternalObjects\_\_} & 29 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ============================================================
+\section{Character physics}
+\label{sec:charphys}
+
+\subsection{Base first-person character (\texttt{ABrinewake2Character})}
+Source: \texttt{Source/Brinewake2/Brinewake2Character.cpp}, constructor.
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Capsule: initialised $55 \times 96$ then set to \textbf{radius $34.0$\,cm, half-height $96.0$\,cm} via \texttt{SetCapsuleSize(34.0f, 96.0f)}.
+  \item First-person mesh: owner-only (\texttt{SetOnlyOwnerSee(true)}, profile \texttt{NoCollision}); third-person mesh set to \texttt{OwnerNoSee} world-space representation.
+  \item Camera: attached to head socket at $(-2.8,\,5.89,\,0.0)$\,cm, $70^\circ$ FOV, first-person scale $0.6$.
+  \item Movement: \texttt{BrakingDecelerationFalling = 1500.0}~cm/s$^2$, \texttt{AirControl = 0.5}. All other \texttt{UCharacterMovementComponent} values are engine defaults (gravity scale $1.0$, world gravity $-980$\,cm/s$^2$ unless overridden in a map).
+  \item Input: Enhanced Input only; move/look/jump routed through \texttt{DoMove/DoAim/DoJumpStart/DoJumpEnd}.
+\end{itemize}
+
+\subsection{Horror character (\texttt{AHorrorCharacter} : \texttt{ABrinewake2Character})}
+Source: \texttt{Variant\_Horror/HorrorCharacter.h/.cpp}. Stamina-gated sprint.
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Parameter & Value & Notes \\
+\midrule
+\texttt{WalkSpeed} & $250$\,cm/s & default locomotion \\
+\texttt{SprintSpeed} & $600$\,cm/s & while sprint meter $>0$ \\
+\texttt{RecoveringWalkSpeed} & $150$\,cm/s & exhaustion penalty \\
+\texttt{SprintTime} & $3.0$\,s & full-meter budget \\
+\texttt{SprintFixedTickTime} & $0.03333$\,s & $\approx 30$\,Hz drain tick \\
+\texttt{RecoveryTime} & $0.0$\,s (tunable) & currently instant in code \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Locomotion law used in \texttt{Tick}: if sprinting and speed $> \texttt{WalkSpeed}$, drain meter; on empty, clamp to \texttt{RecoveringWalkSpeed}; on full recovery restore walk/sprint speed. Sprint state and meter fraction are broadcast to Blueprint via \texttt{OnSprintStateChanged} / \texttt{OnSprintMeterUpdated} (HUD ring).
+
+\subsection{Shooter character + NPC}
+Source: \texttt{Variant\_Shooter/ShooterCharacter.cpp}, \texttt{AI/ShooterNPC.h}.
+\begin{itemize}[leftmargin=1.4em]
+  \item \texttt{RotationRate = (0, 600, 0)}~deg/s (controller yaw responsiveness).
+  \item Death: \texttt{StopMovementImmediately() + DisableMovement()}, capsule to \texttt{NoCollision}, ragdoll profile \texttt{Ragdoll}, deferred destroy $5.0$\,s.
+  \item NPC health: \texttt{CurrentHP = 100.0}. Aim: range $10\,000$\,cm, half-angle variance $10^\circ$, vertical offsets $-35$ to $-60$\,cm from target centre. Team id \texttt{TeamByte}, death tag \texttt{Dead}.
+\end{itemize}
+
+% ============================================================
+\section{Projectile and weapon physics}
+\label{sec:projectile}
+
+\subsection{Projectile actor (\texttt{AShooterProjectile})}
+Source: \texttt{Variant\_Shooter/Weapons/ShooterProjectile.cpp/.h}. All values are code defaults (editable per Blueprint instance).
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Parameter & Default & Meaning \\
+\midrule
+Collision radius & $16.0$\,cm sphere & root \texttt{USphereComponent} \\
+Collision preset & \texttt{QueryAndPhysics}, block all & \texttt{ECR\_Block} all channels \\
+Step-up & \texttt{ECB\_No} & characters cannot stand on shells \\
+\texttt{InitialSpeed / MaxSpeed} & $3000$\,cm/s ($30$\,m/s) & \texttt{UProjectileMovementComponent} \\
+\texttt{bShouldBounce} & \texttt{true} & ricochet; no custom restitution in code \\
+\texttt{HitDamage} & $25.0$ & per direct hit (via \texttt{ApplyDamage}) \\
+\texttt{PhysicsForce} & $100.0$ & impulse magnitude on physics bodies \\
+\texttt{NoiseLoudness / Range} & $3.0$ / $1000$\,cm & AI perception on impact \\
+\texttt{bExplodeOnHit} & \texttt{false} & toggle for AoE \\
+\texttt{ExplosionRadius} & $500$\,cm ($5$\,m) & overlap query when enabled \\
+\texttt{DeferredDestructionTime} & $5.0$\,s & lifetime after first hit \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Hit pipeline (\texttt{NotifyHit}): first hit wins (\texttt{bHit} guard) $\rightarrow$ disable collision $\rightarrow$ \texttt{MakeNoise} $\rightarrow$ direct \texttt{ProcessHit} \emph{or} \texttt{ExplosionCheck} (sphere overlap vs.\ \texttt{Pawn}, \texttt{WorldDynamic}, \texttt{PhysicsBody}, each actor damaged once) $\rightarrow$ Blueprint event \texttt{BP\_OnProjectileHit} $\rightarrow$ destroy now or after $5$\,s.
+
+Damage + impulse rule (\texttt{ProcessHit}):
+\begin{equation}
+\text{if target is } \mathtt{ACharacter} \Rightarrow \mathtt{ApplyDamage}(25), \qquad
+\text{if } \mathtt{HitComp.IsSimulatingPhysics()} \Rightarrow \mathbf{J} = \hat{\mathbf{d}}\cdot 100 \text{ at impact point}.
+\end{equation}
+
+\subsection{Kinematic model (for tuning docs)}
+With no drag/gravity configured on \texttt{ProjectileMovement}, flight is rectilinear at $v_0 = 3000$\,cm/s:
+\begin{equation}
+\mathbf{x}(t) = \mathbf{x}_0 + \mathbf{v}_0 t, \qquad t_{\text{hit}} \approx \frac{d}{3000~\text{cm/s}}.
+\end{equation}
+At $30$\,m the flight time is $\approx 1.0$\,s; at the NPC aim range $100$\,m it is $\approx 3.3$\,s.
+If gravity is later enabled on the movement component with scale $g_s$, use
+\begin{equation}
+\mathbf{x}(t) = \mathbf{x}_0 + \mathbf{v}_0 t + \tfrac{1}{2}\, g_s(-980\,\hat{\mathbf{z}})\,t^2,
+\end{equation}
+so drop at $50$\,m ($\approx 1.67$\,s) would be $\approx 1.37\,g_s$\,m --- keep $g_s = 0$ for hitscan-feel flintlocks, $g_s > 0$ for cannonballs (ship combat).
+
+\subsection{Weapon base (\texttt{AShooterWeapon})}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Parameter & Default & Meaning \\
+\midrule
+\texttt{MagazineSize} & $10$ & design doc target is 5 shots/gun; tune per weapon \\
+\texttt{RefireRate} & $0.5$\,s & semi + full-auto gate \\
+\texttt{bFullAuto} & \texttt{false} & flintlock feel \\
+\texttt{MuzzleOffset} & $10$\,cm & spawn ahead of muzzle socket \\
+\texttt{AimVariance} & $0^\circ$ & base; NPCs add $10^\circ$ \\
+\texttt{FiringRecoil} & $0.0$ & apply per weapon \\
+\texttt{ShotLoudness / Range} & $1.0$ / $300$\,cm & AI hearing \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Collision profile (\texttt{Config/DefaultEngine.ini})}
+\begin{lstlisting}
++Profiles=(Name="Projectile",CollisionEnabled=QueryOnly,
+  ObjectTypeName="Projectile",bCanModify=True)
++DefaultChannelResponses=(Channel=ECC_GameTraceChannel1,
+  Name="Projectile",DefaultResponse=ECR_Block)
++EditProfiles=(Name="Trigger",
+  CustomResponses=((Channel=Projectile, Response=ECR_Ignore)))
+\end{lstlisting}
+Design rule: bullets live on the \texttt{Projectile} object channel; triggers ignore them so pickups/voyage volumes never block shots.
+
+% ============================================================
+\section{Collision, damage and death}
+\label{sec:collision}
+
+\begin{enumerate}[leftmargin=1.4em]
+  \item \textbf{Direct hit:} $25$~HP damage. A $100$~HP NPC dies in $4$ torso hits (before falloff/headshot multipliers, which are not yet in code).
+  \item \textbf{Explosion (opt-in):} $5$\,m sphere overlap; damage + radial impulse per actor once. Owner excluded unless \texttt{bDamageOwner}.
+  \item \textbf{Physics push:} $100$-unit impulse at impact point --- visible nudge on props, negligible on characters (by design; use knockback separately).
+  \item \textbf{Ragdoll:} NPCs switch to \texttt{Ragdoll} profile on death, linger $5$\,s, then destroy. Player death flow (ghost ship $15$--$25$\,s, loot floats $5$\,min) is design-spec, not yet coded --- see \S\ref{sec:content}.
+\end{enumerate}
+
+% ============================================================
+\section{Ship, ocean and buoyancy (design + integration plan)}
+\label{sec:ships}
+
+From \texttt{Docs/01-Tech-Unreal.md} (spec; grey-box ship milestone M1 is the prove-out):
+
+\begin{itemize}[leftmargin=1.4em]
+  \item Ocean: Water plugin, custom Gerstner-wave material; wave parameters replicated from server with server time so all clients evaluate the same surface.
+  \item Ship: \textbf{single server-authoritative Pawn}, Chaos physics + Buoyancy sample points on hull. Clients predict; acceptance criterion \texttt{p.netshowcorrections 1} stays clean with 2 clients in a storm.
+  \item Deck walking: attach characters to ship; test jitter explicitly (listed project risk).
+  \item Reference buoyancy model for the design doc:
+\begin{equation}
+\mathbf{F}_{\text{buoy}} = -\rho\, g\, V_{\text{sub}}\,\hat{\mathbf{z}} + \mathbf{F}_{\text{damp}}(\mathbf{v}, \boldsymbol{\omega}),
+\end{equation}
+  with one sample per hull pontoon in the Chaos Buoyancy component, $\rho = 1025$\,kg/m$^3$ seawater, $V_{\text{sub}}$ from Gerstner height field. Cannon recoil, hole flooding (3 hole sizes at fixed sockets), bailing and sinking are server-auth gameplay states layered over this force, \emph{not} rigid-body shattering.
+  \item Netcode: listen-server, 1 ship / 4 players for M1, target 5 ships / 16 players by M9.
+\end{itemize}
+
+% ============================================================
+\section{Game content reference}
+\label{sec:content}
+
+\subsection{High concept (from \texttt{Docs/00,02,03})}
+\textbf{Brinewake}: Sea-of-Thieves-like co-op pirate sandbox (original IP). Pillars: (1) tools, not menus (compass/map/lantern are held objects); (2) a ship needs hands (every station is a physical job); (3) cosmetic-only progression; (4) chunky painted look; (5) nothing ships silent (every feature needs SFX+VFX+UI).
+
+World: $8\times8$ lettered grid ($\approx 8\times8$\,km), World Partition streaming, storm-wall border (``the Shroud'' kill volume). Regions: Sunlit Shallows (starter slice), Verdant Reach, Ashen Narrows, Ember Deeps. Hub: Gullrest Outpost (docks, shipwright, tavern spawn, tailor, weaponsmith, outfitter, four faction halls). Island recipe: 1 sea-readable landmark, 2 beaches, 2--3 riddle features, dig zones, cave/secret, enemy + wildlife zones.
+
+\subsection{Gameplay systems}
+On foot: walk/sprint/jump/swim/dive (oxygen), ladders, two-handed loot carry, sit/sleep/emotes; tools (compass, map, watch, lantern, spyglass, shovel, bucket, trumpet, rod, tankard, 4 instruments); arsenal cutlass/flintlock/scattergun/long-rifle (carry 2, 5 shots each per design --- code default magazine is 10, reconcile per weapon); cooking (raw $\rightarrow$ cooked $\rightarrow$ burnt).
+Ships: wheel, sail length/angle, capstan, cannons, chart/voyage/banner tables, armoury, stove, bell, crow's nest; damage states (holes $\rightarrow$ flood $\rightarrow$ bail/plank $\rightarrow$ sink; fire/mast later).
+Voyages: Ledger (X-marks/riddles), Wardens (skeleton captain), Tradewind (timed cargo/animals), Anglers (fish/cook/sell) + emergent bottles/wrecks/forts/shark; loot 5 tiers; trick chests; powder kegs; alliance banners grade 1--5 to $2.5\times$.
+Economy/death/social: gold + rep $1$--$50$ + commendations; ghost-ship respawn $15$--$25$\,s, sunk ships respawn far with loot floating $5$\,min; Open Seas (PvP) vs.\ Calm Seas (private); crews $1$--$4$, proximity voice, brig vote.
+
+\subsection{Modes shipped in this snapshot}
+\texttt{FirstPerson} template base + \texttt{Variant\_Shooter} (AI StateTree shooter with pickups, spawner, bullet-counter UI) + \texttt{Variant\_Horror} (stamina sprint, spotlight, horror UI). Full pirate systems (ships, voyages, vendors, shanties) are spec'd in \texttt{Docs/} and roadmapped M0--M12, not yet in C++.
+
+\subsection{UI / audio / VFX (from \texttt{Docs/04,05})}
+53 screens (UMG + CommonUI), parchment/brass style, KB+pad+touch day one. Audio Modulation buses (Music/Ambience/World/Ship/Weapons/Foley/UI/Voice), 3--5 variants + pitch, pooled. Niagara VFX via single manager \texttt{VFX.play(name,pos)}, 3 LOD tiers, no blood (slash arcs, hit stars, bone bursts).
+
+% ============================================================
+\section{Tuning tables (copy into balancing sheets)}
+\label{sec:tuning}
+
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+System & Knob & Current & Suggested range \\
+\midrule
+Player walk & \texttt{WalkSpeed} & 250 & 200--300 (horror is slow by design) \\
+Player sprint & \texttt{SprintSpeed} & 600 & 450--650 \\
+Sprint budget & \texttt{SprintTime} & 3.0\,s & 2--5\,s \\
+Capsule & radius / half-height & 34 / 96\,cm & do not shrink below 30\,cm \\
+Air & \texttt{AirControl} & 0.5 & 0.2--0.6 \\
+Fall braking & \texttt{BrakingDecel} & 1500 & 1200--2000 \\
+Bullet speed & \texttt{InitialSpeed} & 3000\,cm/s & 2000--6000 (cannons slower) \\
+Direct damage & \texttt{HitDamage} & 25 & 10--50 (NPC 100\,HP = 4 hits) \\
+Blast radius & \texttt{ExplosionRadius} & 500\,cm & 300--800 for kegs \\
+Push & \texttt{PhysicsForce} & 100 & 50--500 for props \\
+Magazine & \texttt{MagazineSize} & 10 & 5 per design (flintlocks) \\
+Refire & \texttt{RefireRate} & 0.5\,s & 0.4--1.5 (muzzle-loaders slow) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ============================================================
+\section{How to reproduce / validate}
+\label{sec:repro}
+
+\begin{enumerate}[leftmargin=1.4em]
+  \item Open \texttt{Brinewake2.uproject} in UE 5.8.3; startup map \texttt{/Game/FirstPerson/Lvl\_FirstPerson}.
+  \item Play \texttt{Lvl\_Shooter}: fire at physics props --- expect block, $25$-dmg on NPCs, $100$-unit nudge, $5$\,s corpse linger.
+  \item Play \texttt{Lvl\_Horror}: sprint $3$\,s at $600$\,cm/s, confirm $150$\,cm/s recovery penalty + HUD meter events.
+  \item Ship milestone (M1): 2 clients + storm, \texttt{p.netshowcorrections 1} clean, no deck jitter.
+  \item Collisions: bullets must pass through Trigger volumes (response Ignore) and be blocked by world/pawns.
+\end{enumerate}
+
+\appendix
+\section{Key file paths}
+\begin{lstlisting}
+Brinewake2.uproject
+Config/DefaultEngine.ini          (collision profile, maps, renderer)
+Config/DefaultEditorPerProjectUserSettings.ini  (MCP autostart)
+Source/Brinewake2/Brinewake2Character.*
+Source/Brinewake2/Variant_Horror/HorrorCharacter.*
+Source/Brinewake2/Variant_Shooter/ShooterCharacter.*
+Source/Brinewake2/Variant_Shooter/Weapons/ShooterProjectile.*
+Source/Brinewake2/Variant_Shooter/Weapons/ShooterWeapon.*
+Source/Brinewake2/Variant_Shooter/AI/ShooterNPC.*
+Content/FirstPerson/Lvl_FirstPerson.umap
+Content/Variant_Horror/Lvl_Horror.umap
+Content/Variant_Shooter/Lvl_Shooter.umap
+Docs/00-Pillars-Journey.md ... 06-Milestones.md
+\end{lstlisting}
+
+\end{document}

@@ -1,0 +1,15 @@
+(event EventTick (DeltaSeconds)
+  (bind ch (Game|GetPlayerCharacter :PlayerIndex 0))
+  (Utilities|IsValid ch
+    (:"Is Valid"
+      (bind vol (Variables|Default|GetVolume))
+      (bind loc (Transformation|GetActorLocation :self ch))
+      (bind (surf nrm flow depth) (WaterBody|GetWaterSurfaceInfoatLocation :self (Class|WaterBody|GetWaterBodyComponent :self (Variables|Default|GetOcean)) :InLocation loc :bIncludeDepth false))
+      (Transformation|SetActorLocation :self vol :NewLocation (Math|Vector|MakeVector :X (.x loc) :Y (.y loc) :Z (- (.z surf) (Variables|Default|GetHalfDepth))) :bSweep false :bTeleport true)
+      (bind mv (Class|Character|GetCharacterMovement :self ch))
+      (Class|CharacterMovementComponent|SetBuoyancy :self mv :Buoyancy (Variables|Default|GetBuoyancy))
+      (if (Movement|IsSwimming :self mv)
+        (bind ahead (Math|Vector|DotProduct (Transformation|GetVelocity :self ch) (Transformation|GetActorForwardVector :self ch)))
+        (bind dive (Math|Trig|Sin(Degrees) (.pitch (Pawn|GetBaseAimRotation :self ch))))
+        (Pawn|Input|AddMovementInput :self ch :WorldDirection (Math|Vector|MakeVector :X 0.0 :Y 0.0 :Z 1.0) :ScaleValue (* dive (Math|Float|Clamp(Float) :Value (/ ahead 200.0) :Min -1.0 :Max 1.0)) :bForce false)))
+    (:"Is Not Valid")))
